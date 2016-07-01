@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.4.1", "1", "Actors", "EARoot/EA4/EA1/EA131.html", "4.png", "", "", "{9EBB7F30-FFE5-462a-8AFD-9E62E9B1F508}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2", "1", "UC01 - Soil Data Integration", "EARoot/EA4/EA2/EA154.html", "4.png", "", "", "{ACE6C31F-ECEF-448c-B4E3-7A354EAE6DB3}", "Package");
+tocTab[tocTab.length] = new Array("0.4.3", "1", "UC02 - Soil Sensor Data", "EARoot/EA4/EA3/EA158.html", "4.png", "", "", "{AD7C36CD-5860-4df2-A238-5B8C601D55A0}", "Package");
+tocTab[tocTab.length] = new Array("0.4.4", "1", "UC03 - Soil Property Modelling and Predictions", "EARoot/EA4/EA4/EA162.html", "4.png", "", "", "{1E71C382-4AC3-4541-8DCE-12ABB97CBBF8}", "Package");
+tocTab[tocTab.length] = new Array("0.4.5", "1", "UC04 - Pedo-transfer Functions", "EARoot/EA4/EA5/EA166.html", "4.png", "", "", "{F68F154E-773E-4df3-B1C4-7762F3A402E7}", "Package");
+tocTab[tocTab.length] = new Array("0.4.6", "1", "UC05 - Soil Mapping", "EARoot/EA4/EA6/EA170.html", "4.png", "", "", "{5B8BC630-426F-4650-8D73-60C1935CE437}", "Package");

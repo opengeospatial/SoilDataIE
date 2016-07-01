@@ -1,0 +1,1572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:FeatureCollection 
+xmlns:wfs="http://www.opengis.net/wfs/2.0" 
+xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0" 
+xmlns:soil="http://www.opengis.net/soil-data-ie/0.1" 
+xmlns:gmd="http://www.isotc211.org/2005/gmd" 
+xmlns:gco="http://www.isotc211.org/2005/gco" 
+xmlns:sam="http://www.opengis.net/sampling/2.0" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+xmlns:om="http://www.opengis.net/om/2.0" 
+xmlns:gml="http://www.opengis.net/gml/3.2" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" 
+timeStamp="2015-03-30T22:12:55.882Z" 
+xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd 
+http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd 
+http://www.opengis.net/om/2.0 http://schemas.opengis.net/om/2.0/observation.xsd
+http://www.opengis.net/soil-data-ie/0.1 http://lab.scinfo.org.nz/static/schema/soil-data-ie/0.1/soil-data-ie.xsd" numberMatched="unknown" numberReturned="1">
+	<!-- =========================================-->
+	<!--This wfs:member example is for a soil:SO_Horizon -->
+	<!--Materialised Views: [ANZSOILML_SOILHORIZON], -->
+	<!-- ======================================== -->
+	<!-- Features SF_Specimen refers to: OM_Observation (soil:soRelatedObservation); SF_SpatialSamplingFeature (soil:soRelatedSamplingFeature) SO_Horizon (sam:sampledFeature), SF_Specimen (sam:relatedSample) -->
+	<!--Required Vocabularies: (codelist), (soilfeaturerole), (material), (UOM Metre,Gram), (soilspecimentype), (SRS)-->
+	<!--Required Materialised Views: [SOILML_PROPERTIES] and [ANZSOILML_RELATEDOBSERVATION]-->
+	<!--=================================================-->
+	<wfs:member>
+		<!--Materialised View: [ANZSOILML_SOILHORIZON.SOILHORIZON_GML_ID] Value: "soil_horizon_[HORIZONS.AGENCY_CODE]'.'[HORIZONS.PROJ_CODE]'.'[HORIZONS.S_ID]'.'[HORIZONS.O_ID]'.'[HORIZONS.H_NO]"-->
+		<!--Geoserver soil:SO_Horizon/gml:id =  [ANZSOILML_SOILHORIZON.SOILHORIZON_GML_ID] -->
+		<soil:SO_Horizon gml:id="soil_horizon_103.EPA_CMP.SITE001.1.1">
+			<!--Materialised View: [ANZSOILML_SOILHORIZON.SOILHORIZON_DESC] Value: [HORIZONS.H_NOTES]-->
+			<!--Geoserver gml:description value = [ANZSOILML_SOILHORIZON.SOILHORIZON_DESC]-->
+			<gml:description>Orange mottled clay - mottling associated with old root channels.</gml:description>
+			<!--Geoserver gml:identifier/codeSpace = "http://www.clw.csiro.au/aclep/archive" -->
+			<!--Geoserver gml:identifier value = ${httpuri.so-horizon} + [ANZSOILML_SOILHORIZON.SOILHORIZON_GML_ID]-->
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive"> http://lab.scinfo.org.nz/soil-data-ie/id/csiro/soil/so_horizon/soil_horizon_103.EPA_CMP.SITE001.1.1</gml:identifier>
+			<soil:soDepth>
+				<soil:SO_MeasureRange>
+					<!--Materialised View [ANZSOILML_SOILHORIZON.HORIZON_UPPERDEPTH] Value [HORIZONS.H_UPPER_DEPTH]-->
+					<!--Geoserver soil:soDepth/soil:SO_MeasureRange/soil:soMinimumValue/uom='m'-->
+					<!--Geoserver  soil:soDepth/soil:SO_MeasureRange/soil:soMinimumValue = [ANZSOILML_SOILHORIZON.HORIZON_UPPERDEPTH] -->
+					<soil:soMinimumValue uom="m">0.0</soil:soMinimumValue>
+					<!--Materialised View [ANZSOILML_SOILHORIZON.HORIZON_LOWERDEPTH] Value [HORIZONS.H_LOWER_DEPTH]-->
+					<!--Geoserver soil:soDepth/soil:SO_MeasureRange/soil:soMaximumValue/uom= 'm'-->
+					<!--Geoserver  soil:soDepth/soil:SO_MeasureRange/soil:soMaximumValue = [ANZSOILML_SOILHORIZON.HORIZON_LOWERDEPTH] -->
+					<soil:soMaximumValue uom="m">1.2</soil:soMaximumValue>
+				</soil:SO_MeasureRange>
+			</soil:soDepth>
+			<soil:soComposition>
+				<soil:SO_Component>
+					<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeFraction/xlink:title = "fine earth" -->
+					<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeFraction/xlink:href=strConcat('${httpuri.particle-size}','fine-earth') -->
+					<soil:soParticleSizeFraction xlink:title="fine earth" xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/voc/particle-size/fine-earth"/>
+					<!--Materialised View: [ANZSOILML_SOILHORIZON.TEXTURE_VALUE]    
+Value [CODES.CODE_VALUE] resolved by [HORIZONS.H_TEXTURE] linked to [CODES.CODE_VALUE] where [CODES.CODE_DOMAIN] = "C_H_TEXTURE"-->
+					<!--Materialised View: [ANZSOILML_SOILHORIZON.TEXTURE_TERM] 
+Value: [CODES.CODE_DESC] resolved by [HORIZONS.H_TEXTURE] linked to [CODES.CODE_VALUE] where [CODES.CODE_DOMAIN] = "C_H_TEXTURE"-->
+					<!--Materialised View: [ANZSOILML_SOILHORIZON.TEXTURE_HREF] 
+Value: [CODES.CODE_DESC] resolved by [HORIZONS.H_TEXTURE] linked to [CODES.CODE_VALUE] where [CODES.CODE_DOMAIN] = "C_H_TEXTURE" where spaces are replaced by hyphens -->
+					<!--Geoserver soil:soComposition/soil:SO_Component/soil:soTexture/xlink:href = "http://registry.it.csiro.au/def/soils/texture/" + [ANZSOILML_SOILHORIZON.TEXTURE_HREF] -->
+					<!--Geoserver soil:soTexture/xlink:title = [ANZSOILML_SOILHORIZON.TEXTURE_TERM] -->
+					<soil:soTexture xlink:href="http://registry.it.csiro.au/def/soils/texture/loamy-sand" xlink:title="loamy sand"/>
+					<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+					
+<!--Materialised View: [ANZSOILML_PARTICLES.SOILHORIZON_GML_ID] -->
+<!--Value: "soil_horizon_[HORIZONS.AGENCY_CODE]'.'[HORIZONS.PROJ_CODE]'.'[HORIZONS.S_ID]'.'[HORIZONS.O_ID]'.'[HORIZONS.H_NO]"-->
+<!--Materialised View: [ANZSOILML_PARTICLES.TEXTURE_DESC] = [CODES.CODE_DESC] resolved by [HORIZONS.H_TEXTURE]] linked to [CODES.CODE_VALUE] where [CODES.CODE_DOMAIN] = "C_H_TEXTURE"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC]-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE]-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE]-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP]-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP]-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC]-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE]-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE]-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP]-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP]-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC]-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE]-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE]-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP]-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP]-->
+					<!-- Case: Ignore where [HORIZONS:H_TEXTURE] is one of IP, HP, AP, SP, LP, CP, GP, ST, GR.-->
+					<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+					<!-- ### Component name, size and proportion mappings for each constituent ### -->
+					<!-- Case: Where [HORIZONS.H_TEXTURE]] = SS	{i.e. [CODES.CODE_DESC] = "Pure sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "100"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "100"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE]] = FSS	{i.e. [CODES.CODE_DESC] = "Fine pure sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "Fine sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "0.2"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "100"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "100"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE]] = MSS	{i.e. [CODES.CODE_DESC] = "Medium pure sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "medium sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "0.5"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "100"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "100"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE]] = KSS	{i.e. [CODES.CODE_DESC] = "Coarse pure sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "coarse sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.2"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "100"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "100"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE]] = S	{i.e. [CODES.CODE_DESC] = "Sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "88"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "100"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "7"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "8"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE]] = FS	{i.e. [CODES.CODE_DESC] = "Fine sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "88"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "100"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "7"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "8"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE]] = MS	{i.e. [CODES.CODE_DESC] = "Medium sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "88"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "100"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "7"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "8"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE]] = KS	{i.e. [CODES.CODE_DESC] = "Coarse sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "88"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "100"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "7"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "8"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE]] = LS	{i.e. [CODES.CODE_DESC] = "Loamy sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "92"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "5"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "5"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE]] = LFS	{i.e. [CODES.CODE_DESC] = "Loamy fine sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "92"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "5"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "5"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE]] = LMS	{i.e. [CODES.CODE_DESC] = "Loamy medium sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "92"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "5"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "5"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE]] = LKS	{i.e. [CODES.CODE_DESC] = "Loamy coarse sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "92"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "5"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "5"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE]] = CS	{i.e. [CODES.CODE_DESC] = "Clayey sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "92"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "5"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "12"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE]] = CFS	{i.e. [CODES.CODE_DESC] = "Clayey fine sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "92"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "5"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "12"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE]] = CMS	{i.e. [CODES.CODE_DESC] = "Clayey medium sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "92"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "5"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "12"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE]] = CKS	{i.e. [CODES.CODE_DESC] = "Clayey coarse sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "92"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "5"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "12"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE]] = SL	{i.e. [CODES.CODE_DESC] = "Sandy loam"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "70"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "92"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "8"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "21"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE]] = FSL	{i.e. [CODES.CODE_DESC] = "Fine sandy loam"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "70"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "92"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "8"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "21"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE]] = MSL	{i.e. [CODES.CODE_DESC] = "Medium sandy loam"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "70"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "92"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "8"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "21"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE]] = KSL	{i.e. [CODES.CODE_DESC] = "Coarse sandy loam"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "70"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "92"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "8"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "21"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE]] = L	{i.e. [CODES.CODE_DESC] = "Loam"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "50"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "77"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "10"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "10"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "26"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = LFSY	{i.e. [CODES.CODE_DESC] = "Loam fine sandy"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "50"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "77"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "10"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "10"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "26"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = ZL	{i.e. [CODES.CODE_DESC] = "Silty loam"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "75"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "100"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "26"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = SCL	{i.e. [CODES.CODE_DESC] = "Sandy clay loam"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "80"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "10"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "20"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "30"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = FSCL	{i.e. [CODES.CODE_DESC] = "Fine sandy clay loam"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "80"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "10"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "20"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "30"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = MSCL	{i.e. [CODES.CODE_DESC] = "Medium sandy clay loam"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "80"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "10"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "20"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "30"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = KSCL	{i.e. [CODES.CODE_DESC] = "Coarse sandy clay loam"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "80"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "10"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "20"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "30"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = SCLFS	{i.e. [CODES.CODE_DESC] = "Sandy clay loam, fine sandy"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "80"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "10"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "20"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "30"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = CL	{i.e. [CODES.CODE_DESC] = "Clay loam"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "36"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "70"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "6"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "21"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "40"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = CLFS	{i.e. [CODES.CODE_DESC] = "Clay loam, fine sandy"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "36"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "70"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "6"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "21"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "40"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = CLMS	{i.e. [CODES.CODE_DESC] = "Clay loam, medium sandy"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "36"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "70"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "6"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "21"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "40"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = CLKS	{i.e. [CODES.CODE_DESC] = "Clay loam, coarse sandy"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "36"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "70"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "6"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "21"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "40"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = CLS	{i.e. [CODES.CODE_DESC] = "Clay loam"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "36"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "70"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "6"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "21"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "40"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = ZCL	{i.e. [CODES.CODE_DESC] = "Silty clay loam"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "50"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "74"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "26"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "40"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = LC	{i.e. [CODES.CODE_DESC] = "Light clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "35"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "60"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "35"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "40"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = SLC	{i.e. [CODES.CODE_DESC] = "Sandy light clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "35"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "60"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "35"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "40"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = FSLC	{i.e. [CODES.CODE_DESC] = "Fine sandy light clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "35"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "60"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "35"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "40"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = MSLC	{i.e. [CODES.CODE_DESC] = "Medium sandy light clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "35"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "60"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "35"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "40"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = KSLC	{i.e. [CODES.CODE_DESC] = "Coarse sandy light clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "35"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "60"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "35"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "40"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = ZLC	{i.e. [CODES.CODE_DESC] = "Silty light clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "35"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "60"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "40"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "75"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = ZC	{i.e. [CODES.CODE_DESC] = "Silty clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "35"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "60"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "40"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "75"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = SC	{i.e. [CODES.CODE_DESC] = "Sandy clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "50"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "75"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "6"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "26"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "50"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = FSC	{i.e. [CODES.CODE_DESC] = "Fine sandy clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "50"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "75"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "6"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "26"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "50"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = MSC	{i.e. [CODES.CODE_DESC] = "Medium sandy clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "50"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "75"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "6"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "26"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "50"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = KSC	{i.e. [CODES.CODE_DESC] = "Coarse sandy clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "50"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "75"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "6"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "26"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "50"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = LMC	{i.e. [CODES.CODE_DESC] = "Light medium clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "33"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "57"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "2"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "40"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "45"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = SLMC	{i.e. [CODES.CODE_DESC] = "Sandy light medium clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "33"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "57"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "2"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "40"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "45"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = FSLMC	{i.e. [CODES.CODE_DESC] = "Fine sandy light medium clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "33"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "57"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "2"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "40"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "45"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = MSLMC	{i.e. [CODES.CODE_DESC] = "Medium sandy light medium clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "33"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "57"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "2"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "40"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "45"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = KSLMC	{i.e. [CODES.CODE_DESC] = "Coarse sandy light medium clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "33"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "57"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "2"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "40"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "45"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = ZLMC	{i.e. [CODES.CODE_DESC] = "Silty light medium clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "35"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "60"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "40"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "75"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = MC	{i.e. [CODES.CODE_DESC] = "Medium clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "20"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "57"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "45"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "55"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = SMC	{i.e. [CODES.CODE_DESC] = "Sandy medium clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "20"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "57"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "45"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "55"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = FSMC	{i.e. [CODES.CODE_DESC] = "Fine sandy medium clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "20"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "57"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "45"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "55"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = MSMC	{i.e. [CODES.CODE_DESC] = "Medium sandy medium clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "20"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "57"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "45"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "55"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = KSMC	{i.e. [CODES.CODE_DESC] = "Coarse sandy medium clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "20"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "57"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "45"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "55"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = ZMC	{i.e. [CODES.CODE_DESC] = "Silty medium clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "35"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "60"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "40"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "75"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = MHC	{i.e. [CODES.CODE_DESC] = "Medium heavy clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "10"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "45"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "55"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "65"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = SMHC	{i.e. [CODES.CODE_DESC] = "Sandy medium heavy clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "10"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "45"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "55"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "65"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = FSMHC	{i.e. [CODES.CODE_DESC] = "Fine sandy medium heavy clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "10"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "45"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "55"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "65"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = MSMHC	{i.e. [CODES.CODE_DESC] = "Medium sandy medium heavy clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "10"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "45"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "55"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "65"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = KSMHC	{i.e. [CODES.CODE_DESC] = "Coarse sandy medium heavy clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "10"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "45"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "55"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "65"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = ZMHC	{i.e. [CODES.CODE_DESC] = "Silty medium heavy clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "35"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "60"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "40"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "75"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = HC	{i.e. [CODES.CODE_DESC] = "Heavy clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "35"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "100"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = SHC	{i.e. [CODES.CODE_DESC] = "Sandy heavy clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "35"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "100"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = FSHC	{i.e. [CODES.CODE_DESC] = "Fine sandy heavy clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "35"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "100"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = MSHC	{i.e. [CODES.CODE_DESC] = "Medium sandy heavy clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "35"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "100"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = KSHC	{i.e. [CODES.CODE_DESC] = "Coarse sandy heavy clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "35"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "100"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = ZHC	{i.e. [CODES.CODE_DESC] = "Silty heavy clay"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "35"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "60"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "40"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "75"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = VWCFS	{i.e. [CODES.CODE_DESC] = "Very weak clayey fine sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "92"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "12"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = VWCKS	{i.e. [CODES.CODE_DESC] = "Very weak clayey coarse sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "92"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "12"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = VWCMS	{i.e. [CODES.CODE_DESC] = "Very weak clayey medium sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "92"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "12"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = VWCS	{i.e. [CODES.CODE_DESC] = "Very weak clayey sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "92"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "12"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = WCFS	{i.e. [CODES.CODE_DESC] = "Weak clayey fine sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "92"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "12"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = WCKS	{i.e. [CODES.CODE_DESC] = "Weak clayey coarse sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "92"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "12"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = WCMS	{i.e. [CODES.CODE_DESC] = "Weak clayey medium sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "92"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "12"-->
+					<!-- Case: Where [HORIZONS.H_TEXTURE] = WCS	{i.e. [CODES.CODE_DESC] = "Weak clayey sand"} -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_DESC] = "sand"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE] = "0.02"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE] = "2.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP] = "65"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP] = "92"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_DESC] = "silt"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE] = "0.02" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP] = "4"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP] = "25"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_DESC] ="clay" -->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE] = "0.0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE] = "0.002"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP] = "0"-->
+					<!--Materialised View: [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP] = "12"-->
+					<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+					
+		<!--<soil:soLabel xlink:title="clay" xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/voc/particle-size/clay"/>-->
+		<!--<soil:soTexture xlink:title="sand" xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/voc/texture/sand"/>-->
+		<!--<soil:soLabel xlink:title="silt" xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/voc/particle-size/silt"/>-->
+					<soil:soParticleSizeDistribution>
+						<soil:SO_ParticleSizeValue>
+							<!--Geoserver  soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soLabel/xlink:title =  [ANZSOILML_PARTICLES.PARTICLE1_DESC] 	-->							
+							<!--Geoserver  soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soLabel/xlink:href = "http://lab.scinfo.org.nz/soil-data-ie/def/voc/particle-size" +  [ANZSOILML_PARTICLES.PARTICLE1_DESC] 	-->
+							<soil:soLabel xlink:title="sand"/>
+							<soil:soParticleSize>
+								<soil:SO_MeasureRange>
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soParticleSize/soil:SO_MeasureRange/soil:soMinimumValue/uom='mm'-->
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soParticleSize/soil:SO_MeasureRange/soil:soMinimumValue = [ANZSOILML_PARTICLES.PARTICLE1_MIN_SIZE]-->
+									<soil:soMinimumValue uom="mm">0.02</soil:soMinimumValue>
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soParticleSize/soil:SO_MeasureRange/soil:soMaximumValue/uom='mm'-->
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soParticleSize/soil:SO_MeasureRange/soil:soMaximumValue = [ANZSOILML_PARTICLES.PARTICLE1_MAX_SIZE]-->
+									<soil:soMaximumValue uom="mm">2.0</soil:soMaximumValue>
+								</soil:SO_MeasureRange>
+							</soil:soParticleSize>
+							<soil:soProportion>
+								<soil:SO_MeasureRange>
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soProportion/soil:SO_MeasureRange/soil:soMinimumValue/uom='percent'-->
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soProportion/soil:SO_MeasureRange/soil:soMinimumValue = [ANZSOILML_PARTICLES.PARTICLE1_MIN_PROP]-->
+									<soil:soMinimumValue uom="percent">65</soil:soMinimumValue>
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soProportion/soil:SO_MeasureRange/soil:soMaximumValue/uom='percent'-->
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soProportion/soil:SO_MeasureRange/soil:soMaximumValue = [ANZSOILML_PARTICLES.PARTICLE1_MAX_PROP]-->
+									<soil:soMaximumValue uom="percent">92</soil:soMaximumValue>
+								</soil:SO_MeasureRange>
+							</soil:soProportion>
+						</soil:SO_ParticleSizeValue>
+					</soil:soParticleSizeDistribution>
+					<soil:soParticleSizeDistribution>
+						<soil:SO_ParticleSizeValue>
+							<!--Geoserver  soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soLabel/xlink:title  =  [ANZSOILML_PARTICLES.PARTICLE2_DESC] 	-->
+							<!--Geoserver  soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soLabel/xlink:href = "http://lab.scinfo.org.nz/soil-data-ie/def/voc/particle-size" +  [ANZSOILML_PARTICLES.PARTICLE2_DESC] 	-->
+							<soil:soLabel xlink:title="Silt"/>
+							<soil:soParticleSize>
+								<soil:SO_MeasureRange>
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soParticleSize/soil:SO_MeasureRange/soil:soMinimumValue/uom='mm'-->
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soParticleSize/soil:SO_MeasureRange/soil:soMinimumValue = [ANZSOILML_PARTICLES.PARTICLE2_MIN_SIZE]-->
+									<soil:soMinimumValue uom="mm">0.002</soil:soMinimumValue>
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soParticleSize/soil:SO_MeasureRange/soil:soMaximumValue/uom='mm'-->
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soParticleSize/soil:SO_MeasureRange/soil:soMaximumValue = [ANZSOILML_PARTICLES.PARTICLE2_MAX_SIZE]-->
+									<soil:soMaximumValue uom="mm">0.02</soil:soMaximumValue>
+								</soil:SO_MeasureRange>
+							</soil:soParticleSize>
+							<soil:soProportion>
+								<soil:SO_MeasureRange>
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soProportion/soil:SO_MeasureRange/soil:soMinimumValue/uom='percent'-->
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soProportion/soil:SO_MeasureRange/soil:soMinimumValue = [ANZSOILML_PARTICLES.PARTICLE2_MIN_PROP]-->
+									<soil:soMinimumValue uom="percent">4</soil:soMinimumValue>
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soProportion/soil:SO_MeasureRange/soil:soMaximumValue/uom='percent'-->
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soProportion/soil:SO_MeasureRange/soil:soMaximumValue = [ANZSOILML_PARTICLES.PARTICLE2_MAX_PROP]-->
+									<soil:soMaximumValue uom="percent">25</soil:soMaximumValue>
+								</soil:SO_MeasureRange>
+							</soil:soProportion>
+						</soil:SO_ParticleSizeValue>
+					</soil:soParticleSizeDistribution>
+					<soil:soParticleSizeDistribution>
+						<soil:SO_ParticleSizeValue>
+							<!--Geoserver  soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soLabel/xlink:title  =  [ANZSOILML_PARTICLES.PARTICLE3_DESC] 	-->
+							<!--Geoserver  soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soLabel/xlink:href = "http://lab.scinfo.org.nz/soil-data-ie/def/voc/particle-size" +  [ANZSOILML_PARTICLES.PARTICLE3_DESC] 	-->
+							<soil:soLabel xlink:title="Clay"/>
+							<soil:soParticleSize>
+								<soil:SO_MeasureRange>
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soParticleSize/soil:SO_MeasureRange/soil:soMinimumValue/uom=${httpuri.uom_qudt} + 'Millimeter'-->
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soParticleSize/soil:SO_MeasureRange/soil:soMinimumValue = [ANZSOILML_PARTICLES.PARTICLE3_MIN_SIZE]-->
+									<soil:soMinimumValue uom="http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Millimeter">0.0</soil:soMinimumValue>
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soParticleSize/soil:SO_MeasureRange/soil:soMaximumValue/uom='mm'-->
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soParticleSize/soil:SO_MeasureRange/soil:soMaximumValue = [ANZSOILML_PARTICLES.PARTICLE3_MAX_SIZE]-->
+									<soil:soMaximumValue uom="mm">0.002</soil:soMaximumValue>
+								</soil:SO_MeasureRange>
+							</soil:soParticleSize>
+							<soil:soProportion>
+								<soil:SO_MeasureRange>
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soProportion/soil:SO_MeasureRange/soil:soMinimumValue/uom='percent''-->
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soProportion/soil:SO_MeasureRange/soil:soMinimumValue = [ANZSOILML_PARTICLES.PARTICLE3_MIN_PROP]-->
+									<soil:soMinimumValue uom="percent">5</soil:soMinimumValue>
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soProportion/soil:SO_MeasureRange/soil:soMaximumValue/uom='percent'-->
+									<!--Geoserver soil:soComposition/soil:SO_Component/soil:soParticleSizeDistribution/soil:SO_ParticleSizeValue/soil:soProportion/soil:SO_MeasureRange/soil:soMaximumValue = [ANZSOILML_PARTICLES.PARTICLE3_MAX_PROP]-->
+									<soil:soMaximumValue uom="percent">5</soil:soMaximumValue>
+								</soil:SO_MeasureRange>
+							</soil:soProportion>
+						</soil:SO_ParticleSizeValue>
+					</soil:soParticleSizeDistribution>
+					<!-- #########################################
+These observations need to be converted to in-line range values based on minimum and maximum database values rather than byReference
+###############################################################-->
+<!--Materialised view: [SOILML_PROPERTIES.GML_ID] -->	
+<!-- Value: "soil_horizon_[HORIZONS.AGENCY_CODE]'.'[HORIZONS.PROJ_CODE]'.'[HORIZONS.S_ID]'.'[HORIZONS.O_ID]'.'[HORIZONS.H_NO]" -->		           
+ <!--Materialised view: [SOILML_PROPERTIES.BULK_DENSITY_MAX] -->
+ <!-- Value: Maximum value of [LABR_VALUE] resolved by [LAB_RESULTS.LABM_CODE] linked to [CODES.CODE_VALUE] where [CODES.CODE_DOMAIN] = "LAB_METHODS" and [LAB_METHODS.LABP_CODE] = "DENSITY" --> 
+ <!--Materialised view: [SOILML_PROPERTIES.BULK_DENSITY_MIN] -->
+ <!-- Value: Minimum value of [LABR_VALUE] resolved by [LAB_RESULTS.LABM_CODE] linked to [CODES.CODE_VALUE] where [CODES.CODE_DOMAIN] = "LAB_METHODS" and [LAB_METHODS.LABP_CODE] = "DENSITY" -->
+ 					<soil:soBulkDensity>
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soBulkDensity/om:OM_Observation/gml:id = [SOILML_PROPERTIES.GML_ID]+".bulkdensity" -->
+					<om:OM_Observation gml:id="soil_horizon_103.EPA_CMP.SITE001.1.1.bulkdensity">
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soBulkDensity/om:OM_Observation/om:phenomenonTime/xlink:href = 'http://www.opengis.net/def/nil/OGC/0/unknown' -->
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soBulkDensity/om:OM_Observation/om:phenomenonTime/xlink:htitle = 'unknown' -->
+						<om:phenomenonTime xlink:href="http://www.opengis.net/def/nil/OGC/0/unknown" xlink:title="unknown"/>
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soBulkDensity/om:OM_Observation/om:resultTime/xlink:href = 'http://www.opengis.net/def/nil/OGC/0/unknown' -->
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soBulkDensity/om:OM_Observation/om:resultTime/xlink:htitle = 'unknown' -->
+						<om:resultTime xlink:href="http://www.opengis.net/def/nil/OGC/0/unknown" xlink:title="unknown"/>
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soBulkDensity/om:OM_Observation/om:procedure/xlink:href = 'http://www.opengis.net/def/nil/OGC/0/unknown' -->
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soBulkDensity/om:OM_Observation/om:procedure/xlink:htitle = 'unknown' -->
+						<om:procedure  xlink:href="http://www.opengis.net/def/nil/OGC/0/unknown" xlink:title="unknown"/>
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soBulkDensity/om:OM_Observation/om:observedProperty/xlink:href = 'http://lab.scinfo.org.nz/soil-data-ie/def/property/soBulkDensity' -->
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soBulkDensity/om:OM_Observation/om:observedProperty/xlink:title = 'bulk density' -->						
+						<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/soBulkDensity" xlink:title="bulk density"></om:observedProperty>
+					<!--Geoserver soil:soComposition/soil:SO_Component/soil:soBulkDensity/om:OM_Observation/om:featureOfInterest/xlink:href =  "#" + [ANZSOILML_SOILHORIZON.SOILHORIZON_GML_ID] -->	
+						<om:featureOfInterest xlink:href="#soil_horizon_103.EPA_CMP.SITE001.1.1"></om:featureOfInterest>
+						<om:result>
+						<soil:SO_MeasureRange>
+						<!--Geoserver soil:soComposition/soil:SO_Component/soil:soBulkDensity/om:result/soil:SO_MeasureRange/soil:soMinimumValue/uom =  'g/cm3' -->
+						<!--Geoserver soil:soComposition/soil:SO_Component/soil:soBulkDensity/om:result/soil:SO_MeasureRange/soil:soMinimumValue value =  [SOILML_PROPERTIES.BULK_DENSITY_MIN] -->
+						<soil:soMinimumValue uom="g/cm3">1.7</soil:soMinimumValue>
+						<!--Geoserver soil:soComposition/soil:SO_Component/soil:soBulkDensity/om:result/soil:SO_MeasureRange/soil:soMinimumValue/uom =  'g/cm3' -->
+						<!--Geoserver soil:soComposition/soil:SO_Component/soil:soBulkDensity/om:result/soil:SO_MeasureRange/soil:soMinimumValue value =  [SOILML_PROPERTIES.BULK_DENSITY_MAX] -->
+						<soil:soMaximumValue uom="g/cm3">2.0</soil:soMaximumValue>
+						</soil:SO_MeasureRange>
+						</om:result>
+					</om:OM_Observation>
+					</soil:soBulkDensity>
+<!--Materialised view: [SOILML_PROPERTIES.ECEC_MAX] -->
+<!-- Value: Maximum value of [LABR_VALUE] resolved by [LAB_RESULTS.LABM_CODE] linked to [CODES.CODE_VALUE] where [CODES.CODE_DOMAIN] = "LAB_METHODS" and [LAB_METHODS.LABP_CODE] = "ECEC" --> 
+ <!--Materialised view: [SOILML_PROPERTIES.ECEC_MIN] -->
+ <!-- Value: Minimum value of [LABR_VALUE] resolved by [LAB_RESULTS.LABM_CODE] linked to [CODES.CODE_VALUE] where [CODES.CODE_DOMAIN] = "LAB_METHODS" and [LAB_METHODS.LABP_CODE] = "ECEC" -->
+					<soil:soEffectiveCationExchangeCapacity>					
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soEffectiveCationExchangeCapacity/om:OM_Observation/gml:id = [SOILML_PROPERTIES.GML_ID]+".ecec" -->
+					<om:OM_Observation gml:id="soil_horizon_103.EPA_CMP.SITE001.1.1.ecec">
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soEffectiveCationExchangeCapacity/om:OM_Observation/om:phenomenonTime/xlink:href = 'http://www.opengis.net/def/nil/OGC/0/unknown' -->
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soEffectiveCationExchangeCapacity/om:OM_Observation/om:phenomenonTime/xlink:htitle = 'unknown' -->
+						<om:phenomenonTime xlink:href="http://www.opengis.net/def/nil/OGC/0/unknown" xlink:title="unknown"/>
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soEffectiveCationExchangeCapacity/om:OM_Observation/om:resultTime/xlink:href = 'http://www.opengis.net/def/nil/OGC/0/unknown' -->
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soEffectiveCationExchangeCapacity/om:OM_Observation/om:resultTime/xlink:htitle = 'unknown' -->
+						<om:resultTime xlink:href="http://www.opengis.net/def/nil/OGC/0/unknown" xlink:title="unknown"/>
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soEffectiveCationExchangeCapacity/om:OM_Observation/om:procedure/xlink:href = 'http://www.opengis.net/def/nil/OGC/0/unknown' -->
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soEffectiveCationExchangeCapacity/om:OM_Observation/om:procedure/xlink:htitle = 'unknown' -->
+						<om:procedure  xlink:href="http://www.opengis.net/def/nil/OGC/0/unknown" xlink:title="unknown"/>
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soEffectiveCationExchangeCapacity/om:OM_Observation/om:observedProperty/xlink:href = 'http://lab.scinfo.org.nz/soil-data-ie/def/property/soEffectiveCationExchangeCapacity' -->
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soEffectiveCationExchangeCapacity/om:OM_Observation/om:observedProperty/xlink:htitle = 'effective cation exchange capacity' -->						
+						<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/soEffectiveCationExchangeCapacity" xlink:title="effective cation exchange capacity"></om:observedProperty>
+					<!--Geoserver soil:soComposition/soil:SO_Component/soil:soEffectiveCationExchangeCapacity/om:OM_Observation/om:featureOfInterest/xlink:href =  "#" + [ANZSOILML_SOILHORIZON.SOILHORIZON_GML_ID] -->	
+						<om:featureOfInterest xlink:href="#soil_horizon_103.EPA_CMP.SITE001.1.1"></om:featureOfInterest>
+						<om:result>
+						<soil:SO_MeasureRange>
+						<!--Geoserver soil:soComposition/soil:SO_Component/soil:soEffectiveCationExchangeCapacity/om:result/soil:SO_MeasureRange/soil:soMinimumValue/uom =  'meq/100g' -->
+						<!--Geoserver soil:soComposition/soil:SO_Component/soil:soEffectiveCationExchangeCapacity/om:result/soil:SO_MeasureRange/soil:soMinimumValue value =  [SOILML_PROPERTIES.ECEC_MIN] -->
+						<soil:soMinimumValue uom="meq/100g">1.7</soil:soMinimumValue>
+						<!--Geoserver soil:soComposition/soil:SO_Component/soil:soEffectiveCationExchangeCapacity/om:result/soil:SO_MeasureRange/soil:soMinimumValue/uom =  'meq/100g' -->
+						<!--Geoserver soil:soComposition/soil:SO_Component/soil:soEffectiveCationExchangeCapacity/om:result/soil:SO_MeasureRange/soil:soMinimumValue value =  [SOILML_PROPERTIES.ECEC_MAX] -->
+						<soil:soMaximumValue uom="meq/100g">2.0</soil:soMaximumValue>
+						</soil:SO_MeasureRange>
+						</om:result>
+					</om:OM_Observation>
+					</soil:soEffectiveCationExchangeCapacity>		
+<!--Materialised view: [SOILML_PROPERTIES.EC_MAX] -->
+<!-- Value: Maximum value of [LABR_VALUE] resolved by [LAB_RESULTS.LABM_CODE] linked to [CODES.CODE_VALUE] where [CODES.CODE_DOMAIN] = "LAB_METHODS" and [LAB_METHODS.LABM_CODE] = "3_C_B" or "3A_TSS" --> 
+ <!--Materialised view: [SOILML_PROPERTIES.EC_MIN] -->
+ <!-- Value: Minimum value of [LABR_VALUE] resolved by [LAB_RESULTS.LABM_CODE] linked to [CODES.CODE_VALUE] where [CODES.CODE_DOMAIN] = "LAB_METHODS" and [LAB_METHODS.LABM_CODE] = "3_C_B" or "3A_TSS"  -->
+					<soil:soElectricalConductivity>					
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soElectricalConductivity/om:OM_Observation/gml:id = [SOILML_PROPERTIES.GML_ID]+".ec" -->
+					<om:OM_Observation gml:id="soil_horizon_103.EPA_CMP.SITE001.1.1.ec">
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soElectricalConductivity/om:OM_Observation/om:phenomenonTime/xlink:href = 'http://www.opengis.net/def/nil/OGC/0/unknown' -->
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soElectricalConductivity/om:OM_Observation/om:phenomenonTime/xlink:htitle = 'unknown' -->
+						<om:phenomenonTime xlink:href="http://www.opengis.net/def/nil/OGC/0/unknown" xlink:title="unknown"/>
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soElectricalConductivity/om:OM_Observation/om:resultTime/xlink:href = 'http://www.opengis.net/def/nil/OGC/0/unknown' -->
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soElectricalConductivity/om:OM_Observation/om:resultTime/xlink:htitle = 'unknown' -->
+						<om:resultTime xlink:href="http://www.opengis.net/def/nil/OGC/0/unknown" xlink:title="unknown"/>
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soElectricalConductivity/om:OM_Observation/om:procedure/xlink:href = 'http://www.opengis.net/def/nil/OGC/0/unknown' -->
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soElectricalConductivity/om:OM_Observation/om:procedure/xlink:htitle = 'unknown' -->
+						<om:procedure  xlink:href="http://www.opengis.net/def/nil/OGC/0/unknown" xlink:title="unknown"/>
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soElectricalConductivity/om:OM_Observation/om:observedProperty/xlink:href = 'http://lab.scinfo.org.nz/soil-data-ie/def/property/soElectricalConductivity' -->
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soElectricalConductivity/om:OM_Observation/om:observedProperty/xlink:htitle = 'electrical conductivity' -->					
+						<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/soElectricalConductivity" xlink:title="electrical conductivity"></om:observedProperty>
+					<!--Geoserver soil:soComposition/soil:SO_Component/soil:soElectricalConductivity/om:OM_Observation/om:featureOfInterest/xlink:href =  "#" + [ANZSOILML_SOILHORIZON.SOILHORIZON_GML_ID] -->	
+						<om:featureOfInterest xlink:href="#soil_horizon_103.EPA_CMP.SITE001.1.1"></om:featureOfInterest>
+						<om:result>
+						<soil:SO_MeasureRange>
+						<!--Geoserver soil:soComposition/soil:SO_Component/soil:soElectricalConductivity/om:result/soil:SO_MeasureRange/soil:soMinimumValue/uom =  'percent' -->
+						<!--Geoserver soil:soComposition/soil:SO_Component/soil:soElectricalConductivity/om:result/soil:SO_MeasureRange/soil:soMinimumValue value =  [SOILML_PROPERTIES.EC_MIN] -->
+						<soil:soMinimumValue uom="percent">1.7</soil:soMinimumValue>
+						<!--Geoserver soil:soComposition/soil:SO_Component/soil:soElectricalConductivity/om:result/soil:SO_MeasureRange/soil:soMinimumValue/uom =  'percent' -->
+						<!--Geoserver soil:soComposition/soil:SO_Component/soil:soElectricalConductivity/om:result/soil:SO_MeasureRange/soil:soMinimumValue value =  [SOILML_PROPERTIES.EC_MAX] -->
+						<soil:soMaximumValue uom="percent">2.0</soil:soMaximumValue>
+						</soil:SO_MeasureRange>
+						</om:result>
+					</om:OM_Observation>
+</soil:soElectricalConductivity>		
+<!--Materialised view: [SOILML_PROPERTIES.ORGANIC_CARBON_MAX] -->
+<!-- Value: Maximum value of [LABR_VALUE] resolved by [LAB_RESULTS.LABM_CODE] linked to [CODES.CODE_VALUE] where [CODES.CODE_DOMAIN] = "LAB_METHODS" and [LAB_METHODS.LABP_CODE] = "ORGANIC_CARBON" --> 
+ <!--Materialised view: [SOILML_PROPERTIES.ORGANIC_CARBON_MIN] -->
+ <!-- Value: Minimum value of [LABR_VALUE] resolved by [LAB_RESULTS.LABM_CODE] linked to [CODES.CODE_VALUE] where [CODES.CODE_DOMAIN] = "LAB_METHODS" and [LAB_METHODS.LABP_CODE] = "ORGANIC_CARBON"  -->
+					<soil:soOrganicCarbon>						
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soElectricalConductivity/om:OM_Observation/gml:id = [SOILML_PROPERTIES.GML_ID]+".organiccarbon" -->
+					<om:OM_Observation gml:id="soil_horizon_103.EPA_CMP.SITE001.1.1.organiccarbon">
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soElectricalConductivity/om:OM_Observation/om:phenomenonTime/xlink:href = 'http://www.opengis.net/def/nil/OGC/0/unknown' -->
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soOrganicCarbon/om:OM_Observation/om:phenomenonTime/xlink:htitle = 'unknown' -->
+						<om:phenomenonTime xlink:href="http://www.opengis.net/def/nil/OGC/0/unknown" xlink:title="unknown"/>
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soOrganicCarbon/om:OM_Observation/om:resultTime/xlink:href = 'http://www.opengis.net/def/nil/OGC/0/unknown' -->
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soOrganicCarbon/om:OM_Observation/om:resultTime/xlink:htitle = 'unknown' -->
+						<om:resultTime xlink:href="http://www.opengis.net/def/nil/OGC/0/unknown" xlink:title="unknown"/>
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soOrganicCarbon/om:OM_Observation/om:procedure/xlink:href = 'http://www.opengis.net/def/nil/OGC/0/unknown' -->
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soOrganicCarbon/om:OM_Observation/om:procedure/xlink:htitle = 'unknown' -->
+						<om:procedure  xlink:href="http://www.opengis.net/def/nil/OGC/0/unknown" xlink:title="unknown"/>
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soOrganicCarbon/om:OM_Observation/om:observedProperty/xlink:href = 'http://lab.scinfo.org.nz/soil-data-ie/def/property/soOrganicCarbon' -->
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soOrganicCarbon/om:OM_Observation/om:observedProperty/xlink:htitle = 'organic carbon' -->					
+						<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/soOrganicCarbon" xlink:title="organic carbon"></om:observedProperty>
+					<!--Geoserver soil:soComposition/soil:SO_Component/soil:soOrganicCarbon/om:OM_Observation/om:featureOfInterest/xlink:href =  "#" + [ANZSOILML_SOILHORIZON.SOILHORIZON_GML_ID] -->	
+						<om:featureOfInterest xlink:href="#soil_horizon_103.EPA_CMP.SITE001.1.1"></om:featureOfInterest>
+						<om:result>
+						<soil:SO_MeasureRange>
+						<!--Geoserver soil:soComposition/soil:SO_Component/soil:soOrganicCarbon/om:result/soil:SO_MeasureRange/soil:soMinimumValue/uom =  'percent' -->
+						<!--Geoserver soil:soComposition/soil:SO_Component/soil:soOrganicCarbon/om:result/soil:SO_MeasureRange/soil:soMinimumValue value =  [SOILML_PROPERTIES.ORGANIC_CARBON_MIN] -->
+						<soil:soMinimumValue uom="percent">1.7</soil:soMinimumValue>
+						<!--Geoserver soil:soComposition/soil:SO_Component/soil:soOrganicCarbon/om:result/soil:SO_MeasureRange/soil:soMinimumValue/uom =  'percent' -->
+						<!--Geoserver soil:soComposition/soil:SO_Component/soil:soOrganicCarbon/om:result/soil:SO_MeasureRange/soil:soMinimumValue value =  [SOILML_PROPERTIES.ORGANIC_CARBON_MAX] -->
+						<soil:soMaximumValue uom="percent">2.0</soil:soMaximumValue>
+						</soil:SO_MeasureRange>
+						</om:result>
+					</om:OM_Observation>
+</soil:soOrganicCarbon>	
+						<!-- #########################################
+The pH observations are based on minimum and maximum database values from laboratory values not field values
+###############################################################-->
+					<soil:sopH>						
+<!--Materialised view: [SOILML_PROPERTIES.PH_MAX] -->
+<!-- Value: Maximum value of [LABR_VALUE] resolved by [LAB_RESULTS.LABM_CODE] linked to [CODES.CODE_VALUE] where [CODES.CODE_DOMAIN] = "LAB_METHODS" and [LAB_METHODS.LABP_CODE] = "PH" --> 
+ <!--Materialised view: [SOILML_PROPERTIES.PH_MIN] -->
+ <!-- Value: Minimum value of [LABR_VALUE] resolved by [LAB_RESULTS.LABM_CODE] linked to [CODES.CODE_VALUE] where [CODES.CODE_DOMAIN] = "LAB_METHODS" and [LAB_METHODS.LABP_CODE] = "PH"  -->
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:sopH/om:OM_Observation/gml:id = [SOILML_PROPERTIES.GML_ID]+".ph" -->
+					<om:OM_Observation gml:id="soil_horizon_103.EPA_CMP.SITE001.1.1.ph">
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:sopH/om:OM_Observation/om:phenomenonTime/xlink:href = 'http://www.opengis.net/def/nil/OGC/0/unknown' -->
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:sopH/om:OM_Observation/om:phenomenonTime/xlink:htitle = 'unknown' -->
+						<om:phenomenonTime xlink:href="http://www.opengis.net/def/nil/OGC/0/unknown" xlink:title="unknown"/>
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:sopH/om:OM_Observation/om:resultTime/xlink:href = 'http://www.opengis.net/def/nil/OGC/0/unknown' -->
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:sopH/om:OM_Observation/om:resultTime/xlink:htitle = 'unknown' -->
+						<om:resultTime xlink:href="http://www.opengis.net/def/nil/OGC/0/unknown" xlink:title="unknown"/>
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:sopH/om:OM_Observation/om:procedure/xlink:href = 'http://www.opengis.net/def/nil/OGC/0/unknown' -->
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:sopH/om:OM_Observation/om:procedure/xlink:htitle = 'unknown' -->
+						<om:procedure  xlink:href="http://www.opengis.net/def/nil/OGC/0/unknown" xlink:title="unknown"/>
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:sopH/om:OM_Observation/om:observedProperty/xlink:href = 'http://lab.scinfo.org.nz/soil-data-ie/def/property/sopH' -->
+					<!--Geoserver: soil:soComposition/soil:SO_Component/soil:soOrganicCarbon/om:OM_Observation/om:observedProperty/xlink:htitle = 'pH' -->					
+						<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/sopH" xlink:title="pH"></om:observedProperty>
+					<!--Geoserver soil:soComposition/soil:SO_Component/soil:sopH/om:OM_Observation/om:featureOfInterest/xlink:href =  "#" + [ANZSOILML_SOILHORIZON.SOILHORIZON_GML_ID] -->	
+						<om:featureOfInterest xlink:href="#soil_horizon_103.EPA_CMP.SITE001.1.1"></om:featureOfInterest>
+						<om:result>
+						<soil:SO_MeasureRange>
+						<!--Geoserver soil:soComposition/soil:SO_Component/soil:sopH/om:result/soil:SO_MeasureRange/soil:soMinimumValue/uom =  'pH' -->
+						<!--Geoserver soil:soComposition/soil:SO_Component/soil:sopH/om:result/soil:SO_MeasureRange/soil:soMinimumValue value =  [SOILML_PROPERTIES.PH_MIN] -->
+						<soil:soMinimumValue uom="pH">6.7</soil:soMinimumValue>
+						<!--Geoserver soil:soComposition/soil:SO_Component/soil:sopH/om:result/soil:SO_MeasureRange/soil:soMinimumValue/uom =  'pH' -->
+						<!--Geoserver soil:soComposition/soil:SO_Component/soil:sopH/om:result/soil:SO_MeasureRange/soil:soMinimumValue value =  [SOILML_PROPERTIES.PH_MAX] -->
+						<soil:soMaximumValue uom="pH">8.0</soil:soMaximumValue>
+						</soil:SO_MeasureRange>
+						</om:result>
+					</om:OM_Observation>
+					</soil:sopH>
+				</soil:SO_Component>
+			</soil:soComposition>
+			<!---->
+			<!--Materialised View: Append to [ANZSOILML_RELATEDOBSERVATION] -->
+			<!-- Materialised View:  [ANZSOILML_RELATEDOBSERVATION.GML_ID] Value: "soil_horizon_[HORIZONS.AGENCY_CODE]'.'[HORIZONS.PROJ_CODE]'.'[HORIZONS.S_ID]'.'[HORIZONS.O_ID]'.'[HORIZONS.H_NO]"-->	
+			<!--Materialised view: [ANZSOILML_RELATEDOBSERVATION.OBSERVATION_GML_ID] Value: "soil_observation_[LAB_RESULTS.AGENCY_CODE]'.'[LAB_RESULTS.PROJ_CODE]'.'[LAB_RESULTS.S_ID]'.'[LAB_RESULTS.OBS_ID]'.'[LAB_RESULTS.H_NO]'.'[LAB_RESULTS.SAMP_NO]'.'[LAB_RESULTS.LABM_CODE].'[LAB_RESULTS.LABR_NO]'" joined by [ANZSOILML_SOILHORIZON.SOILHORIZON_GML_ID]--> 
+			<!---->
+            <!--Geoserver soil:soRelatedObservation/xlink:href  = ${httpuri.om-observation} + [ANZSOILML_RELATEDOBSERVATION.OBSERVATION_GML_ID] -->
+            <!--Geoserver linkelement = "_horizonrelatedobservation"-->	
+			<soil:soRelatedObservation xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_103.EPA_CMP.SITE001.1.1.4G1.1"/>				
+			<!--Materialised view: [ANZSOILML_SOILHORIZON.RELATED_SOILPROFILE]
+Value: "soil_profile_[OBSERVATIONS.AGENCY_CODE]'.'[OBSERVATIONS.PROJ_CODE]'.'[OBSERVATIONS.S_ID]'.'[OBSERVATIONS.O_ID]" -->
+		    <!--Geoserver soil:soRelatedSamplingFeature/xlink:href = ${httpuri.sf-samplingfeature} + [ANZSOILML_SOILHORIZON.RELATED_SOILPROFILE]-->		
+		    <!--Geoserver soil:soRelatedSamplingFeature/xlink:title = [ANZSOILML_SOILHORIZON.RELATED_SOILPROFILE]-->	
+		<soil:soRelatedSamplingFeature xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/sams/sf_spatialsamplingfeature/soil_profile_199.CAN.C552.1" 
+		xlink:title="soil_profile_199.CAN.C552.1"/>
+			<!--Materialised View: [ANZSOILML_SOILHORIZON.SOILHORIZON_DESIGNATION] 
+Value: [HORIZONS.H_DESIG_NUM_PREF]+ [HORIZONS.H_DESIG_MASTER] + [HORIZONS.H_DESIG_SUBDIV] + [HORIZONS.H_DESIG_SUFFIX]-->
+			<soil:soDesignation>
+				<soil:SO_HorizonDesignation>
+					<!--Geoserver soil:soLabel = [ANZSOILML_SOILHORIZON.SOILHORIZON_DESIGNATION] -->
+					<soil:soLabel>A22</soil:soLabel>
+					<!--Geoserver soil:soScheme/xlink:href = "http://resource.soilinformationstandards.org/classifier/aclep/soil_horizon_designation" -->
+					<!--Geoserver soil:soScheme/xlink:title = "Australian Soil and Land Survey Field Handbook horizon designation" -->
+					<!-- Or http://resource.soilinformationstandards.org/classifier/aclep/methods/ASLS_Field_Handbook?-->
+					<soil:soScheme xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soil_horizon_designation" xlink:title="Australian Soil and Land Survey Field Handbook horizon designation"/>
+				</soil:SO_HorizonDesignation>
+			</soil:soDesignation>
+			<!---->
+			<!--Materialised View:  [ANZSOILML_SOILHORIZON.SOIL_GML_ID] Value: "soil_[HORIZONS.AGENCY_CODE]'.'[HORIZONS.PROJ_CODE]'.'[HORIZONS.S_ID]'.'[HORIZONS.O_ID]-->
+			<!--Geoserver soil:relatedSoilFeature/soil:SoilRelationship/soil:relatedSoilFeature xlink:href = ${httpuri.so-soil} +  [ANZSOILML_SOILHORIZON.SOIL_GML_ID]-->
+			<soil:soSoil xlink:href="http://resources.aclep.org/soilfeature/soil/so_soil_103.EPA_CMP.SITE001.1"/>
+			<!---->
+		</soil:SO_Horizon>
+	</wfs:member>
+</wfs:FeatureCollection>

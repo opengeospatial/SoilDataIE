@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:FeatureCollection xmlns:wfs="http://www.opengis.net/wfs/2.0"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0"
+	xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:om="http://www.opengis.net/om/2.0"
+	xmlns:wosis="http://isric.org/wosis" xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" xmlns:soil="http://www.opengis.net/soil-data-ie/0.1"
+	xmlns:sam="http://www.opengis.net/sampling/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	numberMatched="unknown" numberReturned="1" timeStamp="2015-12-29T14:43:07.276Z"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd http://www.opengis.net/om/2.0 http://schemas.opengis.net/om/2.0/observation.xsd">
+	<wfs:member>
+		<om:OM_Observation gml:id="om.om_observation.1">
+			<gml:identifier codeSpace="http://www.landcareresearch.co.nz">http://lab.scinfo.org.nz/soil-data-ie/id/isric/om/om_observation/om.om_observation.1</gml:identifier>
+			<om:phenomenonTime xlink:title="http://www.opengis.net/def/nil/OGC/0/withheld" />
+			<om:resultTime>
+				<gml:TimeInstant gml:id="om.resulttime.597709">
+					<gml:timePosition>1983-10-02</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://www.opengis.net/def/nil/OGC/0/unknown"
+				xlink:title="http://www.opengis.net/def/nil/OGC/0/unknown" />
+			<om:observedProperty xlink:title="pH CaCl2" />
+			<om:featureOfInterest
+				xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/lcr/spec/sf_specimen/597709" />
+			<om:result xsi:type="gml:MeasureType" uom="unitless">4.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+</wfs:FeatureCollection>

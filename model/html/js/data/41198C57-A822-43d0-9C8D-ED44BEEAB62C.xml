@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.1", "1", "Conceptual Model", "EARoot/EA1/EA16.html", "4.png", "", "", "{5D741DEE-95D3-42f4-87E0-CC91A38910DA}", "Package");
+tocTab[tocTab.length] = new Array("0.2", "1", "Logical Model", "EARoot/EA2/EA77.html", "4.png", "", "", "{80EAE155-2BE8-4fe9-89F5-1B795C9D10B0}", "Package");
+tocTab[tocTab.length] = new Array("0.3", "1", "IE Architecture", "EARoot/EA3/EA107.html", "4.png", "", "", "{9BD19800-4502-4dd6-B4CE-9AB55DB9B445}", "Package");
+tocTab[tocTab.length] = new Array("0.4", "1", "IE Use Cases", "EARoot/EA4/EA118.html", "4.png", "", "", "{7C280551-12A0-4c65-9AE2-A243880CFB34}", "Package");

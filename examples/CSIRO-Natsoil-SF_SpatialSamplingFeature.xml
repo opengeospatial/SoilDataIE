@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:FeatureCollection  xmlns:wfs="http://www.opengis.net/wfs/2.0" 
+xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0" 
+xmlns:soil-ie="http://www.opengis.net/soil-data-ie/0.1"   
+xmlns:gmd="http://www.isotc211.org/2005/gmd" 
+xmlns:gco="http://www.isotc211.org/2005/gco" 
+xmlns:sam="http://www.opengis.net/sampling/2.0"   
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+xmlns:om="http://www.opengis.net/om/2.0" 
+xmlns:gml="http://www.opengis.net/gml/3.2" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" 
+timeStamp="2015-03-30T22:12:55.882Z" 
+xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd 
+http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd 
+http://www.opengis.net/om/2.0 http://schemas.opengis.net/om/2.0/observation.xsd
+http://www.opengis.net/soil-data-ie/0.1 http://lab.scinfo.org.nz/static/schema/soil-data-ie/0.1/soil-data-ie.xsd"  numberMatched="unknown" numberReturned="1">
+	<!-- =========================================-->
+	<!--This wfs:member example is for a sam:SF_SpatialSamplingFeature -->
+	<!--Materialised Views: [ANZSOILML_SOILPROFILE], -->
+	<!-- ======================================== -->	
+	<!-- Features sam:SF_SpatialSamplingFeature refers to:  -->
+    <!--Required Vocabularies: -->
+    <!--Required Materialised Views:[ANZSOILML_SOILPROFILE] and [ANZSOILML_RELATEDSAMPLINGEATURE]-->
+    <!--=================================================-->  
+	<!-- Deliver wfs:member/sam:SF_SpatialSamplingFeature with references to contained soil-ie:SO_Soil using sam:sampledFeature  -->
+	
+	<wfs:member>	
+	    <!--Materialised View: [ANZSOILML_SOILPROFILE.SOILPROFILE_GML_ID] Value: "soil_profile_[OBSERVATIONS.AGENCY_CODE]'.'[OBSERVATIONS.PROJ_CODE]'.'[OBSERVATIONS.S_ID]'.'[OBSERVATIONS.O_ID]"-->
+	    <!--Geoserver sam:SF_SpatialSamplingFeature/gml:id =  [ANZSOILML_SOILPROFILE.SOILPROFILE_GML_ID]-->
+		<sams:SF_SpatialSamplingFeature gml:id="soil_profile_199.CAN.C552.1">			
+			<!--Geoserver gml:identifier/codeSpace  = "http://www.clw.csiro.au/aclep/archive"  -->
+            <!--Geoserver gml:identifier value = ${httpuri.sf-samplingfeature} +  [ANZSOILML_SOILPROFILE.SOILPROFILE_GML_ID]-->
+            <gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/sams/sf_spatialsamplingfeature/soil_profile_199.CAN.C552.1</gml:identifier>            
+			<!--Materialised View: [ANZSOILML_SOILPROFILE.SAMPLED_SOIL_GML_ID]  Value: "soil_"[ARCHIVE_SAMPLES.AGENCY_CODE]'.'[ARCHIVE_SAMPLES.PROJ_CODE]'.'[ARCHIVE_SAMPLES.S_ID]'.'[ARCHIVE_SAMPLES.O_ID]-->
+			<!--Geoserver sam:sampledFeature xlink:href =  ${httpuri.so-soil} + [ANZSOILML_SOILPROFILE.SAMPLED_SOIL_GML_ID]-->
+			<sam:sampledFeature xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/soil/so_soil/so_soil_199.CAN.C552.1"/>	
+<!--Materialised view: [ANZSOILML_RELATEDOBSERVATION.GML_ID]  Value: [ANZSOILML_SOILPROFILE.SOILPROFILE_GML_ID] -->
+			<!--Materialised view: [ANZSOILML_RELATEDOBSERVATION.OBSERVATION_GML_ID] -->
+			          <!-- Value: "soil_observation_[LAB_RESULTS.AGENCY_CODE]'.'[LAB_RESULTS.PROJ_CODE]'.'[LAB_RESULTS.S_ID]'.'[LAB_RESULTS.O_ID]'.'[LAB_RESULTS.H_NO]'.'[LAB_RESULTS.SAMP_NO]'.'[LAB_RESULTS.LABM_CODE'.'[LAB_RESULTS.LABR_NO]]" joined by [ANZSOILML_SOILPROFILE.SOILPROFILE_GML_ID]-->
+		   <!--Materialised View: [ANZSOILML_SOILOBSERVATION.OBSERVATION_GML_ID] Append-->
+	       <!--    Value: "soil_observation_[HORIZONS.AGENCY_CODE]'.'[HORIZONS.PROJ_CODE]'.'[HORIZONS.S_ID]'.'[HORIZONS.O_ID]'.'[HORIZONS.H_NO]'.4G1.[PHS.PH_NO]"-->
+            <!--Geoserver sam:relatedObservation xlink:href = ${httpuri.om-observation} +  [ANZSOILML_RELATEDOBSERVATION.OBSERVATION_GML_ID] -->
+            <!--Geoserver linkelement = "_sam_relatedobservation"-->	
+			<sam:relatedObservation xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.4G2.1"/>
+			<sam:relatedObservation xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.15R1.1"/>
+			<!-- Going to use sam:parameter to specify the time that the SF_SpatialSamplingFeature was sampled -->
+			<sam:parameter>
+				<om:NamedValue>
+					<!-- For sam:parameter/om:value/gco:Date om:name xlink:href="http://data.anzsoil.org/def/property/x/date" -->
+					<om:name xlink:href="http://data.anzsoil.org/def/property/x/date"/>
+					<om:value>					
+						<!-- Geoserver: gml:TimeInstant/gml:id = "sampled-date" + [ANZSOILML_SOILPROFILE.SOILPROFILE_GML_ID] -->
+						<gml:TimeInstant gml:id="sampled-date_soil_profile_199.CAN.C552.1">
+						<!-- Geoserver: gml:timePosition in format DDMMYYYY (to be checked) from [ANZSOILML_SOILPROFILE.SAMPLED_DATE] -->
+							<gml:timePosition>31032015</gml:timePosition>
+						</gml:TimeInstant>					
+						</om:value>
+				</om:NamedValue>
+			</sam:parameter>  			
+			<!--Profile depth range is recorded as a sam:parameter-->
+			<!--Materialised View [ANZSOILML_SOILPROFILE.PROFILE_UPPERDEPTH] Value minimum of [HORIZONS.H_UPPER_DEPTH] for all samples in the profile -->
+			<!--Materialised View [ANZSOILML_SOILPROFILE.PROFILE_LOWERDEPTH] Value maximum of [HORIZONS.H_LOWER_DEPTH] for all samples in the profile-->
+			<sam:parameter>
+				<om:NamedValue>
+				    <!--Geoserver sam:parameter/om:NamedValue/om:name/xlink:href="http://data.scinfo.org.nz/static/schema/soil-data-ie/0.1/soil-data-ie.xsd"-->
+				    <om:name xlink:href="http://data.scinfo.org.nz/static/schema/soil-data-ie/0.1/soil-data-ie.xsd"/>
+					<om:value>
+					<soil-ie:SO_MeasureRange>
+					<!--Geoserver sam:parameter/om:NamedValue/om:value/soil-ie:SO_MeasureRange/soil-ie:soMinimumValue/uom = 'm' -->
+									<!--Geoserver sam:parameter/om:NamedValue/om:value/soil-ie:SO_MeasureRange/soil-ie:soMinimumValue = [ANZSOILML_SOILSPROFILE.PROFILE_UPPERDEPTH] -->
+					<soil-ie:soMinimumValue uom="http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter">0.0</soil-ie:soMinimumValue>
+					<!--Geoserver sam:parameter/om:NamedValue/om:value/soil-ie:SO_MeasureRange/soil-ie:soMaximumValue/uom = 'm' -->
+									<!--Geoserver sam:parameter/om:NamedValue/om:value/soil-ie:SO_MeasureRange/soil-ie:soMaximumValue = [ANZSOILML_SOILPROFILE.PROFILE_LOWERDEPTH] -->
+					<soil-ie:soMaximumValue uom="http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter">0.03</soil-ie:soMaximumValue>					
+					</soil-ie:SO_MeasureRange>
+					</om:value>
+				</om:NamedValue>
+			</sam:parameter>
+			<!---->			
+			<!--Materialised View [ANZSOILML_SOILPROFILE.PROFILE_POINT_GML_ID]  Value: "profile_point_"[OBSERVATIONS.AGENCY_CODE]'.'[OBSERVATIONS.PROJ_CODE]'.'[OBSERVATIONS.S_ID]'.'[OBSERVATIONS.O_ID] --> 
+			<!--Materialised View [ANZSOILML_SOILPROFILE.PROFILE_POINT] Value: geometry data type from [OBSERVATIONS:O_LONGITUDE_GDA94] and [OBSERVATIONS:O_LATITUDE_GDA94] with SRS = 4283-->
+			<sams:shape>
+			<!--Geoserver sams:shape/gml:AbstractGeometry/gml:id = [ANZSOILML_SOILPROFILE.PROFILE_POINT_GML_ID]-->
+			<!--Geoserver sams:shape/gml:AbstractGeometry value =  [ANZSOILML_SOILPROFILE.PROFILE_POINT]-->
+				<gml:Point gml:id="profile_point_199.CAN.C552.1" srsName="http://www.opengis.net/def/crs/EPSG/0/4283" srsDimension="2">
+					<gml:pos>-25.0 119.0</gml:pos>
+				</gml:Point>
+			</sams:shape>
+	</sams:SF_SpatialSamplingFeature>
+	</wfs:member>
+	
+</wfs:FeatureCollection>

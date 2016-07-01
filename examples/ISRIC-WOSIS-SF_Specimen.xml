@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:FeatureCollection xmlns:wfs="http://www.opengis.net/wfs/2.0"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0"
+	xmlns:om="http://www.opengis.net/om/2.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:wosis="http://isric.org/wosis" xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" xmlns:soil="http://www.opengis.net/soil-data-ie/0.1"
+	xmlns:sam="http://www.opengis.net/sampling/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	numberMatched="unknown" numberReturned="1" timeStamp="2015-12-29T14:40:59.822Z"
+	xsi:schemaLocation="http://www.opengis.net/soil-data-ie/0.1 http://lab.scinfo.org.nz/static/schema/soil-data-ie/0.1/soil-data-ie.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd http://www.opengis.net/samplingSpecimen/2.0 http://schemas.opengis.net/samplingSpecimen/2.0/specimen.xsd">
+	<wfs:member>
+		<spec:SF_Specimen gml:id="spec.sf_specimen.1">
+			<gml:identifier codeSpace="http://www.landcareresearch.co.nz">http://lab.scinfo.org.nz/soil-data-ie/id/isric/spec/sf_specimen/1</gml:identifier>
+			<gml:name>Profile layer id:1</gml:name>
+			<sam:type
+				xlink:href="http://www.opengis.net/def/samplingFeatureType/OGC-OM/2.0/SF_Specimen"
+				xlink:title="SF_Specimen" />
+			<sam:sampledFeature
+				xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/isric/soil/so_horizon/1"
+				xlink:title="0-21cm;1;Ap;ISIS" />
+			<sam:relatedObservation xlink:title="TODO" />
+			<sam:relatedObservation xlink:title="TODO" />
+			<sam:relatedObservation xlink:title="TODO" />
+			<sam:relatedObservation xlink:title="TODO" />
+			<sam:relatedObservation xlink:title="TODO" />
+			<sam:relatedSamplingFeature>
+				<sam:SamplingFeatureComplex>
+					<sam:role
+						xlink:title="http://lab.scinfo.org.nz/soil-data-ie/def/voc/sf-complex-role/site" />
+					<sam:relatedSamplingFeature
+						xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/lcr/sams/sf_spatialsamplingfeature/47010"
+						xlink:title="47010" />
+				</sam:SamplingFeatureComplex>
+			</sam:relatedSamplingFeature>
+			<sam:parameter>
+				<om:NamedValue>
+					<om:name
+						xlink:title="http://lab.scinfo.org.nz/soil-data-ie/def/property/soDepth" />
+					<om:value xlink:href="http://www.opengis.net/def/nil/OGC/0/unknown"
+						xlink:title="unknown" xsi:type="gml:ReferenceType" />
+				</om:NamedValue>
+			</sam:parameter>
+			<spec:materialClass xlink:href="http://www.opengis.net/def/nil/OGC/0/unknown"
+				xlink:title="unknown" />
+			<spec:samplingLocation>
+				<gml:Point srsDimension="2">
+					<gml:pos>0.311389 11.970833</gml:pos>
+				</gml:Point>
+			</spec:samplingLocation>
+		</spec:SF_Specimen>
+	</wfs:member>
+</wfs:FeatureCollection>

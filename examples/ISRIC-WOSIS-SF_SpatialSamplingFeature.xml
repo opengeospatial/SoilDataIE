@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:FeatureCollection xmlns:wfs="http://www.opengis.net/wfs/2.0"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0"
+	xmlns:om="http://www.opengis.net/om/2.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:wosis="http://isric.org/wosis" xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:soil="http://www.opengis.net/soil-data-ie/0.1" xmlns:sam="http://www.opengis.net/sampling/2.0"
+	xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	numberMatched="unknown" numberReturned="1" timeStamp="2015-12-29T14:40:29.501Z"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd http://www.opengis.net/samplingSpatial/2.0 http://schemas.opengis.net/samplingSpatial/2.0/spatialSamplingFeature.xsd">
+	<wfs:member>
+		<sams:SF_SpatialSamplingFeature
+			gml:id="sams.sf_spatialsamplingfeature.135619">
+			<gml:identifier codeSpace="http://www.landcareresearch.co.nz">http://lab.scinfo.org.nz/soil-data-ie/id/isric/sams/sf_spatialsamplingfeature/135619</gml:identifier>
+			<gml:name>135619</gml:name>
+			<sam:type
+				xlink:href="http://www.opengis.net/def/samplingFeatureType/OGC-OM/2.0/SF_SamplingPoint"
+				xlink:title="SF_SamplingPoint" />
+			<sam:sampledFeature
+				xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/isric/soil/so_soil/135619" />
+			<sam:relatedSamplingFeature>
+				<sam:SamplingFeatureComplex>
+					<sam:role
+						xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/voc/sf-complex-role/sample"
+						xlink:title="sample" />
+					<sam:relatedSamplingFeature
+						xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/isric/spec/sf_specimen/605094"
+						xlink:title="0-25cm; A" />
+				</sam:SamplingFeatureComplex>
+			</sam:relatedSamplingFeature>
+			<sam:relatedSamplingFeature>
+				<sam:SamplingFeatureComplex>
+					<sam:role
+						xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/voc/sf-complex-role/sample"
+						xlink:title="sample" />
+					<sam:relatedSamplingFeature
+						xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/isric/spec/sf_specimen/605095"
+						xlink:title="25-48cm; BA" />
+				</sam:SamplingFeatureComplex>
+			</sam:relatedSamplingFeature>
+			<sam:relatedSamplingFeature>
+				<sam:SamplingFeatureComplex>
+					<sam:role
+						xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/voc/sf-complex-role/sample"
+						xlink:title="sample" />
+					<sam:relatedSamplingFeature
+						xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/isric/spec/sf_specimen/605096"
+						xlink:title="48-76cm; Bt1" />
+				</sam:SamplingFeatureComplex>
+			</sam:relatedSamplingFeature>
+			<sam:relatedSamplingFeature>
+				<sam:SamplingFeatureComplex>
+					<sam:role
+						xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/voc/sf-complex-role/sample"
+						xlink:title="sample" />
+					<sam:relatedSamplingFeature
+						xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/isric/spec/sf_specimen/605097"
+						xlink:title="76-102cm; Bt2" />
+				</sam:SamplingFeatureComplex>
+			</sam:relatedSamplingFeature>
+			<sam:relatedSamplingFeature>
+				<sam:SamplingFeatureComplex>
+					<sam:role
+						xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/voc/sf-complex-role/sample"
+						xlink:title="sample" />
+					<sam:relatedSamplingFeature
+						xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/isric/spec/sf_specimen/605098"
+						xlink:title="102-127cm; Bt3" />
+				</sam:SamplingFeatureComplex>
+			</sam:relatedSamplingFeature>
+			<sam:relatedSamplingFeature>
+				<sam:SamplingFeatureComplex>
+					<sam:role
+						xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/voc/sf-complex-role/sample"
+						xlink:title="sample" />
+					<sam:relatedSamplingFeature
+						xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/isric/spec/sf_specimen/605099"
+						xlink:title="127-165cm; BC" />
+				</sam:SamplingFeatureComplex>
+			</sam:relatedSamplingFeature>
+			<sams:shape>
+				<gml:Point gml:id="point.135619" srsDimension="2"
+					srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
+					<gml:pos>-97.15242 39.3490448</gml:pos>
+				</gml:Point>
+			</sams:shape>
+		</sams:SF_SpatialSamplingFeature>
+	</wfs:member>
+</wfs:FeatureCollection>

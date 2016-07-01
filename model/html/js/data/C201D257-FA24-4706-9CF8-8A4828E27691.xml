@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("0.1.2:1", "", "Observation", "EARoot/EA1/EA2/EA46.html", "5.png", "E18124", "0", "", "Class0","{137043AB-13FB-4c60-A5E3-A85954C16061}");
+tocTab[tocTab.length] = new Array("0.1.2:2", "", "ObservationContext", "EARoot/EA1/EA2/EA47.html", "5.png", "E18128", "0", "", "Class0","{887DE8A8-F94D-42e2-8F11-7638DB431C26}");
+tocTab[tocTab.length] = new Array("0.1.2:3", "", "Process", "EARoot/EA1/EA2/EA48.html", "5.png", "E18125", "0", "", "Class0","{6F5969A2-DDD1-4a22-AE20-4340A130F12F}");
+tocTab[tocTab.length] = new Array("0.1.2:4", "", "SamplingFeature", "EARoot/EA1/EA2/EA49.html", "5.png", "E18130", "0", "", "Class0","{F1CC4FE4-76D3-4638-A41D-19532245F517}");
+tocTab[tocTab.length] = new Array("0.1.2:5", "", "SamplingFeatureComplex", "EARoot/EA1/EA2/EA50.html", "5.png", "E18126", "0", "", "Class0","{6F720FEA-E7EE-4f85-AD33-E22E65010369}");
+tocTab[tocTab.length] = new Array("0.1.2:6", "", "SpatialSamplingFeature", "EARoot/EA1/EA2/EA51.html", "5.png", "E18127", "0", "", "Class0","{78A02A81-5DA4-4662-8AED-8B52FA66A6BD}");
+tocTab[tocTab.length] = new Array("0.1.2:7", "", "Specimen", "EARoot/EA1/EA2/EA52.html", "5.png", "E18129", "0", "", "Class0","{BEA7D076-5259-467c-9AAD-0E7A09E0DCD3}");

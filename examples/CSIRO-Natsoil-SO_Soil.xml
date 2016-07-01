@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:FeatureCollection 
+xmlns:wfs="http://www.opengis.net/wfs/2.0" 
+xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0" 
+xmlns:soil="http://www.opengis.net/soil-data-ie/0.1" 
+xmlns:gmd="http://www.isotc211.org/2005/gmd" 
+xmlns:gco="http://www.isotc211.org/2005/gco" 
+xmlns:sam="http://www.opengis.net/sampling/2.0" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+xmlns:om="http://www.opengis.net/om/2.0" 
+xmlns:gml="http://www.opengis.net/gml/3.2" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" 
+timeStamp="2015-03-30T22:12:55.882Z" 
+xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd 
+http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd 
+http://www.opengis.net/om/2.0 http://schemas.opengis.net/om/2.0/observation.xsd
+http://www.opengis.net/soil-data-ie/0.1 http://lab.scinfo.org.nz/static/schema/soil-data-ie/0.1/soil-data-ie.xsd" numberMatched="unknown" numberReturned="1">
+	<!-- =========================================-->
+	<!--This wfs:member example is for a soil:SO_Soil -->
+	<!-- soil:SO_Soil come from the OBSERVATIONS table each with a unique identifier from [AGENCY_CODE].[PROJ_CODE].[S_ID].[OBS_ID] = SO_Soil identifier -->
+	<!--Materialised Views: [ANZSOILML_SOIL], -->
+	<!-- ======================================== -->
+	<!-- Features SO_Soil refers to: OM_Observation (soil:soRelatedObservation); SF_SpatialSamplingFeature (soil:soRelatedSamplingFeature) SO_Horizon (soil:soHorizon),  -->
+	<!--Required Materialised Views:[ANZSOILML_SOIL]-->
+	<!--=================================================-->
+	<wfs:member>
+		<!--Materialised View: [ANZSOILML_SOIL.SOIL_GML_ID] -->
+		<!-- Value: "soil_[OBSERVATIONS.AGENCY_CODE]'.'[OBSERVATIONS.PROJ_CODE]'.'[OBSERVATIONS.S_ID]'.'[OBSERVATIONS.O_ID]"-->
+<!--Geoserver soil:SO_Soil/gml:id = [ANZSOILML_SOIL.SOIL_GML_ID] -->
+		<soil:SO_Soil gml:id="soil_199.CAN.C552.1">			
+			<!--Geoserver gml:identifier/codeSpace = "http://www.clw.csiro.au/aclep/archive" -->
+			<!--Geoserver gml:identifier value = ${httpuri.so-soil} +  [ANZSOILML_SOIL.SOIL_GML_ID]-->
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">
+ http://lab.scinfo.org.nz/soil-data-ie/id/csiro/soil/so_soil/soil_199.CAN.C552.1</gml:identifier>
+ <!--Materialised View: [ANZSOILML_SOIL.SOIL_UNITNAME] Value: [O_MAP_UNIT_NAME] -->
+<!-- Case: If [O_MAP_UNIT_NAME] = "SA" or "SC" -->
+			<!--Geoserver gml:name value = [ANZSOILML_SOIL.SOIL_UNITNAME]-->
+			<gml:name>some name</gml:name>
+			<!--Materialised View [ANZSOILML_SOIL.SOIL_UPPERDEPTH] Value minimum of [HORIZONS.H_UPPER_DEPTH] for all [HORIZONS] at the [OBSERVATION] -->
+			<!--Materialised View [ANZSOILML_SOIL.SOIL_LOWERDEPTH] Value maximum of [HORIZONS.H_LOWER_DEPTH] for all  [HORIZONS] at the [OBSERVATION] -->
+			<soil:soDepth>
+				<soil:SO_MeasureRange>
+					<!--Geoserver soil:soDepth/soil:SO_MeasureRange/soil:soMinimumValue/uom=$'m'-->
+					<!--Geoserver  soil:soDepth/soil:SO_MeasureRange/soil:soMinimumValue = [ANZSOILML_SOIL.SOIL_UPPERDEPTH] -->
+					<soil:soMinimumValue uom="m">0.0</soil:soMinimumValue>
+					<!--Geoserver soil:soDepth/soil:SO_MeasureRange/soil:soMaximumValue/uom='m'-->
+					<!--Geoserver  soil:soDepth/soil:SO_MeasureRange/soil:soMaximumValue = [ANZSOILML_SOIL.SOIL_LOWERDEPTH] -->
+					<soil:soMaximumValue uom="http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter">1.2</soil:soMaximumValue>
+				</soil:SO_MeasureRange>
+			</soil:soDepth>
+			<!--Materialised View: [ANZSOILML_SOIL.RELATED_SOILPROFILE] 
+Value: "soil_profile_[OBSERVATIONS.AGENCY_CODE]'.'[OBSERVATIONS.PROJ_CODE]'.'[OBSERVATIONS.S_ID]'.'[OBSERVATIONS.O_ID]" -->
+		    <!--Geoserver soil:soRelatedSamplingFeature/xlink:href = ${httpuri.sf-samplingfeature} + [ANZSOILML_SOILHORIZON.RELATED_SOILPROFILE]-->		
+		    <!--Geoserver soil:soRelatedSamplingFeature/xlink:title = [ANZSOILML_SOILHORIZON.RELATED_SOILPROFILE]-->	
+		    <soil:soRelatedSamplingFeature xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/sams/sf_spatialsamplingfeature/soil_profile_199.CAN.C552.1" xlink:title="soil_profile_199.CAN.C552.1"/>		    
+			<!--Materialised View: [ANZSOILML_SOIL.SOIL_TAXONOMY] 
+Value: '[CODES.CODE_DESC] joined by [OBSERVATIONS.O_SOIL_TAXONOMY] with [CODES.CODE_VALUE] where [CODES.CODE_DOMAIN] = "C_O_SOIL_TAXONOMY" -->		
+		    <!--Geoserver soil:soRelatedSamplingFeature/xlink:href = ${httpuri.standard} + "soil-taxonomy/" + [ANZSOILML_SOIL.SOIL_TAXONOMY]-->		
+		    <!--Geoserver soil:soRelatedSamplingFeature/xlink:title = [ANZSOILML_SOIL.SOIL_TAXONOMY]-->
+			<soil:soClassifier xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soil-taxonomy/Mollisol" xlink:title="Mollisol"></soil:soClassifier>
+			<!-- NatSoil does not hold soil:soAvailableWaterCapacity values -->
+			<soil:soAvailableWaterCapacity/>						
+			<!--Materialised View: [ANZSOILML_SOIL.DRAINAGE_TERM] 
+Value:  '[CODES.CODE_DESC] joined by [OBSERVATIONS.O_DRAINAGE] with [CODES.CODE_VALUE] where [CODES.CODE_DOMAIN] = "C_O_DRAINAGE" -->
+<!--Geoserver soil:soDrainage/xlink:title = [ANZSOILML_SOIL.DRAINAGE_TERM] -->	
+			<soil:soDrainage xlink:title="moderately well-drained"></soil:soDrainage>
+			<!--Materialised View: [ANZSOILML_SOIL.SUBSTRATE_DEPTH] 
+Value: [OBSERVATIONS.O_SB_DEPTH] -->
+			<soil:soDepthToRock>
+		    <soil:SO_MeasureRange>
+		    <!--Geoserver soil:soDepthToRock/soil:SO_MeasureRange/soil:soMinimumValue/uom = "m" -->
+		    <!-- Geoserver: soil:soDepthToRock/soil:SO_MeasureRange/soil:soMinimumValue = [ANZSOILML_SOIL.SUBSTRATE_DEPTH]-->
+							<soil:soMinimumValue uom="m">1.6</soil:soMinimumValue>
+		    <!--Geoserver soil:soDepthToRock/soil:SO_MeasureRange/soil:soMaximumValue/uom = "m" -->
+		    <!-- Geoserver: soil:soDepthToRock/soil:SO_MeasureRange/soil:soMaximumValue = [ANZSOILML_SOIL.SUBSTRATE_DEPTH]-->
+							<soil:soMaximumValue uom="m">1.6</soil:soMaximumValue>
+						</soil:SO_MeasureRange>
+			</soil:soDepthToRock>	
+			<!--Materialised View: [ANZSOILML_RELATEDSOILHORIZON.SOIL_GML_ID] 
+Value: "soil_[HORIZONS.AGENCY_CODE]'.'[HORIZONS.PROJ_CODE]'.'[HORIZONS.S_ID]'.'[HORIZONS.O_ID]" -->		
+ <!--Materialised View: [ANZSOILML_RELATEDSOILHORIZON.RELATEDSOILHORIZON_GML_ID] 
+Value: "soil_horizon_[HORIZONS.AGENCY_CODE]'.'[HORIZONS.PROJ_CODE]'.'[HORIZONS.S_ID]'.'[HORIZONS.O_ID]'.'[HORIZONS.H_NO]" -->
+			<!--Geoserver soil:soHorizon/xlink:href = "${httpuri.so-horizon} + [ANZSOILML_RELATEDSOILHORIZON.RELATEDSOILHORIZON_GML_ID]" -->
+			<!--Geoserver soil:soHorizon/xlink:title =  [ANZSOILML_RELATEDSOILHORIZON.RELATEDSOILHORIZON_GML_ID]-->			
+			<soil:soHorizon xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/soil/so_horizon/soil_horizon_103.EPA_CMP.SITE001.1.1" xlink:title="soil_horizon_103.EPA_CMP.SITE001.1.1"/>
+		<soil:soHorizon xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/soil/so_horizon/soil_horizon_103.EPA_CMP.SITE001.1.2" xlink:title="soil_horizon_103.EPA_CMP.SITE001.1.2"/>
+		</soil:SO_Soil>
+	</wfs:member>
+</wfs:FeatureCollection>

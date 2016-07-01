@@ -1,0 +1,9 @@
+tocTab[tocTab.length] = new Array("0.3:1", "", "IE Architecture", "EARoot/EA3/EA105.html", "178.png", "8770", "0", "", "Component diagram0","{51D3FBDD-6FEC-4f68-B33F-54D9C8E8EBA0}");
+tocTab[tocTab.length] = new Array("0.3:2", "", "«application» Client", "EARoot/EA3/EA109.html", "10.png", "E18181", "0", "", "Component0","{6C2498FA-4F84-418e-A32B-BE9D4DB41421}");
+tocTab[tocTab.length] = new Array("0.3:3", "", "«Service» PID Service", "EARoot/EA3/EA111.html", "10.png", "E18182", "0", "", "Component0","{6FE21A3A-7C41-4603-9013-699DC7320DC1}");
+tocTab[tocTab.length] = new Array("0.3:4", "", "«Service» Registry", "EARoot/EA3/EA112.html", "10.png", "E18185", "0", "", "Component0","{AABCF37A-9ABD-4d43-9FF8-2CA0BA7F7A06}");
+tocTab[tocTab.length] = new Array("0.3:5", "", "«Service» SOS", "EARoot/EA3/EA113.html", "10.png", "E18186", "0", "", "Component0","{D8F71DD4-C928-4227-BAF1-FDDF6E60CC2A}");
+tocTab[tocTab.length] = new Array("0.3:6", "", "«Service» WCS", "EARoot/EA3/EA114.html", "10.png", "E18187", "0", "", "Component0","{FE1A8D3A-3732-49d3-A086-F403673D0D43}");
+tocTab[tocTab.length] = new Array("0.3:7", "", "«Service» WFS", "EARoot/EA3/EA115.html", "10.png", "E18183", "0", "", "Component0","{7538B48B-BD03-49e7-99C5-2614736D154F}");
+tocTab[tocTab.length] = new Array("0.3:8", "", "«Service» WPS", "EARoot/EA3/EA116.html", "10.png", "E18178", "0", "", "Component0","{245A5872-A054-4e48-9F66-5FC4B45A9B34}");
+tocTab[tocTab.length] = new Array("0.3:9", "", "«Service» XSLT Mediator", "EARoot/EA3/EA117.html", "10.png", "E18179", "0", "", "Component0","{3D262DA1-3731-4ac2-8501-633296F4AC41}");

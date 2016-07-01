@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:FeatureCollection 
+xmlns:wfs="http://www.opengis.net/wfs/2.0" 
+xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0" 
+xmlns:soil="http://www.opengis.net/soil-data-ie/0.1"   
+xmlns:gmd="http://www.isotc211.org/2005/gmd" 
+xmlns:gco="http://www.isotc211.org/2005/gco" 
+xmlns:sam="http://www.opengis.net/sampling/2.0"   
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+xmlns:om="http://www.opengis.net/om/2.0" 
+xmlns:gml="http://www.opengis.net/gml/3.2" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" 
+timeStamp="2015-03-30T22:12:55.882Z" 
+xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd 
+http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd 
+http://www.opengis.net/om/2.0 http://schemas.opengis.net/om/2.0/observation.xsd
+http://www.opengis.net/soil-data-ie/0.1 http://lab.scinfo.org.nz/static/schema/soil-data-ie/0.1/soil-data-ie.xsd" 
+numberMatched="unknown" numberReturned="1">
+<!--http://lab.scinfo.org.nz/static/schema/soil-data-ie/0.1/soil-data-ie.xsd
+https://data.scinfo.org.nz/static/schema/soil-data-ie/0.1/soil-data-ie.xsd
+http://schemas.opengis.net/samplingSpecimen/2.0/specimen.xsd-->
+	<!-- =========================================-->
+	<!-- This wfs:member example is for a wfs:member/spec:SF_Specimen -->	
+	<!--=================================================-->
+	<!-- Features SF_Specimen refers to: OM_Observation (sam:relatedObservation); SO_Horizon (sam:sampledFeature), SF_Specimen (sam:relatedSample) -->
+    <!--Required Vocabularies: (codelist), (soilfeaturerole), (material), (UOM Metre,Gram), (soilspecimentype), (SRS)-->
+    <!--Required Materialised Views:[ANZSOILML_SOILSPECIMEN] and [ANZSOILML_RELATEDSAMPLINGEATURE]-->
+    <!--=================================================-->    
+	<wfs:member>
+	<!--Materialised View: [ANZSOILML_SOILSPECIMEN.SOILSPECIMEN_GML_ID] Value:"soil_specimen_[ARCHIVE_SAMPLES.AGENCY_CODE]'.'[ARCHIVE_SAMPLES.PROJ_CODE]'.'[ARCHIVE_SAMPLES.S_ID]'.'[ARCHIVE_SAMPLES.O_ID]'.'[ARCHIVE_SAMPLES.H_NO]'.'[ARCHIVE_SAMPLES.SAMP_NO]'.'[ARCHIVE_SAMPLES.JAR_NO]'.'[ARCHIVE_SAMPLES.SPEC_ID]"-->
+    <!--Case: If [SPEC_ID] = "null" then [SPEC_ID] = "0"-->
+    <!--Case: If [SPEC_ID] = "not null" then create new record with [SPEC_ID] = 0-->
+    <!--Materialised View: [ANZSOILML_SOILSPECIMEN.SOILSPECIMEN_GML_ID] 
+Value: "soil_specimen_[SAMPLES.AGENCY_CODE]'.'[SAMPLES.PROJ_CODE]'.'[SAMPLES.S_ID]'.'[SAMPLES.OBS_ID]'.'[SAMPLES.H_NO]'.'[SAMPLES.SAMP_NO]"-->
+	<!--Geoserver SoilSpecimen/gml:id = [ANZSOILML_SOILSPECIMEN.SOILSPECIMEN_GML_ID]-->
+		<spec:SF_Specimen gml:id="soil_specimen_199.CAN.C552.1.1.1.1.0">
+	<!-- Use this metaDataProperty to represent the data specimen provider, data custodian, archive location etc, set up different roles for different responsible parties-->
+			<gml:metaDataProperty>
+				<gml:GenericMetaData>
+					<gmd:CI_ResponsibleParty>
+						<gmd:organisationName>
+							<!-- Geoserver gmd:organisationName/gco:CharacterString= "CSIRO Land and Water" -->
+							<gco:CharacterString>CSIRO Land and Water</gco:CharacterString>
+						</gmd:organisationName>
+						<gmd:role>
+							<!--Geoserver gmd:role/gmd:CI_RoleCode value = "owner"-->
+							<!--Geoserver gmd:role/codeList = ${httpuri.rolecodelist}-->
+                            <!--Geoserver gmd:role/codeListValue="CI_RoleCode_owner"-->
+							<!--Geoserver gmd:role/codeSpace="ISOTC211/19115"-->
+							<gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml" codeSpace="ISOTC211/19115" codeListValue="CI_RoleCode_owner">owner</gmd:CI_RoleCode>
+						</gmd:role>
+					</gmd:CI_ResponsibleParty>
+					<gmd:CI_ResponsibleParty>
+						<gmd:organisationName>
+							<!--Geoserver gmd:organisationName/gco:CharacterString = "CSIRO Land and Water"-->
+							<gco:CharacterString>CSIRO Land and Water</gco:CharacterString>
+						</gmd:organisationName>
+						<gmd:role>
+						    <!--Geoserver gmd:role/gmd:CI_RoleCode value = "custodian"-->
+							<!--Geoserver gmd:role/codeList = ${httpuri.rolecodelist}-->
+                            <!--Geoserver gmd:role/codeListValue="CI_RoleCode_custodian"-->
+							<!--Geoserver gmd:role/codeSpace="ISOTC211/19115"-->
+							<gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml" codeSpace="ISOTC211/19115" codeListValue="CI_RoleCode_custodian">custodian</gmd:CI_RoleCode>
+						</gmd:role>
+					</gmd:CI_ResponsibleParty>
+					<gmd:CI_ResponsibleParty>
+						<gmd:organisationName>
+						    <!--Materialised View: [ANZSOILML_SOILSPECIMEN.SPECIMEN_ORIGINATOR] 
+                              value = [AGENCIES.AGENCY_NAME]  linked by ([ARCHIVE_SAMPLES.AGENCY_CODE] joined [AGENCIES.AGENCY_CODE]-->
+                            <!--Materialised View: [ANZSOILML_SOILSPECIMEN.SPECIMEN_ORIGINATOR] 
+                              value = [AGENCIES.AGENCY_NAME]  linked by ([SAMPLES.AGENCY_CODE] joined [AGENCIES.AGENCY_CODE]-->  
+							<!-- Geoserver gmd:organisationName/gco:CharacterString = [ANZSOILML_SOILSPECIMEN.SPECIMEN_ORIGINATOR]-->
+							<gco:CharacterString>NSW Department of Agriculture</gco:CharacterString>
+						</gmd:organisationName>
+						<gmd:role>
+						    <!--Geoserver gmd:role/gmd:CI_RoleCode value = "originator"-->
+							<!--Geoserver gmd:role/codeList = ${httpuri.rolecodelist}-->
+                            <!--Geoserver gmd:role/codeListValue="CI_RoleCode_originator"-->
+							<!--Geoserver gmd:role/codeSpace="ISOTC211/19115"-->
+							<gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml" codeSpace="ISOTC211/19115" codeListValue="CI_RoleCode_originator">originator</gmd:CI_RoleCode>
+						</gmd:role>
+					</gmd:CI_ResponsibleParty>
+				</gml:GenericMetaData>
+			</gml:metaDataProperty>
+			<!---->
+			<!--Materialised View: [ANZSOILML_SOILSPECIMEN.SOILSPECIMEN_DESCRIPTION] Value: [SAMPLES.SAMP_NOTES]-->
+		   <!--Geoserver SoilSample/gml:description= [ANZSOILML_SOILSPECIMEN.SOILSPECIMEN_DESCRIPTION]-->
+			<gml:description>"undisturbed soil core; oven dried 40˚C;"</gml:description>			
+			<!--Geoserver gml:identifier/codeSpace  = "http://www.clw.csiro.au/aclep/archive"  -->
+            <!--Geoserver gml:identifier value = ${httpuri.sf-specimen} +  [ANZSOILML_SOILSPECIMEN.SOILSPECIMEN_GML_ID]-->
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive"> http://lab.scinfo.org.nz/soil-data-ie/id/csiro/sams/sf_spatialsamplingfeature/soil_specimen_199.CAN.C552.1.1.1.1.0</gml:identifier>	
+			<!--Need sam:type or not?-->					
+			<sam:type></sam:type>
+<!--Materialised View: [ANZSOILML_SOILSPECIMEN.SAMPLED_HORIZON_GML_ID]  Value: "soil_horizon_" [ARCHIVE_SAMPLES.AGENCY_CODE]'.'[ARCHIVE_SAMPLES.PROJ_CODE]'.'[ARCHIVE_SAMPLES.S_ID]'.'[ARCHIVE_SAMPLES.O_ID]'.'[ARCHIVE_SAMPLES.H_NO]'-->
+			<!--Materialised View: [ANZSOILML_SOILSPECIMEN.SAMPLED_HORIZON_GML_ID]  Value: "soil_horizon_" [SAMPLES.AGENCY_CODE]'.'[SAMPLES.PROJ_CODE]'.'[SAMPLES.S_ID]'.'[SAMPLES.O_ID]'.'[SAMPLES.H_NO]'-->			
+				<!--Geoserver sam:sampledFeature xlink:ref =  ${httpuri.soilfeature} + "soilhorizon/so_" + [ANZSOILML_SOILSPECIMEN.SAMPLED_HORIZON_GML_ID]-->
+			<sam:sampledFeature xlink:href="http://environment.data.gov.au/soil/feature/soilhorizon/so_soil_horizon_199.CAN.C552.1.1"/>		
+			<!--Materialised view: [ANZSOILML_RELATEDOBSERVATION.GML_ID] Value: [ANZSOILML_SOILSPECIMEN.SOILSPECIMEN_GML_ID] -->
+			<!--Materialised view: [ANZSOILML_RELATEDOBSERVATION.OBSERVATION_GML_ID] Value: "soil_observation_[LAB_RESULTS.AGENCY_CODE]'.'[LAB_RESULTS.PROJ_CODE]'.'[LAB_RESULTS.S_ID]'.'[LAB_RESULTS.OBS_ID]'.'[LAB_RESULTS.H_NO]'.'[LAB_RESULTS.SAMP_NO]'.'[LAB_RESULTS.LABM_CODE].'[LAB_RESULTS.LABR_NO]'" joined by [ANZSOILML_SOILSPECIMEN.SOILSPECIMEN_GML_ID]--> 
+			<!--Archive specimens will not have related observations, however observations will be related back to the jar via the sample no (a related sampling feature)-->
+            <!--Geoserver sam:relatedObservation xlink:href = ${httpuri.om-observation} + [ANZSOILML_RELATEDOBSERVATION.OBSERVATION_GML_ID] -->
+            <!--Geoserver linkelement = "_relatedobservation"-->	
+			<sam:relatedObservation  xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.15_NR_CA.1"/>
+			<sam:relatedObservation xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.15_NR_K.1"/>
+			<sam:relatedObservation xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.15_NR_MG.1"/>
+			<sam:relatedObservation xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.15_NR_NA.1"/>
+			<sam:relatedObservation xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.15G1_H.1"/>
+			<sam:relatedObservation xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.15J_H.1"/>
+			<sam:relatedObservation xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.2_LOI.1"/>
+			<sam:relatedObservation xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.2A1.1"/>
+			<sam:relatedObservation xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.3A_TSS.1"/>
+			<sam:relatedObservation xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.4A1.1"/>
+			<sam:relatedObservation xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.5A2.1"/>
+			<sam:relatedObservation xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.7_NR.1"/>
+			<sam:relatedObservation xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.9A_HCL.1"/>
+			<sam:relatedObservation xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.P10_PB_C.1"/>
+			<sam:relatedObservation xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.P10_PB_CS.1"/>
+			<sam:relatedObservation xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.P10_PB_Z.1"/>
+			 <!---->
+             <!--Materialised View: [ANZSOILML_RELATEDSAMPLINGFEATURE.GML_ID] Value: [ANZSOILML_SOILSPECIMEN.SOILSPECIMEN_GML_ID]-->
+             <!--Materialised View: [ANZSOILML_RELATEDSAMPLINGFEATURE.RELATED_GML_ID] Value:"soil_specimen_[ARCHIVE_SAMPLES.AGENCY_CODE]'.'[ARCHIVE_SAMPLES.PROJ_CODE]'.'[ARCHIVE_SAMPLES.S_ID]'.'[ARCHIVE_SAMPLES.O_ID]'.'[ARCHIVE_SAMPLES.H_NO]'.'[ARCHIVE_SAMPLES.SAMP_NO]'.'[ARCHIVE_SAMPLES.JAR_NO]'.'[ARCHIVE_SAMPLES.SPEC_ID]" joined by [ARCHIVE_SAMPLES.AGENCY_CODE]'.'[ARCHIVE_SAMPLES.PROJ_CODE]'.'[ARCHIVE_SAMPLES.S_ID]'.'[ARCHIVE_SAMPLES.O_ID]'.'[ARCHIVE_SAMPLES.H_NO]'.'[ARCHIVE_SAMPLES.SAMP_NO]-->
+              <!--Materialised View: [ANZSOILML_RELATEDSAMPLINGFEATURE.SAMPLING_HREF] Value: "related_sub_specimen"  where related [ARCHIVE_SAMPLES.SPEC_ID] > 0-->
+              <!--Materialised View: [ANZSOILML_RELATEDSAMPLINGFEATURE.SAMPLING_HREF] Value: "related_specimen"  where related [ARCHIVE_SAMPLES.SPEC_ID] = 0-->
+              <!--Materialised View: [ANZSOILML_RELATEDSAMPLINGFEATURE.SAMPLING_TITLE] Value: "related sub-specimen" where related [ARCHIVE_SAMPLES.SPEC_ID] > 0-->
+              <!--Materialised View: [ANZSOILML_RELATEDSAMPLINGFEATURE.SAMPLING_TITLE] Value: "related specimen" where related [ARCHIVE_SAMPLES.SPEC_ID] = 0-->
+	          <!--Geoserver linkelement = "_relatedsamplingfeature" -->
+			<sam:relatedSamplingFeature>
+				<sam:SamplingFeatureComplex>
+				    <!--Geoserver sam:relatedSamplingFeature/sam:SamplingFeatureComplex/sam:role/xlink:href = ${httpuri.standard} + "soilfeaturerole/" + [ANZSOILML_RELATEDSAMPLINGFEATURE.SAMPLING_HREF]-->
+	                <!--Geoserver sam:relatedSamplingFeature/sam:SamplingFeatureComplex/sam:role/xlink:title = [ANZSOILML_RELATEDSAMPLINGFEATURE.SAMPLING_TITLE]-->			
+					<sam:role xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilfeaturerole/related_specimen" xlink:title="related specimen"/>
+					<!--Geoserver sam:relatedSamplingFeature/sam:SamplingFeatureComplex/sam:relatedSamplingFeature/xlink:href =  ${httpuri.sf-specimen} + [ANZSOILML_RELATEDSAMPLINGFEATURE.RELATED_GML_ID]-->		
+					<sam:relatedSamplingFeature xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C552.1.1.1.1.136"/>
+				</sam:SamplingFeatureComplex>
+			</sam:relatedSamplingFeature>			
+			<!--Materialised View: [ANZSOILML_RELATEDSAMPLINGFEATURE.GML_ID] Value: [ANZSOILML_SOILSPECIMEN.SOILSPECIMEN_GML_ID]-->
+             <!--Materialised View: [ANZSOILML_RELATEDSAMPLINGFEATURE.RELATED_GML_ID] Value:"soil_specimen_[SAMPLES.AGENCY_CODE]'.'[SAMPLES.PROJ_CODE]'.'[SAMPLES.S_ID]'.'[SAMPLES.O_ID]'.'[SAMPLES.H_NO].[SAMPLES.SAMP_NO]" joined by [SAMPLES.AGENCY_CODE]'.'[SAMPLES.PROJ_CODE]'.'[SAMPLES.S_ID]'.'[SAMPLES.O_ID]'.'[SAMPLES.H_NO]-->
+              <!--Materialised View: [ANZSOILML_RELATEDSAMPLINGFEATURE.SAMPLING_HREF] Value: "related_sample"-->
+              <!--Materialised View: [ANZSOILML_RELATEDSAMPLINGFEATURE.SAMPLING_TITLE] Value: "related sample"-->
+	          <!--Geoserver linkelement = "_relatedsamplingfeature" -->
+			<sam:relatedSamplingFeature>
+				<sam:SamplingFeatureComplex>
+				    <!--Geoserver sam:relatedSamplingFeature/sam:SamplingFeatureComplex/sam:role/xlink:href = ${httpuri.standard} + 'soilfeaturerole/' + [ANZSOILML_RELATEDSAMPLINGFEATURE.SAMPLING_HREF]-->
+	                <!--Geoserver sam:relatedSamplingFeature/sam:SamplingFeatureComplex/sam:role/xlink:title = [ANZSOILML_RELATEDSAMPLINGFEATURE.SAMPLING_TITLE]-->			
+					<sam:role xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilfeaturerole/related_sample" xlink:title="related sample"/>
+					<!--Geoserver sam:relatedSamplingFeature/sam:SamplingFeatureComplex/sam:relatedSamplingFeature/xlink:href =  ${httpuri.sf-specimen} + [ANZSOILML_RELATEDSAMPLINGFEATURE.RELATED_GML_ID]-->	
+					<sam:relatedSamplingFeature xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C552.1.1.1.1.137"/>
+				</sam:SamplingFeatureComplex>
+			</sam:relatedSamplingFeature>
+		    <!---->
+			<!--Specimen depth is recorded as a sam:parameter-->
+			<!--Materialised View [ANZSOILML_SOILSPECIMEN.SPECIMEN_UPPERDEPTH] Value [SAMPLES.SAMP_UPPER_DEPTH]-->
+			<!--Materialised View [ANZSOILML_SOILSPECIMEN.SPECIMEN_LOWERDEPTH] Value [SAMPLES.SAMP_LOWER_DEPTH]-->
+			<sam:parameter>
+				<om:NamedValue>
+				    <!--Geoserver sam:parameter/om:NamedValue/om:name/xlink:href="http://data.scinfo.org.nz/static/schema/soil-data-ie/0.1/soil-data-ie.xsd"-->
+				    <om:name xlink:href="http://data.scinfo.org.nz/static/schema/soil-data-ie/0.1/soil-data-ie.xsd"/>
+					<om:value>
+					<soil:SO_MeasureRange>
+					<!--Geoserver sam:parameter/om:NamedValue/om:value/soil:SO_MeasureRange/soil:soMinimumValue/uom = 'm' -->
+					<!--Geoserver sam:parameter/om:NamedValue/om:value/soil:SO_MeasureRange/soil:soMinimumValue/ = [ANZSOILML_SOILSPECIMEN.SPECIMEN_UPPERDEPTH]  -->
+					<soil:soMinimumValue uom="m">0.0</soil:soMinimumValue>
+					<!--Geoserver sam:parameter/om:NamedValue/om:value/soil:SO_MeasureRange/soil:soMaximumValue/uom = 'm' -->
+					<!--Geoserver sam:parameter/om:NamedValue/om:value/soil:SO_MeasureRange/soil:soMaximumValue/ = [ANZSOILML_SOILSPECIMEN.SPECIMEN_LOWERDEPTH]  -->
+					<soil:soMaximumValue uom="m">0.03</soil:soMaximumValue>					
+					</soil:SO_MeasureRange>
+					</om:value>
+				</om:NamedValue>
+			</sam:parameter>
+<!---->
+			<!--Geoserver spec:materialClass/xlink:href = "http://www.opengis.net/def/material/OGC-OM/2.0/soil"-->
+			<!--Geoserver spec:materialClass/xlink:title = "soil"-->
+			<spec:materialClass xlink:href="http://www.opengis.net/def/material/OGC-OM/2.0/soil" xlink:title="soil"/>
+			<!---->
+			<!--Materialised View: [ANZSOILML_SOILSPECIMEN.SAMPLING_TIME] Value: [OBSERVATIONS.O_DATE_DESC]-->
+			<spec:samplingTime>
+			    <!--Geoserver spec:samplingTime/gml:TimeInstant/gml:id = 'samplingtime_' + [ANZSOILML_SOILSPECIMEN.SOILSPECIMEN_GML_ID] + '.' + [ANZSOILML_SOILSPECIMEN.SAMPLING_TIME] -->
+				<gml:TimeInstant gml:id="samplingtime_199.CAN.C552.1.1.1.1.0.04101969">
+				    <!--Geoserver spec:samplingTime/gml:TimeInstant/gml:timePosition = [ANZSOILML_SOILSPECIMEN.SAMPLING_TIME]-->
+					<gml:timePosition>04101969</gml:timePosition>
+				</gml:TimeInstant>
+			</spec:samplingTime>
+			<!---->
+			<!--Materialised View [ANZSOILML_SOILSPECIMEN.SAMPLING_METHOD_TITLE] Value [CODES.CODE_DESC] joined by [CODES.CODE_VALUE] with [OBSERVATIONS.O_TYPE] where [CODES.CODE_DOMAIN] = "C_O_SB_OBS_TYPE"-->
+<!--Materialised View [ANZSOILML_SOILSPECIMEN.SAMPLING_METHOD_URI] Value [CODES.CODE_DESC] by case - joined by [CODES.CODE_VALUE] with [OBSERVATIONS.O_TYPE] where [CODES.CODE_DOMAIN] = "C_O_SB_OBS_TYPE"-->
+			<!--CASE: "Auger Boring" = "augerboring"-->
+			<!--CASE: "Undisturbed soil core" = "undisturbedsoilcore"-->
+			<!--CASE: "Existing vertical exposure" = "existingverticalexposure"-->
+			<!--CASE: "Outcrop" = "outcrop"-->
+			<!--CASE: "Soil pit" = "soilpit"-->
+			<!--Geoserver spec:samplingMethod/xlink:href = ${httpuri.standard} + "soilsamplingmethod/" + [ANZSOILML_SOILSPECIMEN.SAMPLING_METHOD_HREF]-->
+			<!--Geoserver spec:samplingMethod/xlink:title = [ANZSOILML_SOILSPECIMEN.SAMPLING_METHOD_TITLE]-->
+           <spec:samplingMethod xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilsamplingmethod/soilpit" xlink:title="Soil pit"/>
+			<!--Materialised View [ANZSOILML_SOILSPECIMEN.SPECIMEN_POINT_GML_ID]  Value: "specimen_point_"[ARCHIVE_SAMPLES.AGENCY_CODE]'.'[ARCHIVE_SAMPLES.PROJ_CODE]'.'[ARCHIVE_SAMPLES.S_ID]'.'[ARCHIVE_SAMPLES.OBS_ID] --> 
+			<!--Materialised View [ANZSOILML_SOILSPECIMEN.SPECIMEN_POINT_GML_ID]  Value: "specimen_point_"[SAMPLES.AGENCY_CODE]'.'[SAMPLES.PROJ_CODE]'.'[SAMPLES.S_ID]'.'[SAMPLES.OBS_ID] -->
+			<!--Materialised View [ANZSOILML_SOILSPECIMEN.SPECIMEN_POINT] Value: geometry data type from [OBSERVATIONS:O_LONGITUDE_GDA94] and [OBSERVATIONS:O_LATITUDE_GDA94] with SRS = 4283-->
+			<!--The specimen_point_gml_id will not be unique to each specimen, but is unique to the location. Geoserver will recognise this...-->
+			<!--Example internal xlink:href for specimen using the same gml:id     <spec:samplingLocation xlink:href="#specimen_point_199.CAN.C552.1"/>-->
+			<spec:samplingLocation >
+			    <!--Geoserver spec:samplingLocation/gml:AbstractGeometry/gml:id = [ANZSOILML_SOILSPECIMEN.SPECIMEN_POINT_GML_ID]-->
+				<gml:Point gml:id="specimen_point_199.CAN.C552.1" srsName="http://www.opengis.net/def/crs/EPSG/0/4283" srsDimension="2">
+				    <!--Geoserver spec:samplingLocation/gml:AbstractGeometry value =  [ANZSOILML_SOILSPECIMEN.SPECIMEN_POINT]--> 
+					<gml:pos>-25.0 119.0</gml:pos>
+				</gml:Point>
+			</spec:samplingLocation>			
+			<!---->
+			<!--Materialised View [ANZSOILML_SOILSPECIMEN.SPECIMEN_WEIGHT] Value [ARCHIVE_SAMPLES.WEIGHT]  -->
+			<!--There will be blank records, this is ok, Geoserver will just leave this tag out if there is no value-->
+			<!--Geoserver spec:size/uom = "http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Gram"-->
+			<!--Geoserver spec:size/xlink:title = "Gram" -->
+			<!--Geoserver spec:size value = [ANZSOILML_SOILSPECIMEN.SPECIMEN_WEIGHT] -->
+			<spec:size uom="g" xlink:href="http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Gram" xlink:title="Gram" >10</spec:size>
+			<!---->			
+			<!--Materialised View [ANZSOILML_SOILSPECIMEN.SPECIMEN_CURRENT_LOCATION_HREF] Value: "http://www.clw.csiro/aclep/archive" where [ARCHIVE_SAMPLES.JAR_NO] is not null-->
+            <!--Materialised View [ANZSOILML_SOILSPECIMEN.SPECIMEN_CURRENT_LOCATION_HREF] Value: "http://www.opengis.net/def/nil/OGC-OM/2.0/destroyed" where there is no record in the [ARCHIVE_SAMPLES] table-->
+            <!--Materialised View [ANZSOILML_SOILSPECIMEN.SPECIMEN_CURRENT_LOCATION_TITLE] Value: "CSIRO National Soil Archive" where [ARCHIVE_SAMPLES.JAR_NO] is not null-->
+            <!--Materialised View [ANZSOILML_SOILSPECIMEN.SPECIMEN_CURRENT_LOCATION_TITLE] Value: "Not available" where [ARCHIVE_SAMPLES.JAR_NO] is not null-->
+            <!--Geoserver spec:currentLocation/xlink:href = [ANZSOILML_SOILSPECIMEN.SPECIMEN_CURRENT_LOCATION_HREF]-->
+            <!--Geoserver spec:currentLocation/xlink:title = [ANZSOILML_SOILSPECIMEN.SPECIMEN_CURRENT_LOCATION_TITLE]-->
+			<spec:currentLocation xlink:href="http://www.clw.csiro/aclep/archive"  xlink:title="CSIRO National Soil Archive"> </spec:currentLocation>
+			
+			<!--Materialised View [ANZSOILML_SOILSPECIMEN.SPECIMEN_TYPE] Value [ARCHIVE_SAMPLES.SAMP_TYPE]-->
+			<!--Materialised View [ANZSOILML_SOILSPECIMEN.SPECIMEN_TYPE_DESC] Value [CODES.CODE_DESC] where [CODES.CODE_DOMAIN] = "C_AS_SAMP_TYPE" and [CODES.CODE_VALUE] = [ARCHIVE_SAMPLES.SAMP_TYPE]-->
+			<!--Geoserver spec:specimenType/xlink:href = ${httpuri.standard} + 'soilspecimentype/' +  [ANZSOILML_SOILSPECIMEN.SPECIMEN_TYPE]-->
+			<!--Geoserver spec:specimenType/xlink:title = [ANZSOILML_SOILSPECIMEN.SPECIMEN_TYPE_DESC]-->
+			<spec:specimenType xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilspecimentype/WS" xlink:title="whole soil"/>		
+		</spec:SF_Specimen>
+	</wfs:member>
+</wfs:FeatureCollection>

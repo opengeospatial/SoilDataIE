@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:soil="http://www.opengis.net/soil-data-ie/0.1" xmlns:om="http://www.opengis.net/om/2.0" xmlns:sam="http://www.opengis.net/sampling/2.0" xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0" targetNamespace="http://www.opengis.net/soil-data-ie/0.1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.1">
+    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+    <xs:import namespace="http://www.opengis.net/om/2.0" schemaLocation="http://schemas.opengis.net/om/2.0/observation.xsd"/>
+    <xs:import namespace="http://www.opengis.net/sampling/2.0" schemaLocation="http://schemas.opengis.net/sampling/2.0/samplingFeature.xsd"/>
+    <xs:import namespace="http://www.opengis.net/samplingSpatial/2.0" schemaLocation="http://schemas.opengis.net/samplingSpatial/2.0/spatialSamplingFeature.xsd"/>
+    <xs:import namespace="http://www.opengis.net/samplingSpecimen/2.0" schemaLocation="http://schemas.opengis.net/samplingSpecimen/2.0/specimen.xsd"/>
+    <xs:annotation>
+        <xs:documentation>The OGC Soil Data Interoperability Experiment application schema is an application of GML/Observations and Measurements (OM) that has been developed by members of the OGC Agriculture Domain Working Group. It uses extensions of O and M and GML to create feature types that provide data about soils and the sampling and observation activites undertaken to understand their distribution and character.</xs:documentation>
+        <xs:documentation>Manually generated schema based on UML model at: https://svn.opengeospatial.org/ogc-projects/ip/SoilDataIE/trunk/uml/soil-data-ie-lm.xml</xs:documentation>
+    </xs:annotation>
+    <!-- ==================================== -->
+    <!-- ==== SO_SoilFeature ================ -->
+    <!-- ==================================== -->
+    <xs:complexType name="SO_SoilFeatureType" abstract="true">
+        <xs:annotation>
+            <xs:documentation>The abstract SO_SoilFeature class is a conceptual feature that exists coherently in the world. It corresponds with a soil body, comprising a set of similar soil profiles with a mappable distribution in some soil landscape, or a soil profile or its constituent parts. The implemented SO_SoilFeature instance acts as the description package. ANZSoilML, following patterns established in GeoSciML, classifies the SO_SoilFeature description according to its purpose as an ‘instance’ (capturing an observation), ‘typical norm’ (capturing a description of the expected range of property values in a soil body), or ‘defining norm’ (capturing the necessary criteria to be classified as a particular class of soil).  In contrast, INSPIRE uses separate classes to distinguish observed descriptions from derived descriptions. Neither option was tested during the IE.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="gml:AbstractFeatureType">
+                <xs:sequence>
+                    <xs:element name="soDepth" type="soil:SO_MeasureRangePropertyType" nillable="true" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>The upper (nearest to Earth's surface) and lower boundary of the described soil or horizon.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="soComposition" type="soil:SO_ComponentPropertyType" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>The physical or chemical composition of a soil.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="soRelatedObservation" type="om:OM_ObservationPropertyType" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>Any observation made on the soil.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="soRelatedSamplingFeature" type="sam:SF_SamplingFeaturePropertyType" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>Sampling features related to the soil. May be where the soil was observed or where one or more samples were taken from the soil.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="soRelatedSoilFeature" type="soil:SO_SoilFeatureRelationshipPropertyType" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>Relates a soil feature to another soil feature.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <!-- .................. -->
+    <xs:element name="SO_SoilFeature" type="soil:SO_SoilFeatureType" substitutionGroup="gml:AbstractFeature"/>
+    <!-- .................. -->
+    <xs:complexType name="SO_SoilFeaturePropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="soil:SO_SoilFeature"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    <!-- ==================================== -->
+    <!-- ==== SO_Soil ======================= -->
+    <!-- ==================================== -->
+    <xs:complexType name="SO_SoilType" abstract="false">
+        <xs:annotation>
+            <xs:documentation>The Soil Science Glossary defines a soil as “(i) The unconsolidated mineral or organic material on the immediate surface of the Earth that serves as a natural medium for the growth of land plants. (ii) The unconsolidated mineral or organic matter on the surface of the Earth that has been subjected to and shows effects of genetic and environmental factors of: climate (including water and temperature effects), and macro- and microorganisms, conditioned by relief, acting on parent material over a period of time. A product-soil differs from the material from which it is derived in many physical, chemical, biological, and morphological properties and characteristics.”</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="soil:SO_SoilFeatureType">
+                <xs:sequence>
+                    <xs:element name="soClassifier" type="gml:ReferenceType" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>TO DO</xs:documentation>
+                            <xs:appinfo>
+                                <gml:defaultCodeSpace>http://www.opengis.net/def/nil/template</gml:defaultCodeSpace>
+                            </xs:appinfo>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="soAvailableWaterCapacity" type="om:OM_ObservationPropertyType" nillable="true" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>Available water capacity, measured or computed for a set of specified depth increments using a pedo-transfer function that references the values estimated for organic carbon, sand, silt, clay and bulk density.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="soDrainage" type="gml:ReferenceType" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>The local soil wetness conditions. For example, 'very poorly drained', 'poorly drained' or 'well-drained’.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="soDepthToRock" type="soil:SO_MeasureRangePropertyType" nillable="true" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>The depth to rock. Also known as the R horizon depth or total profile depth.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="soHorizon" type="soil:SO_HorizonPropertyType" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>Related soil horizons.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <!-- .................. -->
+    <xs:element name="SO_Soil" type="soil:SO_SoilType" substitutionGroup="soil:SO_SoilFeature"/>
+    <!-- .................. -->
+    <xs:complexType name="SO_SoilPropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="soil:SO_Soil"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    <!-- ==================================== -->
+    <!-- ==== SO_Component ================== -->
+    <!-- ==================================== -->
+    <xs:complexType name="SO_ComponentType" abstract="false">
+        <xs:annotation>
+            <xs:documentation>A data type that describes the particle size distribution, and physical and chemical properties of the various soil size fractions (such as 'fine soil material', 'whole soil', 'coarse fragments'), either within a soil horizon or an undifferentiated soil. These properties were taken from the GlobalSoilMap consortium’s requirements.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="soParticleSizeFraction" type="gml:ReferenceType" nillable="true" minOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>The size fraction of the soil being described (e.g. 'fine soil material', 'whole soil', '’coarse fragments').</xs:documentation>
+                    <xs:appinfo>
+                        <gml:defaultCodeSpace>http://www.opengis.net/def/nil/template</gml:defaultCodeSpace>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="soTexture" type="gml:ReferenceType" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Classification of soil texture according to a defined scheme (e.g. ‘sand’ or ‘clay loam’).</xs:documentation>
+                    <xs:appinfo>
+                        <gml:defaultCodeSpace>http://www.opengis.net/def/nil/template</gml:defaultCodeSpace>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="soParticleSizeDistribution" type="soil:SO_ParticleSizeValuePropertyType" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>The proportion of defined particle sizes (e.g. 'sand', ‘silt’ and ‘clay’) within the described size fraction.</xs:documentation>
+                    <xs:appinfo>
+                        <gml:defaultCodeSpace>http://www.opengis.net/def/nil/template</gml:defaultCodeSpace>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="soBulkDensity" type="om:OM_ObservationPropertyType" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Bulk density in mass per unit volume of the described size fraction.</xs:documentation>
+                    <xs:appinfo>
+                        <gml:defaultCodeSpace>http://www.opengis.net/def/nil/template</gml:defaultCodeSpace>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="soEffectiveCationExchangeCapacity" type="om:OM_ObservationPropertyType" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>The total capacity of the described size fraction to hold exchangeable cations.</xs:documentation>
+                    <xs:appinfo>
+                        <gml:defaultCodeSpace>http://www.opengis.net/def/nil/template</gml:defaultCodeSpace>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="soElectricalConductivity" type="om:OM_ObservationPropertyType" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>The ability of a soil to transmit an electric current.</xs:documentation>
+                    <xs:appinfo>
+                        <gml:defaultCodeSpace>http://www.opengis.net/def/nil/template</gml:defaultCodeSpace>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="soOrganicCarbon" type="om:OM_ObservationPropertyType" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Carbon present as organic matter in the described size fraction.</xs:documentation>
+                    <xs:appinfo>
+                        <gml:defaultCodeSpace>http://www.opengis.net/def/nil/template</gml:defaultCodeSpace>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="sopH" type="om:OM_ObservationPropertyType" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>The acidity or alkalinity of the described size fraction.</xs:documentation>
+                    <xs:appinfo>
+                        <gml:defaultCodeSpace>http://www.opengis.net/def/nil/template</gml:defaultCodeSpace>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <!-- .................. -->
+    <xs:element name="SO_Component" type="soil:SO_ComponentType" substitutionGroup="gml:AbstractObject"/>
+    <!-- .................. -->
+    <xs:complexType name="SO_ComponentPropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="soil:SO_Component"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    <!-- ==================================== -->
+    <!-- ==== SO_ParticleSizeValue ========== -->
+    <!-- ==================================== -->
+    <xs:complexType name="SO_ParticleSizeValueType" abstract="false">
+        <xs:annotation>
+            <xs:documentation>A data type to describe the proportions of particle size classes in the soil. As the definition of a particle size may vary according to the classification system, this class explicitly states the size range.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="soLabel" type="gml:ReferenceType" nillable="true" minOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>A label to describe the particle size (e.g. 'sand', 'fine sand').</xs:documentation>
+                    <xs:appinfo>
+                        <gml:defaultCodeSpace>http://www.opengis.net/def/nil/template</gml:defaultCodeSpace>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="soParticleSize" type="soil:SO_MeasureRangePropertyType" nillable="true" minOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>The lower and upper limits of the particle size appropriate for the classification system used to provide term used in soLabel.</xs:documentation>
+                    <xs:appinfo>
+                        <gml:defaultCodeSpace>http://www.opengis.net/def/nil/template</gml:defaultCodeSpace>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="soProportion" type="soil:SO_MeasureRangePropertyType" nillable="true" minOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>The proportion that the soil contains of this particle size.</xs:documentation>
+                    <xs:appinfo>
+                        <gml:defaultCodeSpace>http://www.opengis.net/def/nil/template</gml:defaultCodeSpace>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <!-- .................. -->
+    <xs:element name="SO_ParticleSizeValue" type="soil:SO_ParticleSizeValueType" substitutionGroup="gml:AbstractObject"/>
+    <!-- .................. -->
+    <xs:complexType name="SO_ParticleSizeValuePropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="soil:SO_ParticleSizeValue"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    <!-- ==================================== -->
+    <!-- ==== SO_Horizon ==================== -->
+    <!-- ==================================== -->
+    <xs:complexType name="SO_HorizonType" abstract="false">
+        <xs:annotation>
+            <xs:documentation>The Soil Science Glossary defines a soil horizon as a “layer of soil or soil material approximately parallel to the land surface and differing from adjacent genetically related layers in physical, chemical, and biological properties or characteristics such as color, structure, texture, consistency, kinds and number of organisms present, degree of acidity or alkalinity, etc.”</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="soil:SO_SoilFeatureType">
+                <xs:sequence>
+                    <xs:element name="soDesignation" type="soil:SO_HorizonDesignationPropertyType" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>Reference to a classification of a horizon according to a formal system.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="soSoil" type="soil:SO_SoilPropertyType" nillable="true" minOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation>The soil that contains the horizon.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <!-- .................. -->
+    <xs:element name="SO_Horizon" type="soil:SO_HorizonType" substitutionGroup="soil:SO_SoilFeature"/>
+    <!-- .................. -->
+    <xs:complexType name="SO_HorizonPropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="soil:SO_Horizon"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    <!-- ==================================== -->
+    <!-- ==== SO_HorizonDesignation ========= -->
+    <!-- ==================================== -->
+    <xs:complexType name="SO_HorizonDesignationType" abstract="false">
+        <xs:annotation>
+            <xs:documentation>A term to categorise the soil horizon according to certain physical criteria. Horizons may be defined as genetic, morphological, functional or diagnostic horizons (to support differentiation of soils into soil taxa).</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="soLabel" type="xs:string" minOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>A soil horizon designation.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="soScheme" type="gml:ReferenceType" minOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>The scheme from which the designation value is taken.</xs:documentation>
+                    <xs:appinfo>
+                        <gml:defaultCodeSpace>http://www.opengis.net/def/nil/template</gml:defaultCodeSpace>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <!-- .................. -->
+    <xs:element name="SO_HorizonDesignation" type="soil:SO_HorizonDesignationType" substitutionGroup="gml:AbstractObject"/>
+    <!-- .................. -->
+    <xs:complexType name="SO_HorizonDesignationPropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="soil:SO_HorizonDesignation"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    <!-- ==================================== -->
+    <!-- ==== SO_SoilFeatureRelationship ==== -->
+    <!-- ==================================== -->
+    <xs:element name="SO_SoilFeatureRelationship" type="soil:SO_SoilFeatureRelationshipType" substitutionGroup="gml:AbstractObject">
+        <xs:annotation>
+            <xs:documentation>A SO_SoilFeatureRelationship class was proposed but not tested. This captures relationships between soils and/or horizons. These include spatial and temporal associations, or aggregation of soils into collections like map complexes. Participants in relationships play roles (e.g. ‘overlies’, ‘truncates’, ‘member’). The design is based on the GeoSciML GeologicFeatureRelationship feature type and can be extended to provide additional information, for example, a boundary relationship between two horizons could capture the distinctness of the boundary.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <!-- .................. -->
+    <xs:complexType name="SO_SoilFeatureRelationshipType">
+        <xs:sequence>
+            <xs:element name="soType" type="gml:ReferenceType" nillable="true" minOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>The type of relationship.</xs:documentation>
+                    <xs:appinfo>
+                        <gml:defaultCodeSpace>http://www.opengis.net/def/nil/template</gml:defaultCodeSpace>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="soSourceRole" type="gml:ReferenceType" nillable="true" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The role played by the source soil feature or object.</xs:documentation>
+                    <xs:appinfo>
+                        <gml:defaultCodeSpace>http://www.opengis.net/def/nil/template</gml:defaultCodeSpace>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="soTargetRole" type="gml:ReferenceType" nillable="true" minOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>The role played by the target soil feature or object.</xs:documentation>
+                    <xs:appinfo>
+                        <gml:defaultCodeSpace>http://www.opengis.net/def/nil/template</gml:defaultCodeSpace>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="soRelatedSoilFeature" type="soil:SO_SoilFeaturePropertyType" nillable="true" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>The target soil feature.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <!-- .................. -->
+    <xs:complexType name="SO_SoilFeatureRelationshipPropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="soil:SO_SoilFeatureRelationship"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    <!-- ==================================== -->
+    <!-- ==== SO_SoilProfile ================ -->
+    <!-- ==================================== -->
+    <xs:complexType name="SO_SoilProfileType" abstract="false">
+        <xs:annotation>
+            <xs:documentation>The soil profile is a fundamental concept in soil science, describing the character of a soil as a vertical sequence of soil horizons. The soil profile is also commonly used as a proxy for the soil itself, as well as a method of sampling the soil. Soil profiles are primarily used to describe a soil at a single location - this reflects the difficulty in describing a soil over larger extents due to the significant variation in the nature of a soil over small distances. Despite this, it is useful to provide descriptions of soil for a larger volume that predict expected values for a property in that space. These are presented as profiles and given names like ‘soil class profiles’ or ‘derived profiles’. Soil map units can represent the occurrence of one or more of these interpreted profiles.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="gml:AbstractFeatureType">
+                <xs:sequence>
+                    <xs:element name="soLocation" type="sams:SF_SpatialSamplingFeaturePropertyType" nillable="true" minOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation>The location (sampling location or mapped extent) described by the soil profile.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="soDescription" type="soil:SO_SoilPropertyType" nillable="true" minOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation>The description of the soil.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <!-- .................. -->
+    <xs:element name="SO_SoilProfile" type="soil:SO_SoilProfileType" substitutionGroup="gml:AbstractFeature"/>
+    <!-- .................. -->
+    <xs:complexType name="SO_SoilProfilePropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="soil:SO_SoilProfile"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    <!-- ==================================== -->
+    <!-- ==== SO_MeasureRange =============== -->
+    <!-- ==================================== -->
+    <xs:complexType name="SO_MeasureRangeType" abstract="false">
+        <xs:annotation>
+            <xs:documentation>Captures a range of Measure values (for example a depth interval).</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="soMinimumValue" type="gml:MeasureType" minOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Minimum value in the range.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="soMaximumValue" type="gml:MeasureType" minOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Maximum value in the range.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <!-- .................. -->
+    <xs:element name="SO_MeasureRange" type="soil:SO_MeasureRangeType" substitutionGroup="gml:AbstractObject"/>
+    <!-- .................. -->
+    <xs:complexType name="SO_MeasureRangePropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="soil:SO_MeasureRange"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+</xs:schema>
