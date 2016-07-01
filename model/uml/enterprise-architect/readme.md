@@ -6,7 +6,7 @@ The template Sparx Enterprise Architect project file soil-data-ie-template.eap h
 
 !! IMPORTANT !!
 
-Please do not check-out and modify soil-data-ie-template.eap - instead create a local copy yourself and manage it as below.
+Please do not check-out and modify soil-data-ie-template.eap - instead create a local copy yourself and manage it as described below.
 
 At times this template will be updated - for example if new reference models become available, or existing ones are updated.
 
