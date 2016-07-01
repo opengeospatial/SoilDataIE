@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:FeatureCollection xmlns:wfs="http://www.opengis.net/wfs/2.0"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0"
+	xmlns:om="http://www.opengis.net/om/2.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:wosis="http://isric.org/wosis" xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" xmlns:sam="http://www.opengis.net/sampling/2.0"
+	xmlns:soil="http://www.opengis.net/soil-data-ie/0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	numberMatched="unknown" numberReturned="1" timeStamp="2015-12-29T14:39:38.462Z"
+	xsi:schemaLocation="http://www.opengis.net/soil-data-ie/0.1 http://lab.scinfo.org.nz/static/schema/soil-data-ie/0.1/soil-data-ie.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd">
+	<wfs:member>
+		<soil:SO_Soil gml:id="soil.so_soil.135619">
+			<gml:description>WOSIS profile id: 135619 layer title as: upper_depth-lower_depth cm;layer_number;layer_name;dataset_id</gml:description>
+			<gml:identifier codeSpace="http://www.landcareresearch.co.nz">http://lab.scinfo.org.nz/soil-data-ie/id/isric/soil/so_soil/135619</gml:identifier>
+			<soil:soRelatedSamplingFeature
+				xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/isric/sams/sf_spatialsamplingfeature/135619"
+				xlink:title="135619" />
+			<soil:soHorizon
+				xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/isric/soil/so_horizon/605094"
+				xlink:title="0-25cm;1;A;NCSS" />
+			<soil:soHorizon
+				xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/isric/soil/so_horizon/605095"
+				xlink:title="25-48cm;2;BA;NCSS" />
+			<soil:soHorizon
+				xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/isric/soil/so_horizon/605096"
+				xlink:title="48-76cm;3;Bt1;NCSS" />
+			<soil:soHorizon
+				xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/isric/soil/so_horizon/605097"
+				xlink:title="76-102cm;4;Bt2;NCSS" />
+			<soil:soHorizon
+				xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/isric/soil/so_horizon/605098"
+				xlink:title="102-127cm;5;Bt3;NCSS" />
+			<soil:soHorizon
+				xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/isric/soil/so_horizon/605099"
+				xlink:title="127-165cm;6;BC;NCSS" />
+		</soil:SO_Soil>
+	</wfs:member>
+</wfs:FeatureCollection>

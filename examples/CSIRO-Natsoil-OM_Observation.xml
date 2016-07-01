@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:FeatureCollection 
+xmlns:wfs="http://www.opengis.net/wfs/2.0" 
+xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0" 
+xmlns:soil-ie="http://www.opengis.net/soil-data-ie/0.1" 
+xmlns:gmd="http://www.isotc211.org/2005/gmd" 
+xmlns:gco="http://www.isotc211.org/2005/gco" 
+xmlns:sam="http://www.opengis.net/sampling/2.0" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+xmlns:om="http://www.opengis.net/om/2.0" 
+xmlns:gml="http://www.opengis.net/gml/3.2" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" 
+timeStamp="2015-03-30T22:12:55.882Z" 
+xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd 
+http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd 
+http://www.opengis.net/om/2.0 http://schemas.opengis.net/om/2.0/observation.xsd
+http://www.opengis.net/soil-data-ie/0.1 http://lab.scinfo.org.nz/static/schema/soil-data-ie/0.1/soil-data-ie.xsd" numberMatched="unknown" numberReturned="1">
+<!--
+
+xmlns:gsmlla="http://xmlns.geosciml.org/LaboratoryAnalysis-Specimen/3.0" 
+http://xmlns.geosciml.org/LaboratoryAnalysis-Specimen/3.0 http://schemas.geosciml.org/laboratoryanalysis-specimen/3.0/laboratoryAnalysis.xsd-->
+<!--=================================================-->
+<!--Required Services: (soilspecimen)-->
+<!--Required Vocabularies: (soilobservationprocess), (soilproperty)-->
+<!--Required Materialised Views: [ANZSOILML_SOILOBSERVATION]-->
+<!--=================================================-->
+
+<!--Materialised View: Include standard fields (AGENCY_CODE,PROJ_CODE,S_ID,OBS_ID,H_NO,SAMP_NO,LABR_NO,LABM_CODE)-->
+	<wfs:member>
+	     <!--Materialised View: [ANZSOILML_SOILOBSERVATION.OBSERVATION_GML_ID] -->
+	     <!--    Value "soil_observation_[SAMPLES.AGENCY_CODE]'.'[SAMPLES.PROJ_CODE]'.'[SAMPLES.S_ID]'.'[SAMPLES.O_ID]'.'[SAMPLES.H_NO]'.'[SAMPLES.SAMP_NO]'.'[LAB_RESULTS.LABM_CODE]'.'[LAB_RESULTS.LABR_NO]"-->
+	     
+	     <!--Materialised view: [ANZSOILML_RELATEDOBSERVATION.OBSERVATION_GML_ID] Value: "soil_observation_[LAB_RESULTS.AGENCY_CODE]'.'[LAB_RESULTS.PROJ_CODE]'.'[LAB_RESULTS.S_ID]'.'[LAB_RESULTS.OBS_ID]'.'[LAB_RESULTS.H_NO]'.'[LAB_RESULTS.SAMP_NO]'.'[LAB_RESULTS.LABM_CODE].'[LAB_RESULTS.LABR_NO]'" joined by [ANZSOILML_SOILSPECIMEN.SOILSPECIMEN_GML_ID]--> 
+	     
+	     
+	     <!--Geoserver om:OM_Observation/gml:id = [ANZSOILML_SOILOBSERVATION.OBSERVATION_GML_ID]-->
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.1.1.15_NR_CA.1">
+		<!---->
+		<!--Geoserver gml:identifier/codeSpace = "http://www.clw.csiro.au/aclep/archive" -->
+        <!--Geoserver gml:identifier value = ${httpuri.om-observation} + "soilobservation/" + [ANZSOILML_SOILOBSERVATION.OBSERVATION_GML_ID]-->
+        <gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive"> http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.15_NR_CA.1</gml:identifier>
+        <!---->
+	    <!--Materialised View: [ANZSOILML_SOILOBSERVATION.PHENOMENON_TIMEINSTANT_GML_ID] -->
+		<!--    Value "phenomenonTime_"[SAMPLES.AGENCY_CODE]'.'[SAMPLES.PROJ_CODE]'.'[SAMPLES.S_ID]'.'[SAMPLES.O_ID]'.'[SAMPLES.H_NO]'.'[SAMPLES.SAMP_NO]'.'[LAB_RESULTS.LABM_CODE]'.'[LAB_RESULTS.LABR_NO]'_'[OBSERVATIONS.O_DATE_DESC]--> 
+		<!--Materialised View: [ANZSOILML_SOILOBSERVATION.PHENOMENON_TIMEPOSITION] -->
+		<!--    Value [OBSERVATIONS.O_DATE_DESC]-->
+		<om:phenomenonTime>
+		<!-- Geoserver om:phenomenonTime/gml:TimeInstant/gml:id = [ANZSOILML_SOILOBSERVATION.PHENOMENON_TIMEINSTANT_GML_ID]-->
+			 <gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.1.1.15_NR_CA.1_07091953">
+			      <!-- Geoserver om:phenomenonTime/gml:TimeInstant/gml:timePosition = [ANZSOILML_SOILOBSERVATION.PHENOMENON_TIMEPOSITION] -->
+				  <gml:timePosition>1953-09-07</gml:timePosition>
+			 </gml:TimeInstant>
+		</om:phenomenonTime>
+	      <!---->
+		  <!-- Materialised View: [ANZSOILML_SOILOBSERVATION.RESULT_TIMEINSTANT_GML_ID] -->
+		  <!--    Value "resultTime_"[SAMPLES.AGENCY_CODE]'.'[SAMPLES.PROJ_CODE]'.'[SAMPLES.S_ID]'.'[SAMPLES.O_ID]'.'[SAMPLES.H_NO]'.'[SAMPLES.SAMP_NO]'.'[LAB_RESULTS.LABM_CODE]'.'[LAB_RESULTS.LABR_NO]'.'[LAB_RESULTS.LABR_DATE] -->
+		  <!-- Materialised View: [ANZSOILML_SOILOBSERVATION.RESULT_TIMEPOSITION] -->
+		  <!--    Value [LAB_RESULTS.LABR_DATE] -->
+		  <!--There are zeros and 4 digit values in the date field, need to deal with that-->
+			<om:resultTime>
+			    <!-- Geoserver om:resultTime/gml:TimeInstant/gml:id = [ANZSOILML_SOILOBSERVATION.RESULT_TIMEINSTANT_GML_ID]-->
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.1.1.1.15_NR_CA_07101953">	
+				    <!-- Geoserver om:resultTime/gml:TimeInstant/gml:timePosition = [ANZSOILML_SOILOBSERVATION.RESULT_TIMEPOSITION] -->
+					<!--<gml:timePosition>07101953</gml:timePosition>-->
+					<gml:timePosition>1953-10-07</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<!---->
+			<!--Materialised View: [ANZSOILML_SOILOBSERVATION.ANALYSTICALPROCESS_GML_ID] -->
+			<!--    Value "process_"[SAMPLES.AGENCY_CODE]'.'[SAMPLES.PROJ_CODE]'.'[SAMPLES.S_ID]'.'[SAMPLES.O_ID]'.'[SAMPLES.H_NO]'.'[SAMPLES.SAMP_NO]'.'[LAB_RESULTS.LABM_CODE]'.'[LAB_RESULTS.LABR_NO]"-->
+            <!--Materialised View: [ANZSOILML_SOILOBSERVATION.DESCRIPTION] -->
+            <!--    Value "[LAB_METHODS.LABM_NAME]"-->
+			<!--Materialised View: [ANZSOILML_SOILOBSERVATION.NAME] -->
+			<!--   Value "[LAB_METHODS.LABM_SHORT_NAME]"-->
+			<!--Materialised View: [ANZSOILML_SOILOBSERVATION.METHOD] -->
+			<!--    Value "[LAB_METHODS.LABM_CODE]"-->
+			<!--Geoserver om:procedure/xlink:href = ${httpuri.standard} + "soilobservationprocess/" + [ANZSOILML_SOILOBSERVATION.ANALYTICALPROCESS_GML_ID]-->
+				<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/process_199.CAN.C1.1.1.1.15_NR_CA.1"/>
+				<!---->
+<!--				<gsmlla:AnalyticalProcess gml:id="process_199.CAN.C1.1.1.1.15_NR_CA.1">
+					<gml:description>Exch. basic cations (Ca++) - meq per 100g of soil - Not recorded</gml:description>
+					<gml:name>Exch. Ca++</gml:name>
+					<gsmlla:method xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15_NR_CA" xlink:title="Exch. basic cations (Ca++) - meq per 100g of soil - Not recorded"/>
+					<gsmlla:acquisition xsi:nil="true" nilReason="missing"/>
+					<gsmlla:computation xsi:nil="true" gco:nilReason="missing"/>
+				</gsmlla:AnalyticalProcess>
+			</om:procedure>-->
+			<!---->
+			<!-- Materialized View: [ANZSOILML_SOILOBSERVATION.LABP_CODE] Value = [LAB_METHODS.LABP_CODE]-->
+            <!--Geoserver om:observedProperty xlink:href = ${httpuri.standard} + "soilproperty/" + [ANZSOILML_SOILOBSERVATION.METHOD]-->
+			<!--Geoserver om:observedProperty xlink:title = [ANZSOILML_SOILOBSERVATION.NAME]-->
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/15_NR_CA" xlink:title="Exch. Ca++"/>
+			<!---->
+			<!--Materialised View: [ANZSOILML_SOILOBSERVATION.FEATUREOFINTEREST] -->
+			<!--    Value soil_sample_[LAB_RESULTS.AGENCY_CODE]'.'[LAB_RESULTS.PROJ_CODE]'.'[LAB_RESULTS.S_ID]'.'[LAB_RESULTS.OBS_ID]'.'[LAB_RESULTS.H_NO]'.'[LAB_RESULTS.SAMP_NO]"-->
+            <!--Geoserver om:featureOfInterest xlink:href = ${httpuri.soilfeature} + "soilspecimen/" + [ANZSOILML_SOILOBSERVATION.FEATUREOFINTEREST]-->
+			<om:featureOfInterest xlink:href="http://environment.data.gov.au/soil/feature/soilsample/soil_specimen_199.CAN.C1.1.1.1"/>
+			<!---->
+			<!--Materialised View: [ANZSOILML_SOILOBSERVATION.RESULT_VALUE] -->
+			<!--    Value [LAB_RESULTS.LABR_VALUE]-->
+			<!--Materialised View: [ANZSOILML_SOILOBSERVATION.RESULT_UNITS] -->
+			<!--    Value [LAB_METHODS.LABM_UNITS]-->
+            <!--Geoserver om:result/xsi:type="gml:MeasureType"-->
+			<!--Geoserver om:result/uom= [ANZSOILML_SOILOBSERVATION.RESULT_UNITS]-->
+			<!--Geoserver om:result value= [ANZSOILML_SOILOBSERVATION.RESULT_VALUE]-->
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">4.9</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<!---->
+	<wfs:member>
+	<!--This member is for horizon observations (ie field observations), specifically pH at present-->
+          <!--Materialised View: [ANZSOILML_SOILOBSERVATION.OBSERVATION_GML_ID] Append-->
+	      <!--    Value "soil_observation_[HORIZONS.AGENCY_CODE]'.'[HORIZONS.PROJ_CODE]'.'[HORIZONS.S_ID]'.'[HORIZONS.O_ID]'.'[HORIZONS.H_NO]'.4G1.[PHS.PH_NO]"-->
+	      <!--Geoserver om:OM_Observation/gml:id = [ANZSOILML_SOILOBSERVATION.OBSERVATION_GML_ID]-->	
+	      <om:OM_Observation gml:id="soil_observation_103.EPA_CMP.SITE001.1.1.4G1.1">
+			<!---->
+			<!--Geoserver gml:identifier/codeSpace = "http://www.clw.csiro.au/aclep/archive" -->
+            <!--Geoserver gml:identifier value = ${httpuri.soilfeature} + "soilobservation/" + [ANZSOILML_SOILOBSERVATION.OBSERVATION_GML_ID]-->
+            <gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive"> http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_103.EPA_CMP.SITE001.1.1.4G1.1</gml:identifier>
+            <!---->
+			<!--Materialised View: [ANZSOILML_SOILOBSERVATION.PHENOMENON_TIMEINSTANT_GML_ID] -->
+			<!--    Value "phenomenonTime_"[OBSERVATIONS.AGENCY_CODE]'.'[OBSERVATIONS.PROJ_CODE]'.'[OBSERVATIONS.S_ID]'.'[OBSERVATIONS.O_ID]''.'[OBSERVATIONS.O_DATE_DESC]--> 
+			<!--Materialised View: [ANZSOILML_SOILOBSERVATION.PHENOMENON_TIMEPOSITION] -->
+			<!--    Value [OBSERVATIONS.O_DATE_DESC]-->
+			<om:phenomenonTime>
+			<!-- Geoserver om:phenomenonTime/gml:TimeInstant/gml:id = [ANZSOILML_SOILOBSERVATION.PHENOMENON_TIMEINSTANT_GML_ID]-->
+			  <gml:TimeInstant gml:id="phenomenonTime_103.EPA_CMP.SITE001.1.1.4G1.1_07091953">
+			       <!-- Geoserver om:phenomenonTime/gml:TimeInstant/gml:timePosition = [ANZSOILML_SOILOBSERVATION.PHENOMENON_TIMEPOSITION] -->
+				   <gml:timePosition>07091953</gml:timePosition>
+			  </gml:TimeInstant>
+			</om:phenomenonTime>
+			<!---->
+			<!--Materialised View: [ANZSOILML_SOILOBSERVATION.RESULT_TIMEINSTANT_GML_ID] -->
+				<!--    Value "resultTime_"[OBSERVATIONS.AGENCY_CODE]'.'[OBSERVATIONS.PROJ_CODE]'.'[OBSERVATIONS.S_ID]'.'[OBSERVATIONS.O_ID]''.'[OBSERVATIONS.O_DATE_DESC]--> 
+			    <!--Materialised View: [ANZSOILML_SOILOBSERVATION.RESULT_TIMEPOSITION] -->
+			    <!--    Value [OBSERVATIONS.O_DATE_DESC]-->
+			<om:resultTime>
+			<!-- Geoserver om:resultTime/gml:TimeInstant/gml:id = [ANZSOILML_SOILOBSERVATION.RESULT_TIMEINSTANT_GML_ID]-->
+			  <gml:TimeInstant gml:id="resultTime_103.EPA_CMP.SITE001.1.1.4G1.1_07091953">
+			       <!-- Geoserver om:resultTime/gml:TimeInstant/gml:timePosition = [ANZSOILML_SOILOBSERVATION.RESULT_TIMEPOSITION] -->
+				   <gml:timePosition>07091953</gml:timePosition>
+			  </gml:TimeInstant>
+			</om:resultTime>
+			<!---->
+			<!--Materialised View: [ANZSOILML_SOILOBSERVATION.ANALYTICALPROCESS_GML_ID] -->
+			<!--    Value "process_[HORIZONS.AGENCY_CODE]'.'[HORIZONS.PROJ_CODE]'.'[HORIZONS.S_ID]'.'[HORIZONS.O_ID]'.'[HORIZONS.H_NO]'.4G1"-->
+            <!--Materialised View: [ANZSOILML_SOILOBSERVATION.DESCRIPTION] -->
+            <!--    Value "Field determination of pH"-->
+			<!--Materialised View: [ANZSOILML_SOILOBSERVATION.NAME] -->
+			<!--    Value "pH"-->
+			<!--Materialised View: [ANZSOILML_SOILOBSERVATION.METHOD] -->
+			<!--    Value "4G1"-->
+			<!--Potential multiple use of the same procedure-->
+			<!--Geoserver om:procedure/xlink:href = ${httpuri.standard} + "soilobservationprocess/" + [ANZSOILML_SOILOBSERVATION.METHOD]-->
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/4G1" xlink:title="4G1"/>
+			<!--Geoserver om:procedure/gsmlla:AnalyticalProcess/gml:id = [ANZSOILML_SOILOBSERVATION.ANALYTICALPROCESS_GML_ID]-->
+	<!--			<gsmlla:AnalyticalProcess gml:id="process_103.EPA_CMP.SITE001.1.1.4G1">
+-->				    <!--Geoserver gml:description = [ANZSOILML_SOILOBSERVATION.DESCRIPTION]-->
+<!--					<gml:description>Field determination of pH</gml:description>
+-->					<!--Geoserver gml:name = [ANZSOILML_SOILOBSERVATION.NAME]-->
+<!--					<gml:name>pH</gml:name>
+-->					<!--Geoserver om:procedure/gsmlla:AnalyticalProcess/gsmlla:method/xlink:href = ${httpuri.standard} + "soilobservationprocess/" + [ANZSOILML_SOILOBSERVATION.METHOD]-->
+					<!--Geoserver om:procedure/gsmlla:AnalyticalProcess/gsmlla:method/xlink:title = [ANZSOILML_SOILOBSERVATION.DESCRIPTION]-->
+<!--					<gsmlla:method xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/4G1" xlink:title="Field determination of pH" />
+-->					<!--Geoserver om:procedure/gsmlla:AnalyticalProcess/gsmlla:acquisition/xsi:nil = "true"-->
+					<!--Geoserver om:procedure/gsmlla:AnalyticalProcess/gsmlla:acquisition/nilReason = "missing"-->
+<!--					<gsmlla:acquisition xsi:nil="true" nilReason="missing"/>
+-->					<!--Geoserver om:procedure/gsmlla:AnalyticalProcess/gsmlla:computation/xsi:nil = "true"-->
+					<!--Geoserver om:procedure/gsmlla:AnalyticalProcess/gsmlla:computation/gco:nilReason = "missing"-->
+<!--					<gsmlla:computation xsi:nil="true" gco:nilReason="missing"/>
+				</gsmlla:AnalyticalProcess>
+			</om:procedure>
+ -->          <!---->
+           <!--Materialised View: [ANZSOILML_SOILOBSERVATION.DEPTH] -->
+           <!--    Value [PHS.PH_DEPTH]-->
+           <om:parameter>
+				<om:NamedValue>
+				    <!--Geoserver sam:parameter/om:NamedValue/om:name/xlink:href="http://data.scinfo.org.nz/static/schema/soil-data-ie/0.1/soil-data-ie.xsd"-->
+				    <om:name xlink:href="http://data.scinfo.org.nz/static/schema/soil-data-ie/0.1/soil-data-ie.xsd"/>
+					<om:value>
+					
+				<!--Geoserver om:parameter/om:NamedValue/om:value = [ANZSOILML_SOILOBSERVATION.DEPTH]-->
+					<soil-ie:SO_MeasureRange>
+					<!--Geoserver sam:parameter/om:NamedValue/om:value/soil-ie:SO_MeasureRange/soil-ie:soMinimumValue/uom = ${httpuri.uom_qudt} + 'Meter' -->
+					<!--Geoserver sam:parameter/om:NamedValue/om:value/soil-ie:SO_MeasureRange/soil-ie:soMinimumValue/ = [ANZSOILML_SOILSPECIMEN.SPECIMEN_UPPERDEPTH]  -->
+					<soil-ie:soMinimumValue uom="http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter">2.0</soil-ie:soMinimumValue>
+					<!--Geoserver sam:parameter/om:NamedValue/om:value/soil-ie:SO_MeasureRange/soil-ie:soMaximumValue/uom = ${httpuri.uom_qudt} + 'Meter' -->
+					<!--Geoserver sam:parameter/om:NamedValue/om:value/soil-ie:SO_MeasureRange/soil-ie:soMaximumValue/ = [ANZSOILML_SOILSPECIMEN.SPECIMEN_LOWERDEPTH]  -->
+					<soil-ie:soMaximumValue uom="http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter">2.0</soil-ie:soMaximumValue>					
+					</soil-ie:SO_MeasureRange>
+					</om:value>
+				</om:NamedValue>
+			</om:parameter>
+			
+           <!---->
+           <!--Geoserver om:observedProperty xlink:href = ${httpuri.standard} + "soilproperty/" + [ANZSOILML_SOILOBSERVATION.METHOD]-->
+		   <!--Geoserver om:observedProperty xlink:title = [ANZSOILML_SOILOBSERVATION.NAME]-->
+		   <om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/4G1" xlink:title="pH"/>		
+           <!---->
+           <!--Materialised View: [ANZSOILML_SOILOBSERVATION.FEATUREOFINTEREST] -->
+		   <!--    Value "soil_horizon_[HORIZONS.AGENCY_CODE]'.'[HORIZONS.PROJ_CODE]'.'[HORIZONS.S_ID]'.'[HORIZONS.O_ID]'.'[HORIZONS.H_NO]"-->
+           <!--Geoserver om:featureOfInterest xlink:href = ${httpuri.soilfeature} + "soilspecimen/" + [ANZSOILML_SOILOBSERVATION.FEATUREOFINTEREST]-->
+		  <om:featureOfInterest xlink:href="#soil_horizon_103.EPA_CMP.SITE001.1.1"></om:featureOfInterest>
+				<!---->
+				<!--Materialised View: [ANZSOILML_SOILOBSERVATION.RESULT_VALUE] -->
+				<!--   Value [PHS.PH_VALUE]-->
+			    <!--Materialised View: [ANZSOILML_SOILOBSERVATION.RESULT_UNITS] -->
+			    <!--   Value "pH"-->
+		
+				   <!--Geoserver om:result/xsi:type="gml:MeasureType"-->
+			<!--Geoserver om:result/uom= [ANZSOILML_SOILOBSERVATION.RESULT_UNITS]-->
+			<!--Geoserver om:result value= [ANZSOILML_SOILOBSERVATION.RESULT_VALUE]-->
+			<om:result xsi:type="gml:MeasureType" uom="pH">6.0</om:result>	
+			</om:OM_Observation>
+	</wfs:member>
+</wfs:FeatureCollection>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:FeatureCollection xmlns:wfs="http://www.opengis.net/wfs/2.0"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0"
+	xmlns:om="http://www.opengis.net/om/2.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:wosis="http://isric.org/wosis" xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" xmlns:sam="http://www.opengis.net/sampling/2.0"
+	xmlns:soil="http://www.opengis.net/soil-data-ie/0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	numberMatched="unknown" numberReturned="1" timeStamp="2015-12-29T14:42:16.672Z"
+	xsi:schemaLocation="http://www.opengis.net/soil-data-ie/0.1 http://lab.scinfo.org.nz/static/schema/soil-data-ie/0.1/soil-data-ie.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd">
+	<wfs:member>
+		<soil:SO_SoilProfile gml:id="soil.so_soilprofile.135619">
+			<gml:description>Profile number:135619</gml:description>
+			<gml:identifier codeSpace="http://www.landcareresearch.co.nz">http://lab.scinfo.org.nz/soil-data-ie/id/isric/soil/so_soilprofile/135619</gml:identifier>
+			<gml:name codeSpace="http://www.landcareresearch.co.nz">135619</gml:name>
+			<soil:soLocation
+				xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/isric/sams/sf_spatialsamplingfeature/135619"
+				xlink:title="135619" />
+			<soil:soDescription
+				xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/isric/soil/so_soil/135619" />
+		</soil:SO_SoilProfile>
+	</wfs:member>
+</wfs:FeatureCollection>

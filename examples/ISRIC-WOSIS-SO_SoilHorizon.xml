@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:FeatureCollection xmlns:wfs="http://www.opengis.net/wfs/2.0"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0"
+	xmlns:om="http://www.opengis.net/om/2.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:wosis="http://isric.org/wosis" xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" xmlns:sam="http://www.opengis.net/sampling/2.0"
+	xmlns:soil="http://www.opengis.net/soil-data-ie/0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	numberMatched="unknown" numberReturned="1" timeStamp="2015-12-29T14:41:42.381Z"
+	xsi:schemaLocation="http://www.opengis.net/soil-data-ie/0.1 http://lab.scinfo.org.nz/static/schema/soil-data-ie/0.1/soil-data-ie.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd">
+	<wfs:member>
+		<soil:SO_Horizon gml:id="soil.so_horizon.1">
+			<gml:identifier codeSpace="http://www.landcareresearch.co.nz">http://lab.scinfo.org.nz/soil-data-ie/id/isric/soil/so_horizon/1</gml:identifier>
+			<soil:soDepth>
+				<soil:SO_MeasureRange>
+					<soil:soMinimumValue uom="cm">0.0</soil:soMinimumValue>
+					<soil:soMaximumValue uom="cm">21.0</soil:soMaximumValue>
+				</soil:SO_MeasureRange>
+			</soil:soDepth>
+			<soil:soComposition>
+				<soil:SO_Component>
+					<soil:soParticleSizeFraction
+						xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/voc/particle-size-fraction/fine-earth"
+						xlink:title="fine earth" />
+					<soil:soTexture
+						xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/voc/texture"
+						xlink:title="unknown" />
+					<soil:soParticleSizeDistribution>
+						<soil:SO_ParticleSizeValue>
+							<soil:soLabel
+								xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/voc/particle-size/clay"
+								xlink:title="clay" />
+							<soil:soParticleSize>
+								<soil:SO_MeasureRange>
+									<soil:soMinimumValue uom="mm">0.0</soil:soMinimumValue>
+									<soil:soMaximumValue uom="mm">0.002</soil:soMaximumValue>
+								</soil:SO_MeasureRange>
+							</soil:soParticleSize>
+							<soil:soProportion>
+								<soil:SO_MeasureRange>
+									<soil:soMinimumValue uom="g/100g">5.9</soil:soMinimumValue>
+									<soil:soMaximumValue uom="g/100g">5.9</soil:soMaximumValue>
+								</soil:SO_MeasureRange>
+							</soil:soProportion>
+						</soil:SO_ParticleSizeValue>
+					</soil:soParticleSizeDistribution>
+					<soil:soParticleSizeDistribution>
+						<soil:SO_ParticleSizeValue>
+							<soil:soLabel
+								xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/voc/particle-size/silt"
+								xlink:title="silt" />
+							<soil:soParticleSize>
+								<soil:SO_MeasureRange>
+									<soil:soMinimumValue uom="mm">0.002</soil:soMinimumValue>
+									<soil:soMaximumValue uom="mm">0.06</soil:soMaximumValue>
+								</soil:SO_MeasureRange>
+							</soil:soParticleSize>
+							<soil:soProportion>
+								<soil:SO_MeasureRange>
+									<soil:soMinimumValue uom="g/100g">15.1</soil:soMinimumValue>
+									<soil:soMaximumValue uom="g/100g">15.1</soil:soMaximumValue>
+								</soil:SO_MeasureRange>
+							</soil:soProportion>
+						</soil:SO_ParticleSizeValue>
+					</soil:soParticleSizeDistribution>
+					<soil:soParticleSizeDistribution>
+						<soil:SO_ParticleSizeValue>
+							<soil:soLabel
+								xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/voc/particle-size/sand"
+								xlink:title="sand" />
+							<soil:soParticleSize>
+								<soil:SO_MeasureRange>
+									<soil:soMinimumValue uom="mm">0.06</soil:soMinimumValue>
+									<soil:soMaximumValue uom="mm">2.0</soil:soMaximumValue>
+								</soil:SO_MeasureRange>
+							</soil:soParticleSize>
+							<soil:soProportion>
+								<soil:SO_MeasureRange>
+									<soil:soMinimumValue uom="g/100g">79.0</soil:soMinimumValue>
+									<soil:soMaximumValue uom="g/100g">79.0</soil:soMaximumValue>
+								</soil:SO_MeasureRange>
+							</soil:soProportion>
+						</soil:SO_ParticleSizeValue>
+					</soil:soParticleSizeDistribution>
+					<soil:soOrganicCarbon>
+						<om:OM_Observation gml:id="om.om_observation.organiccarbon.fe.1">
+							<om:phenomenonTime>
+								<gml:TimeInstant gml:id="time.organiccarbon.1">
+									<gml:timePosition>1997-08-31</gml:timePosition>
+								</gml:TimeInstant>
+							</om:phenomenonTime>
+							<om:resultTime xlink:href="#time.organiccarbon.1" />
+							<om:procedure xlink:href="http://www.opengis.net/def/nil/OGC/0/template"
+								xlink:title="template" />
+							<om:observedProperty
+								xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/soOrganicCarbon"
+								xlink:title="organic carbon" />
+							<om:featureOfInterest xlink:href="#soil.so_horizon.1" />
+							<om:result>
+								<soil:SO_MeasureRange>
+									<soil:soMinimumValue uom="g/kg">2.1</soil:soMinimumValue>
+									<soil:soMaximumValue uom="g/kg">2.1</soil:soMaximumValue>
+								</soil:SO_MeasureRange>
+							</om:result>
+						</om:OM_Observation>
+					</soil:soOrganicCarbon>
+					<soil:sopH>
+						<om:OM_Observation gml:id="om.om_observation.ph.h20.fe.1">
+							<om:phenomenonTime>
+								<gml:TimeInstant gml:id="time.ph.h2o.1">
+									<gml:timePosition>1997-08-31</gml:timePosition>
+								</gml:TimeInstant>
+							</om:phenomenonTime>
+							<om:resultTime xlink:href="#time.ph.h2o.1" />
+							<om:procedure
+								xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/procedure/pH/H2O"
+								xlink:title="pH (H2O)" />
+							<om:observedProperty
+								xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/sopH"
+								xlink:title="unitless" />
+							<om:featureOfInterest xlink:href="#soil.so_horizon.1" />
+							<om:result>
+								<soil:SO_MeasureRange>
+									<soil:soMinimumValue uom="unitless">4.6</soil:soMinimumValue>
+									<soil:soMaximumValue uom="unitless">4.6</soil:soMaximumValue>
+								</soil:SO_MeasureRange>
+							</om:result>
+						</om:OM_Observation>
+					</soil:sopH>
+					<soil:sopH>
+						<om:OM_Observation gml:id="om.om_observation.ph.kcl.fe.1">
+							<om:phenomenonTime>
+								<gml:TimeInstant gml:id="time.ph.kcl.1">
+									<gml:timePosition>1997-08-31</gml:timePosition>
+								</gml:TimeInstant>
+							</om:phenomenonTime>
+							<om:resultTime xlink:href="#time.ph.kcl.1" />
+							<om:procedure
+								xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/procedure/pH/KCL"
+								xlink:title="pH (KCL)" />
+							<om:observedProperty
+								xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/sopH"
+								xlink:title="unitless" />
+							<om:featureOfInterest xlink:href="#soil.so_horizon.1" />
+							<om:result>
+								<soil:SO_MeasureRange>
+									<soil:soMinimumValue uom="unitless">4.3</soil:soMinimumValue>
+									<soil:soMaximumValue uom="unitless">4.3</soil:soMaximumValue>
+								</soil:SO_MeasureRange>
+							</om:result>
+						</om:OM_Observation>
+					</soil:sopH>
+				</soil:SO_Component>
+			</soil:soComposition>
+			<soil:soRelatedSamplingFeature
+				xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/lcr/isric/sf_specimen/1"
+				xlink:title="0-21cm;1;Ap;ISIS" />
+			<soil:soDesignation>
+				<soil:SO_HorizonDesignation>
+					<soil:soLabel>Ap</soil:soLabel>
+					<soil:soScheme xlink:href="TODO" xlink:title="ISIS.so_horizon.1" />
+				</soil:SO_HorizonDesignation>
+			</soil:soDesignation>
+			<soil:soSoil
+				xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/isric/soil/so_soil/47010" />
+		</soil:SO_Horizon>
+	</wfs:member>
+</wfs:FeatureCollection>

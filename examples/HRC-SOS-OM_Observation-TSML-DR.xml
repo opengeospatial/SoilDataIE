@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsml:Collection xsi:schemaLocation="http://www.opengis.net/timeseriesml/1.0 http://lab.scinfo.org.nz/static/schema/timeseriesml/1.0/timeseriesML.xsd" gml:id="tsml.collection.example.soil-data-ie" xmlns:tsml="http://www.opengis.net/timeseriesml/1.0" xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sam="http://www.opengis.net/sampling/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:om="http://www.opengis.net/om/2.0" xmlns:gmlcov="http://www.opengis.net/gmlcov/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:wml2="http://www.opengis.net/waterml/2.0">
+    <gml:description>This is an example TimeSeriesML1.0 (draft) encoding of soil moisture sensor data provided as WaterML 2.0 by a Hilltop Server Sensor Observation Service. These are derived from actual data but may be changed for demonstration purposes. They must not be used for true life. Auth: Alistair Ritchie, Landcare Research (NZ) Ltd. Credit: Thanks to Landcare Research, Horizons Regional Council and the United States Geological Survey for the source data.</gml:description>
+    <tsml:generationDate>1973-01-26T19:10:00+12:00</tsml:generationDate>
+    <tsml:generationSystem>XSLT over Hilltop Server SOS.</tsml:generationSystem>
+    <tsml:observationMember>
+        <om:OM_Observation gml:id="om.observation.1">
+            <om:phenomenonTime>
+                <gml:TimePeriod gml:id="om.phenomenontime.1">
+                    <gml:beginPosition>2014-01-01T00:00:00+12:00</gml:beginPosition>
+                    <gml:endPosition>2015-10-26T13:15:00+12:00</gml:endPosition>
+                </gml:TimePeriod>
+            </om:phenomenonTime>
+            <om:resultTime xlink:title="missing" xlink:href="http://www.opengis.net/def/nil/OGC/0/missing"/>
+            <om:procedure xlink:title="Soil Moisture" xlink:href=""/>
+            <om:observedProperty xlink:title="soil moisture" xlink:href="http://lab.scinfo.org.nz/soil/def/property/soil-data-ie/soil-moisture"/>
+            <om:featureOfInterest xlink:title="Kumeti at Rua Roa" xlink:href="http://hilltopserver.horizons.govt.nz/def/"/>
+            <om:result>
+                <tsml:TimeseriesDomainRange gml:id="tsml.timeseriesdomainrange.1">
+                    <gml:domainSet>
+                        <tsml:TimePositionList gml:id="tsml.timepositionlist.1">
+                            <tsml:timePositionList>2015-10-25T13:15:00+12:00 2015-10-25T13:30:00+12:00 2015-10-25T13:45:00+12:00 2015-10-25T14:00:00+12:00 2015-10-25T14:15:00+12:00 2015-10-25T14:30:00+12:00 2015-10-25T14:45:00+12:00 2015-10-25T15:00:00+12:00 2015-10-25T15:15:00+12:00 2015-10-25T15:30:00+12:00 2015-10-25T15:45:00+12:00 2015-10-25T16:00:00+12:00 2015-10-25T16:15:00+12:00 2015-10-25T16:30:00+12:00 2015-10-25T16:45:00+12:00 2015-10-25T17:00:00+12:00 2015-10-25T17:15:00+12:00 2015-10-25T17:30:00+12:00 2015-10-25T17:45:00+12:00 2015-10-25T18:00:00+12:00 2015-10-25T18:15:00+12:00 2015-10-25T18:30:00+12:00 2015-10-25T18:45:00+12:00 2015-10-25T19:00:00+12:00 2015-10-25T19:15:00+12:00 2015-10-25T19:30:00+12:00 2015-10-25T19:45:00+12:00 2015-10-25T20:00:00+12:00 2015-10-25T20:15:00+12:00 2015-10-25T20:30:00+12:00 2015-10-25T20:45:00+12:00 2015-10-25T21:00:00+12:00 2015-10-25T21:15:00+12:00 2015-10-25T21:30:00+12:00 2015-10-25T21:45:00+12:00 2015-10-25T22:00:00+12:00 2015-10-25T22:15:00+12:00 2015-10-25T22:30:00+12:00 2015-10-25T22:45:00+12:00 2015-10-25T23:00:00+12:00 2015-10-25T23:15:00+12:00 2015-10-25T23:30:00+12:00 2015-10-25T23:45:00+12:00 2015-10-26T00:00:00+12:00 2015-10-26T00:15:00+12:00 2015-10-26T00:30:00+12:00 2015-10-26T00:45:00+12:00 2015-10-26T01:00:00+12:00 2015-10-26T01:15:00+12:00 2015-10-26T01:30:00+12:00 2015-10-26T01:45:00+12:00 2015-10-26T02:00:00+12:00 2015-10-26T02:15:00+12:00 2015-10-26T02:30:00+12:00 2015-10-26T02:45:00+12:00 2015-10-26T03:00:00+12:00 2015-10-26T03:15:00+12:00 2015-10-26T03:30:00+12:00 2015-10-26T03:45:00+12:00 2015-10-26T04:00:00+12:00 2015-10-26T04:15:00+12:00 2015-10-26T04:30:00+12:00 2015-10-26T04:45:00+12:00 2015-10-26T05:00:00+12:00 2015-10-26T05:15:00+12:00 2015-10-26T05:30:00+12:00 2015-10-26T05:45:00+12:00 2015-10-26T06:00:00+12:00 2015-10-26T06:15:00+12:00 2015-10-26T06:30:00+12:00 2015-10-26T06:45:00+12:00 2015-10-26T07:00:00+12:00 2015-10-26T07:15:00+12:00 2015-10-26T07:30:00+12:00 2015-10-26T07:45:00+12:00 2015-10-26T08:00:00+12:00 2015-10-26T08:15:00+12:00 2015-10-26T08:30:00+12:00 2015-10-26T08:45:00+12:00 2015-10-26T09:00:00+12:00 2015-10-26T09:15:00+12:00 2015-10-26T09:30:00+12:00 2015-10-26T09:45:00+12:00 2015-10-26T10:00:00+12:00 2015-10-26T10:15:00+12:00 2015-10-26T10:30:00+12:00 2015-10-26T10:45:00+12:00 2015-10-26T11:00:00+12:00 2015-10-26T11:15:00+12:00 2015-10-26T11:30:00+12:00 2015-10-26T11:45:00+12:00 2015-10-26T12:00:00+12:00 2015-10-26T12:15:00+12:00 2015-10-26T12:30:00+12:00 2015-10-26T12:45:00+12:00 2015-10-26T13:00:00+12:00 2015-10-26T13:15:00+12:00</tsml:timePositionList>
+                        </tsml:TimePositionList>
+                    </gml:domainSet>
+                    <gml:rangeSet>
+                        <gml:QuantityList uom="Percent">27.78 27.71 27.69 27.64 27.60 27.56 27.51 27.51 27.47 27.43 27.39 27.35 27.33 27.31 27.30 27.28 27.23 27.21 27.25 26.76 26.74 26.65 26.65 26.65 26.64 26.62 26.62 26.59 26.63 26.59 26.61 26.58 26.62 26.57 26.56 26.55 26.52 26.52 26.55 26.55 26.53 26.53 26.51 26.50 26.49 26.49 26.48 26.44 26.47 26.46 26.46 26.46 26.45 26.43 26.43 26.38 26.42 26.40 26.40 26.40 26.35 26.34 26.33 26.36 26.32 26.35 26.33 26.34 26.32 26.32 26.31 26.30 26.34 26.33 26.32 26.31 26.29 26.29 26.28 26.27 26.29 26.27 26.27 26.26 26.24 26.23 26.21 26.18 26.14 26.10 26.06 26.04 26.01 25.97 25.98 25.95 25.93</gml:QuantityList>
+                    </gml:rangeSet>
+                    <gmlcov:rangeType>
+                        <swe:DataRecord id="swe.datarecord.1">
+                            <swe:field name="observed_value">
+                                <swe:Quantity definition="http://lab.scinfo.org.nz/soil/def/property/soil-data-ie/soil-moisture">
+                                    <swe:uom xlink:href="http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Percent" code="Percent"/>
+                                </swe:Quantity>
+                            </swe:field>
+                        </swe:DataRecord>
+                    </gmlcov:rangeType>
+                    <gmlcov:metadata>
+                        <gmlcov:Extension>
+                            <tsml:TimeseriesMetadataExtension>
+                                <tsml:defaultPointMetadata>
+                                    <tsml:PointMetadata>
+                                        <tsml:uom code="Percent"/>
+                                        <tsml:interpolationType xlink:href="http://www.opengis.net/def/timeseries/1.0/interpolationType/Continuous" xlink:title="Continuous"/>
+                                    </tsml:PointMetadata>
+                                </tsml:defaultPointMetadata>
+                            </tsml:TimeseriesMetadataExtension>
+                        </gmlcov:Extension>
+                    </gmlcov:metadata>
+                </tsml:TimeseriesDomainRange>
+            </om:result>
+        </om:OM_Observation>
+    </tsml:observationMember>
+</tsml:Collection>

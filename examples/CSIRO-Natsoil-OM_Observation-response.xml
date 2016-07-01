@@ -1,0 +1,1903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:FeatureCollection xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:om="http://www.opengis.net/om/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:soil="http://www.opengis.net/soil-data-ie/0.1" xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sam="http://www.opengis.net/sampling/2.0" numberMatched="unknown" numberReturned="100" timeStamp="2015-11-23T02:50:11.976Z" xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd http://www.opengis.net/om/2.0 http://schemas.opengis.net/om/2.0/observation.xsd">
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.1.1.15_NR_CA.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.15_NR_CA.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.1.1.15_NR_CA.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.1.1.1.15_NR_CA.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15_NR_CA" xlink:title="15_NR_CA"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/EXCH_BASES_CA" xlink:title="EXCH_BASES_CA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.1.1" xlink:title="soil_specimen_199.CAN.C1.1.1.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">4.9</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.1.1.15_NR_K.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.15_NR_K.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.1.1.15_NR_K.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.1.1.1.15_NR_K.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15_NR_K" xlink:title="15_NR_K"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/EXCH_BASES_K" xlink:title="EXCH_BASES_K"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.1.1" xlink:title="soil_specimen_199.CAN.C1.1.1.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">1.1</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.1.1.15_NR_MG.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.15_NR_MG.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.1.1.15_NR_MG.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.1.1.1.15_NR_MG.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15_NR_MG" xlink:title="15_NR_MG"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/EXCH_BASES_MG" xlink:title="EXCH_BASES_MG"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.1.1" xlink:title="soil_specimen_199.CAN.C1.1.1.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">3.5</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.1.1.15_NR_NA.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.15_NR_NA.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.1.1.15_NR_NA.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.1.1.1.15_NR_NA.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15_NR_NA" xlink:title="15_NR_NA"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/EXCH_BASES_NA" xlink:title="EXCH_BASES_NA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.1.1" xlink:title="soil_specimen_199.CAN.C1.1.1.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">0.62</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.1.1.15G1_H.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.15G1_H.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.1.1.15G1_H.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.1.1.1.15G1_H.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15G1_H" xlink:title="15G1_H"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/EXCH_H" xlink:title="EXCH_H"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.1.1" xlink:title="soil_specimen_199.CAN.C1.1.1.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">5.5</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.1.1.15J_H.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.15J_H.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.1.1.15J_H.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.1.1.1.15J_H.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15J_H" xlink:title="15J_H"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/soEffectiveCationExchangeCapacity" xlink:title="effective cation exchange capacity"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.1.1" xlink:title="soil_specimen_199.CAN.C1.1.1.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">15.6</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.1.1.2_LOI.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.2_LOI.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.1.1.2_LOI.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.1.1.1.2_LOI.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/2_LOI" xlink:title="2_LOI"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/LOSS_ON_IGNITION" xlink:title="LOSS_ON_IGNITION"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.1.1" xlink:title="soil_specimen_199.CAN.C1.1.1.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">5.2</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.1.1.2A1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.2A1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.1.1.2A1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.1.1.1.2A1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/2A1" xlink:title="2A1"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/MOISTURE_CONTENT" xlink:title="MOISTURE_CONTENT"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.1.1" xlink:title="soil_specimen_199.CAN.C1.1.1.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">1.9</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.1.1.3A_TSS.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.3A_TSS.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.1.1.3A_TSS.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.1.1.1.3A_TSS.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/3A_TSS" xlink:title="3A_TSS"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/soElectricalConductivity" xlink:title="electrical conductivity"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.1.1" xlink:title="soil_specimen_199.CAN.C1.1.1.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">0.022</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.1.1.4A1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.4A1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.1.1.4A1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.1.1.1.4A1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/4A1" xlink:title="4A1"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/sopH" xlink:title="pH"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.1.1" xlink:title="soil_specimen_199.CAN.C1.1.1.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="-">6.8</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.1.1.5A2.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.5A2.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.1.1.5A2.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.1.1.1.5A2.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/5A2" xlink:title="5A2"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/CHLORIDE" xlink:title="CHLORIDE"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.1.1" xlink:title="soil_specimen_199.CAN.C1.1.1.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="mg/kg">60.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.1.1.7_NR.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.7_NR.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.1.1.7_NR.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.1.1.1.7_NR.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/7_NR" xlink:title="7_NR"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/NITROGEN" xlink:title="NITROGEN"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.1.1" xlink:title="soil_specimen_199.CAN.C1.1.1.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">0.145</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.1.1.9A_HCL.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.9A_HCL.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.1.1.9A_HCL.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.1.1.1.9A_HCL.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/9A_HCL" xlink:title="9A_HCL"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PHOSPHORUS" xlink:title="PHOSPHORUS"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.1.1" xlink:title="soil_specimen_199.CAN.C1.1.1.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">0.022</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.1.1.P10_PB_C.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.P10_PB_C.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.1.1.P10_PB_C.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.1.1.1.P10_PB_C.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_C" xlink:title="P10_PB_C"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.1.1" xlink:title="soil_specimen_199.CAN.C1.1.1.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">22.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.1.1.P10_PB_CS.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.P10_PB_CS.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.1.1.P10_PB_CS.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.1.1.1.P10_PB_CS.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_CS" xlink:title="P10_PB_CS"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.1.1" xlink:title="soil_specimen_199.CAN.C1.1.1.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">14.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.1.1.P10_PB_FS.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.P10_PB_FS.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.1.1.P10_PB_FS.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.1.1.1.P10_PB_FS.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_FS" xlink:title="P10_PB_FS"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.1.1" xlink:title="soil_specimen_199.CAN.C1.1.1.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">44.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.1.1.P10_PB_Z.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.1.P10_PB_Z.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.1.1.P10_PB_Z.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.1.1.1.P10_PB_Z.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_Z" xlink:title="P10_PB_Z"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.1.1" xlink:title="soil_specimen_199.CAN.C1.1.1.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">18.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.1.4G1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.1.4G1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.1.4G1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.1.4G1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/4G1" xlink:title="4G1"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/sopH" xlink:title="pH"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_horizon_199.CAN.C1.1.1" xlink:title="soil_horizon_199.CAN.C1.1.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="pH">6.8</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.10.1.19A1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.10.1.19A1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.10.1.19A1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.10.1.1.19A1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/19A1" xlink:title="19A1"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/CARBONATES" xlink:title="CARBONATES"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.10.1" xlink:title="soil_specimen_199.CAN.C1.1.10.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">0.02</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.10.1.2_LOI.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.10.1.2_LOI.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.10.1.2_LOI.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.10.1.1.2_LOI.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/2_LOI" xlink:title="2_LOI"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/LOSS_ON_IGNITION" xlink:title="LOSS_ON_IGNITION"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.10.1" xlink:title="soil_specimen_199.CAN.C1.1.10.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">5.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.10.1.2A1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.10.1.2A1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.10.1.2A1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.10.1.1.2A1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/2A1" xlink:title="2A1"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/MOISTURE_CONTENT" xlink:title="MOISTURE_CONTENT"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.10.1" xlink:title="soil_specimen_199.CAN.C1.1.10.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">4.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.10.1.3A_TSS.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.10.1.3A_TSS.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.10.1.3A_TSS.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.10.1.1.3A_TSS.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/3A_TSS" xlink:title="3A_TSS"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/soElectricalConductivity" xlink:title="electrical conductivity"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.10.1" xlink:title="soil_specimen_199.CAN.C1.1.10.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">0.19</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.10.1.4A1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.10.1.4A1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.10.1.4A1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.10.1.1.4A1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/4A1" xlink:title="4A1"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/sopH" xlink:title="pH"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.10.1" xlink:title="soil_specimen_199.CAN.C1.1.10.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="-">8.6</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.10.1.5A2.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.10.1.5A2.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.10.1.5A2.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.10.1.1.5A2.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/5A2" xlink:title="5A2"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/CHLORIDE" xlink:title="CHLORIDE"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.10.1" xlink:title="soil_specimen_199.CAN.C1.1.10.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="mg/kg">560.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.10.1.P10_PB_C.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.10.1.P10_PB_C.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.10.1.P10_PB_C.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.10.1.1.P10_PB_C.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_C" xlink:title="P10_PB_C"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.10.1" xlink:title="soil_specimen_199.CAN.C1.1.10.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">42.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.10.1.P10_PB_CS.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.10.1.P10_PB_CS.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.10.1.P10_PB_CS.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.10.1.1.P10_PB_CS.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_CS" xlink:title="P10_PB_CS"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.10.1" xlink:title="soil_specimen_199.CAN.C1.1.10.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">1.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.10.1.P10_PB_FS.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.10.1.P10_PB_FS.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.10.1.P10_PB_FS.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.10.1.1.P10_PB_FS.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_FS" xlink:title="P10_PB_FS"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.10.1" xlink:title="soil_specimen_199.CAN.C1.1.10.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">14.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.10.1.P10_PB_Z.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.10.1.P10_PB_Z.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.10.1.P10_PB_Z.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.10.1.1.P10_PB_Z.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_Z" xlink:title="P10_PB_Z"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.10.1" xlink:title="soil_specimen_199.CAN.C1.1.10.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">38.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.10.4G1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.10.4G1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.10.4G1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.10.4G1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/4G1" xlink:title="4G1"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/sopH" xlink:title="pH"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_horizon_199.CAN.C1.1.10" xlink:title="soil_horizon_199.CAN.C1.1.10"/>
+			<om:result xsi:type="gml:MeasureType" uom="pH">8.6</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.2.1.15_NR_CA.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.2.1.15_NR_CA.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.2.1.15_NR_CA.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.2.1.1.15_NR_CA.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15_NR_CA" xlink:title="15_NR_CA"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/EXCH_BASES_CA" xlink:title="EXCH_BASES_CA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.2.1" xlink:title="soil_specimen_199.CAN.C1.1.2.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">4.6</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.2.1.15_NR_K.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.2.1.15_NR_K.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.2.1.15_NR_K.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.2.1.1.15_NR_K.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15_NR_K" xlink:title="15_NR_K"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/EXCH_BASES_K" xlink:title="EXCH_BASES_K"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.2.1" xlink:title="soil_specimen_199.CAN.C1.1.2.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">0.69</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.2.1.15_NR_MG.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.2.1.15_NR_MG.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.2.1.15_NR_MG.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.2.1.1.15_NR_MG.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15_NR_MG" xlink:title="15_NR_MG"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/EXCH_BASES_MG" xlink:title="EXCH_BASES_MG"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.2.1" xlink:title="soil_specimen_199.CAN.C1.1.2.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">3.5</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.2.1.15_NR_NA.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.2.1.15_NR_NA.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.2.1.15_NR_NA.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.2.1.1.15_NR_NA.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15_NR_NA" xlink:title="15_NR_NA"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/EXCH_BASES_NA" xlink:title="EXCH_BASES_NA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.2.1" xlink:title="soil_specimen_199.CAN.C1.1.2.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">0.75</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.2.1.15G1_H.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.2.1.15G1_H.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.2.1.15G1_H.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.2.1.1.15G1_H.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15G1_H" xlink:title="15G1_H"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/EXCH_H" xlink:title="EXCH_H"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.2.1" xlink:title="soil_specimen_199.CAN.C1.1.2.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">5.3</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.2.1.15J_H.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.2.1.15J_H.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.2.1.15J_H.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.2.1.1.15J_H.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15J_H" xlink:title="15J_H"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/soEffectiveCationExchangeCapacity" xlink:title="effective cation exchange capacity"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.2.1" xlink:title="soil_specimen_199.CAN.C1.1.2.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">14.9</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.2.1.2_LOI.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.2.1.2_LOI.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.2.1.2_LOI.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.2.1.1.2_LOI.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/2_LOI" xlink:title="2_LOI"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/LOSS_ON_IGNITION" xlink:title="LOSS_ON_IGNITION"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.2.1" xlink:title="soil_specimen_199.CAN.C1.1.2.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">4.3</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.2.1.2A1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.2.1.2A1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.2.1.2A1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.2.1.1.2A1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/2A1" xlink:title="2A1"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/MOISTURE_CONTENT" xlink:title="MOISTURE_CONTENT"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.2.1" xlink:title="soil_specimen_199.CAN.C1.1.2.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">1.8</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.2.1.3A_TSS.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.2.1.3A_TSS.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.2.1.3A_TSS.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.2.1.1.3A_TSS.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/3A_TSS" xlink:title="3A_TSS"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/soElectricalConductivity" xlink:title="electrical conductivity"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.2.1" xlink:title="soil_specimen_199.CAN.C1.1.2.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">0.022</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.2.1.4A1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.2.1.4A1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.2.1.4A1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.2.1.1.4A1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/4A1" xlink:title="4A1"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/sopH" xlink:title="pH"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.2.1" xlink:title="soil_specimen_199.CAN.C1.1.2.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="-">6.7</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.2.1.5A2.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.2.1.5A2.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.2.1.5A2.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.2.1.1.5A2.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/5A2" xlink:title="5A2"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/CHLORIDE" xlink:title="CHLORIDE"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.2.1" xlink:title="soil_specimen_199.CAN.C1.1.2.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="mg/kg">70.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.2.1.7_NR.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.2.1.7_NR.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.2.1.7_NR.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.2.1.1.7_NR.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/7_NR" xlink:title="7_NR"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/NITROGEN" xlink:title="NITROGEN"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.2.1" xlink:title="soil_specimen_199.CAN.C1.1.2.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">0.105</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.2.1.9A_HCL.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.2.1.9A_HCL.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.2.1.9A_HCL.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.2.1.1.9A_HCL.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/9A_HCL" xlink:title="9A_HCL"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PHOSPHORUS" xlink:title="PHOSPHORUS"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.2.1" xlink:title="soil_specimen_199.CAN.C1.1.2.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">0.019</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.2.1.P10_PB_C.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.2.1.P10_PB_C.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.2.1.P10_PB_C.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.2.1.1.P10_PB_C.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_C" xlink:title="P10_PB_C"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.2.1" xlink:title="soil_specimen_199.CAN.C1.1.2.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">19.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.2.1.P10_PB_CS.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.2.1.P10_PB_CS.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.2.1.P10_PB_CS.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.2.1.1.P10_PB_CS.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_CS" xlink:title="P10_PB_CS"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.2.1" xlink:title="soil_specimen_199.CAN.C1.1.2.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">13.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.2.1.P10_PB_FS.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.2.1.P10_PB_FS.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.2.1.P10_PB_FS.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.2.1.1.P10_PB_FS.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_FS" xlink:title="P10_PB_FS"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.2.1" xlink:title="soil_specimen_199.CAN.C1.1.2.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">46.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.2.1.P10_PB_Z.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.2.1.P10_PB_Z.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.2.1.P10_PB_Z.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.2.1.1.P10_PB_Z.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_Z" xlink:title="P10_PB_Z"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.2.1" xlink:title="soil_specimen_199.CAN.C1.1.2.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">20.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.2.4G1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.2.4G1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.2.4G1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.2.4G1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/4G1" xlink:title="4G1"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/sopH" xlink:title="pH"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_horizon_199.CAN.C1.1.2" xlink:title="soil_horizon_199.CAN.C1.1.2"/>
+			<om:result xsi:type="gml:MeasureType" uom="pH">6.7</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.3.1.15_NR_CA.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.3.1.15_NR_CA.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.3.1.15_NR_CA.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.3.1.1.15_NR_CA.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15_NR_CA" xlink:title="15_NR_CA"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/EXCH_BASES_CA" xlink:title="EXCH_BASES_CA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.3.1" xlink:title="soil_specimen_199.CAN.C1.1.3.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">8.8</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.3.1.15_NR_K.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.3.1.15_NR_K.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.3.1.15_NR_K.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.3.1.1.15_NR_K.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15_NR_K" xlink:title="15_NR_K"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/EXCH_BASES_K" xlink:title="EXCH_BASES_K"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.3.1" xlink:title="soil_specimen_199.CAN.C1.1.3.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">0.83</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.3.1.15_NR_MG.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.3.1.15_NR_MG.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.3.1.15_NR_MG.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.3.1.1.15_NR_MG.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15_NR_MG" xlink:title="15_NR_MG"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/EXCH_BASES_MG" xlink:title="EXCH_BASES_MG"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.3.1" xlink:title="soil_specimen_199.CAN.C1.1.3.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">9.8</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.3.1.15_NR_NA.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.3.1.15_NR_NA.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.3.1.15_NR_NA.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.3.1.1.15_NR_NA.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15_NR_NA" xlink:title="15_NR_NA"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/EXCH_BASES_NA" xlink:title="EXCH_BASES_NA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.3.1" xlink:title="soil_specimen_199.CAN.C1.1.3.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">2.8</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.3.1.15G1_H.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.3.1.15G1_H.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.3.1.15G1_H.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.3.1.1.15G1_H.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15G1_H" xlink:title="15G1_H"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/EXCH_H" xlink:title="EXCH_H"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.3.1" xlink:title="soil_specimen_199.CAN.C1.1.3.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">4.9</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.3.1.15J_H.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.3.1.15J_H.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.3.1.15J_H.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.3.1.1.15J_H.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15J_H" xlink:title="15J_H"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/soEffectiveCationExchangeCapacity" xlink:title="effective cation exchange capacity"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.3.1" xlink:title="soil_specimen_199.CAN.C1.1.3.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">27.1</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.3.1.2_LOI.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.3.1.2_LOI.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.3.1.2_LOI.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.3.1.1.2_LOI.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/2_LOI" xlink:title="2_LOI"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/LOSS_ON_IGNITION" xlink:title="LOSS_ON_IGNITION"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.3.1" xlink:title="soil_specimen_199.CAN.C1.1.3.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">6.2</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.3.1.2A1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.3.1.2A1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.3.1.2A1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.3.1.1.2A1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/2A1" xlink:title="2A1"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/MOISTURE_CONTENT" xlink:title="MOISTURE_CONTENT"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.3.1" xlink:title="soil_specimen_199.CAN.C1.1.3.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">4.2</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.3.1.3A_TSS.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.3.1.3A_TSS.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.3.1.3A_TSS.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.3.1.1.3A_TSS.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/3A_TSS" xlink:title="3A_TSS"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/soElectricalConductivity" xlink:title="electrical conductivity"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.3.1" xlink:title="soil_specimen_199.CAN.C1.1.3.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">0.036</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.3.1.4A1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.3.1.4A1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.3.1.4A1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.3.1.1.4A1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/4A1" xlink:title="4A1"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/sopH" xlink:title="pH"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.3.1" xlink:title="soil_specimen_199.CAN.C1.1.3.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="-">7.4</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.3.1.5A2.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.3.1.5A2.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.3.1.5A2.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.3.1.1.5A2.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/5A2" xlink:title="5A2"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/CHLORIDE" xlink:title="CHLORIDE"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.3.1" xlink:title="soil_specimen_199.CAN.C1.1.3.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="mg/kg">110.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.3.1.P10_PB_C.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.3.1.P10_PB_C.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.3.1.P10_PB_C.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.3.1.1.P10_PB_C.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_C" xlink:title="P10_PB_C"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.3.1" xlink:title="soil_specimen_199.CAN.C1.1.3.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">50.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.3.1.P10_PB_CS.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.3.1.P10_PB_CS.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.3.1.P10_PB_CS.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.3.1.1.P10_PB_CS.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_CS" xlink:title="P10_PB_CS"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.3.1" xlink:title="soil_specimen_199.CAN.C1.1.3.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">8.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.3.1.P10_PB_FS.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.3.1.P10_PB_FS.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.3.1.P10_PB_FS.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.3.1.1.P10_PB_FS.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_FS" xlink:title="P10_PB_FS"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.3.1" xlink:title="soil_specimen_199.CAN.C1.1.3.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">29.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.3.1.P10_PB_Z.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.3.1.P10_PB_Z.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.3.1.P10_PB_Z.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.3.1.1.P10_PB_Z.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_Z" xlink:title="P10_PB_Z"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.3.1" xlink:title="soil_specimen_199.CAN.C1.1.3.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">11.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.3.4G1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.3.4G1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.3.4G1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.3.4G1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/4G1" xlink:title="4G1"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/sopH" xlink:title="pH"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_horizon_199.CAN.C1.1.3" xlink:title="soil_horizon_199.CAN.C1.1.3"/>
+			<om:result xsi:type="gml:MeasureType" uom="pH">7.4</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.4.1.15_NR_CA.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.4.1.15_NR_CA.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.4.1.15_NR_CA.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.4.1.1.15_NR_CA.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15_NR_CA" xlink:title="15_NR_CA"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/EXCH_BASES_CA" xlink:title="EXCH_BASES_CA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.4.1" xlink:title="soil_specimen_199.CAN.C1.1.4.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">11.6</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.4.1.15_NR_K.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.4.1.15_NR_K.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.4.1.15_NR_K.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.4.1.1.15_NR_K.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15_NR_K" xlink:title="15_NR_K"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/EXCH_BASES_K" xlink:title="EXCH_BASES_K"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.4.1" xlink:title="soil_specimen_199.CAN.C1.1.4.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">0.8</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.4.1.15_NR_MG.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.4.1.15_NR_MG.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.4.1.15_NR_MG.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.4.1.1.15_NR_MG.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15_NR_MG" xlink:title="15_NR_MG"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/EXCH_BASES_MG" xlink:title="EXCH_BASES_MG"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.4.1" xlink:title="soil_specimen_199.CAN.C1.1.4.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">13.6</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.4.1.15_NR_NA.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.4.1.15_NR_NA.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.4.1.15_NR_NA.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.4.1.1.15_NR_NA.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15_NR_NA" xlink:title="15_NR_NA"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/EXCH_BASES_NA" xlink:title="EXCH_BASES_NA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.4.1" xlink:title="soil_specimen_199.CAN.C1.1.4.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">4.3</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.4.1.15J_H.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.4.1.15J_H.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.4.1.15J_H.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.4.1.1.15J_H.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/15J_H" xlink:title="15J_H"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/soEffectiveCationExchangeCapacity" xlink:title="effective cation exchange capacity"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.4.1" xlink:title="soil_specimen_199.CAN.C1.1.4.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="meq/100g">30.3</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.4.1.19A1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.4.1.19A1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.4.1.19A1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.4.1.1.19A1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/19A1" xlink:title="19A1"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/CARBONATES" xlink:title="CARBONATES"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.4.1" xlink:title="soil_specimen_199.CAN.C1.1.4.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">0.01</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.4.1.2_LOI.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.4.1.2_LOI.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.4.1.2_LOI.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.4.1.1.2_LOI.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/2_LOI" xlink:title="2_LOI"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/LOSS_ON_IGNITION" xlink:title="LOSS_ON_IGNITION"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.4.1" xlink:title="soil_specimen_199.CAN.C1.1.4.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">6.8</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.4.1.2A1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.4.1.2A1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.4.1.2A1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.4.1.1.2A1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/2A1" xlink:title="2A1"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/MOISTURE_CONTENT" xlink:title="MOISTURE_CONTENT"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.4.1" xlink:title="soil_specimen_199.CAN.C1.1.4.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">5.2</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.4.1.3A_TSS.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.4.1.3A_TSS.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.4.1.3A_TSS.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.4.1.1.3A_TSS.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/3A_TSS" xlink:title="3A_TSS"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/soElectricalConductivity" xlink:title="electrical conductivity"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.4.1" xlink:title="soil_specimen_199.CAN.C1.1.4.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">0.048</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.4.1.4A1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.4.1.4A1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.4.1.4A1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.4.1.1.4A1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/4A1" xlink:title="4A1"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/sopH" xlink:title="pH"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.4.1" xlink:title="soil_specimen_199.CAN.C1.1.4.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="-">8.3</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.4.1.5A2.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.4.1.5A2.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.4.1.5A2.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.4.1.1.5A2.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/5A2" xlink:title="5A2"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/CHLORIDE" xlink:title="CHLORIDE"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.4.1" xlink:title="soil_specimen_199.CAN.C1.1.4.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="mg/kg">179.99998</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.4.1.P10_PB_C.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.4.1.P10_PB_C.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.4.1.P10_PB_C.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.4.1.1.P10_PB_C.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_C" xlink:title="P10_PB_C"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.4.1" xlink:title="soil_specimen_199.CAN.C1.1.4.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">58.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.4.1.P10_PB_CS.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.4.1.P10_PB_CS.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.4.1.P10_PB_CS.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.4.1.1.P10_PB_CS.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_CS" xlink:title="P10_PB_CS"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.4.1" xlink:title="soil_specimen_199.CAN.C1.1.4.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">6.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.4.1.P10_PB_FS.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.4.1.P10_PB_FS.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.4.1.P10_PB_FS.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.4.1.1.P10_PB_FS.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_FS" xlink:title="P10_PB_FS"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.4.1" xlink:title="soil_specimen_199.CAN.C1.1.4.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">22.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.4.1.P10_PB_Z.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.4.1.P10_PB_Z.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.4.1.P10_PB_Z.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.4.1.1.P10_PB_Z.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_Z" xlink:title="P10_PB_Z"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.4.1" xlink:title="soil_specimen_199.CAN.C1.1.4.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">12.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.4.4G1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.4.4G1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.4.4G1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.4.4G1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/4G1" xlink:title="4G1"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/sopH" xlink:title="pH"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_horizon_199.CAN.C1.1.4" xlink:title="soil_horizon_199.CAN.C1.1.4"/>
+			<om:result xsi:type="gml:MeasureType" uom="pH">8.3</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.5.1.19A1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.5.1.19A1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.5.1.19A1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.5.1.1.19A1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/19A1" xlink:title="19A1"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/CARBONATES" xlink:title="CARBONATES"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.5.1" xlink:title="soil_specimen_199.CAN.C1.1.5.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">0.11</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.5.1.2_LOI.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.5.1.2_LOI.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.5.1.2_LOI.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.5.1.1.2_LOI.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/2_LOI" xlink:title="2_LOI"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/LOSS_ON_IGNITION" xlink:title="LOSS_ON_IGNITION"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.5.1" xlink:title="soil_specimen_199.CAN.C1.1.5.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">6.3</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.5.1.2A1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.5.1.2A1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.5.1.2A1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.5.1.1.2A1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/2A1" xlink:title="2A1"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/MOISTURE_CONTENT" xlink:title="MOISTURE_CONTENT"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.5.1" xlink:title="soil_specimen_199.CAN.C1.1.5.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">5.2</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.5.1.3A_TSS.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.5.1.3A_TSS.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.5.1.3A_TSS.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.5.1.1.3A_TSS.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/3A_TSS" xlink:title="3A_TSS"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/soElectricalConductivity" xlink:title="electrical conductivity"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.5.1" xlink:title="soil_specimen_199.CAN.C1.1.5.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">0.093</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.5.1.4A1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.5.1.4A1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.5.1.4A1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.5.1.1.4A1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/4A1" xlink:title="4A1"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/sopH" xlink:title="pH"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.5.1" xlink:title="soil_specimen_199.CAN.C1.1.5.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="-">8.9</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.5.1.5A2.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.5.1.5A2.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.5.1.5A2.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.5.1.1.5A2.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/5A2" xlink:title="5A2"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/CHLORIDE" xlink:title="CHLORIDE"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.5.1" xlink:title="soil_specimen_199.CAN.C1.1.5.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="mg/kg">380.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.5.1.P10_PB_C.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.5.1.P10_PB_C.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.5.1.P10_PB_C.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.5.1.1.P10_PB_C.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_C" xlink:title="P10_PB_C"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.5.1" xlink:title="soil_specimen_199.CAN.C1.1.5.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">58.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.5.1.P10_PB_CS.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.5.1.P10_PB_CS.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.5.1.P10_PB_CS.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.5.1.1.P10_PB_CS.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_CS" xlink:title="P10_PB_CS"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.5.1" xlink:title="soil_specimen_199.CAN.C1.1.5.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">6.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.5.1.P10_PB_FS.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.5.1.P10_PB_FS.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.5.1.P10_PB_FS.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.5.1.1.P10_PB_FS.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_FS" xlink:title="P10_PB_FS"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.5.1" xlink:title="soil_specimen_199.CAN.C1.1.5.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">22.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.5.1.P10_PB_Z.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.5.1.P10_PB_Z.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.5.1.P10_PB_Z.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.5.1.1.P10_PB_Z.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/P10_PB_Z" xlink:title="P10_PB_Z"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/PSA" xlink:title="PSA"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.5.1" xlink:title="soil_specimen_199.CAN.C1.1.5.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">10.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.5.4G1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.5.4G1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.5.4G1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.5.4G1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/4G1" xlink:title="4G1"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/sopH" xlink:title="pH"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_horizon_199.CAN.C1.1.5" xlink:title="soil_horizon_199.CAN.C1.1.5"/>
+			<om:result xsi:type="gml:MeasureType" uom="pH">8.9</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.6.1.19A1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.6.1.19A1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.6.1.19A1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.6.1.1.19A1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/19A1" xlink:title="19A1"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/CARBONATES" xlink:title="CARBONATES"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.6.1" xlink:title="soil_specimen_199.CAN.C1.1.6.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">2.1</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.6.1.2_LOI.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.6.1.2_LOI.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.6.1.2_LOI.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.6.1.1.2_LOI.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/2_LOI" xlink:title="2_LOI"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/LOSS_ON_IGNITION" xlink:title="LOSS_ON_IGNITION"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.6.1" xlink:title="soil_specimen_199.CAN.C1.1.6.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">6.2</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.6.1.2A1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.6.1.2A1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.6.1.2A1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.6.1.1.2A1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/2A1" xlink:title="2A1"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/MOISTURE_CONTENT" xlink:title="MOISTURE_CONTENT"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.6.1" xlink:title="soil_specimen_199.CAN.C1.1.6.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">5.1</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.6.1.3A_TSS.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.6.1.3A_TSS.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.6.1.3A_TSS.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.6.1.1.3A_TSS.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/3A_TSS" xlink:title="3A_TSS"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/soElectricalConductivity" xlink:title="electrical conductivity"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.6.1" xlink:title="soil_specimen_199.CAN.C1.1.6.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">0.21</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.6.1.4A1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.6.1.4A1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.6.1.4A1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.6.1.1.4A1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/4A1" xlink:title="4A1"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/sopH" xlink:title="pH"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.6.1" xlink:title="soil_specimen_199.CAN.C1.1.6.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="-">9.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.6.1.5A2.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.6.1.5A2.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.6.1.5A2.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.6.1.1.5A2.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/5A2" xlink:title="5A2"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/CHLORIDE" xlink:title="CHLORIDE"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.6.1" xlink:title="soil_specimen_199.CAN.C1.1.6.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="mg/kg">590.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.6.4G1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.6.4G1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.6.4G1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.6.4G1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/4G1" xlink:title="4G1"/>
+			<om:observedProperty xlink:href="http://lab.scinfo.org.nz/soil-data-ie/def/property/sopH" xlink:title="pH"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_horizon_199.CAN.C1.1.6" xlink:title="soil_horizon_199.CAN.C1.1.6"/>
+			<om:result xsi:type="gml:MeasureType" uom="pH">9.0</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.7.1.19A1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.7.1.19A1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.7.1.19A1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.7.1.1.19A1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/19A1" xlink:title="19A1"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/CARBONATES" xlink:title="CARBONATES"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.7.1" xlink:title="soil_specimen_199.CAN.C1.1.7.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">0.11</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.7.1.2_LOI.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.7.1.2_LOI.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.7.1.2_LOI.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.7.1.1.2_LOI.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/2_LOI" xlink:title="2_LOI"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/LOSS_ON_IGNITION" xlink:title="LOSS_ON_IGNITION"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.7.1" xlink:title="soil_specimen_199.CAN.C1.1.7.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">5.1</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+	<wfs:member>
+		<om:OM_Observation gml:id="soil_observation_199.CAN.C1.1.7.1.2A1.1">
+			<gml:identifier codeSpace="http://www.clw.csiro.au/aclep/archive">http://lab.scinfo.org.nz/soil-data-ie/id/csiro/om/om_observation/soil_observation_199.CAN.C1.1.7.1.2A1.1</gml:identifier>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime_199.CAN.C1.1.7.1.2A1.1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime_199.CAN.C1.1.7.1.1.2A1.07101953">
+					<gml:timePosition>07101953</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilobservationprocess/2A1" xlink:title="2A1"/>
+			<om:observedProperty xlink:href="http://resource.soilinformationstandards.org/classifier/aclep/soilproperty/MOISTURE_CONTENT" xlink:title="MOISTURE_CONTENT"/>
+			<om:featureOfInterest xlink:href="http://lab.scinfo.org.nz/soil-data-ie/id/csiro/spec/sf_specimen/soil_specimen_199.CAN.C1.1.7.1" xlink:title="soil_specimen_199.CAN.C1.1.7.1"/>
+			<om:result xsi:type="gml:MeasureType" uom="percent">5.3</om:result>
+		</om:OM_Observation>
+	</wfs:member>
+</wfs:FeatureCollection>
