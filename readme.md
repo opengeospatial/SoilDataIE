@@ -3,7 +3,7 @@
 ## Overview
 This repository contains used created participants in the OGC Soil Data Interoperability Experiment. 
 
-Read the [Engineering Report](https://portal.opengeospatial.org/files/?artifact_id=) for more information.
+Read the [Engineering Report](https://portal.opengeospatial.org/files/?artifact_id=69891) for more information.
 
 ## Contents
 
