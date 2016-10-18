@@ -14,9 +14,7 @@ It contains un-versioned packages for the existing models that are evaluated, us
 
     Timeseries Profile of O&M - rc1.0   the new profile of Observations and Measurements for timeseries/monitoring data.
 
-!! NOTE THAT these files represent the work of other communities and are to be treated with the appropriate considerations for 
-
-!! IP and copryright and so on. Please don't edit these models or redistribute without appropriate permission.
+!! NOTE THAT these files represent the work of other communities and are to be treated with the appropriate considerations for IP, copryright and so on. Please don't edit these models or redistribute without appropriate permission.
 
 !! Note also that models considered by the IE, but not in the public domain, e.g. the work of ISO TC/190, are excluded. 
 	
