@@ -1,7 +1,7 @@
 # OGC Soil Data Interoperability Experiment
 
 ## Overview
-This repository contains used created participants in the OGC Soil Data Interoperability Experiment. 
+This repository contains example material and documentation created by the OGC Soil Data Interoperability Experiment. 
 
 Read the [Engineering Report](https://portal.opengeospatial.org/files/?artifact_id=69891) for more information.
 
