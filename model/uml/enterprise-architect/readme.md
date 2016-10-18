@@ -4,7 +4,7 @@
 
 The Sparx Enterprise Architect project file soil-data-ie.eap has been created to allow users to explore the model.
 
-## OVERVIEW OF soil-data-ie-template.eap
+## OVERVIEW OF soil-data-ie.eap
 
 It contains un-versioned packages for the existing models that are evaluated, used, and /or extended by this interoperability experiment:
 
