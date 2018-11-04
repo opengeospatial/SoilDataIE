@@ -3,7 +3,7 @@
 ## Overview
 This repository contains example material and documentation created by the OGC Soil Data Interoperability Experiment. 
 
-Read the [Engineering Report](https://portal.opengeospatial.org/files/?artifact_id=69891) for more information.
+Read the [Engineering Report](https://portal.opengeospatial.org/files/?artifact_id=69896) for more information.
 
 ## Contents
 
